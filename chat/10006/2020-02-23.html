@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>1일10콩수익</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+월욜 코로나주 상치겟네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:00</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+난리네 아주</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초보</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜요? ㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>달자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+폐럼주는 아무거나</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오태식이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어떤게 있죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>한손에500억</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+많죠..뭐 알콜주 마스크주..<br>
+학교가휴교하면 인강주..<br>
+라면이나 생필품주<br>
+알콜 마스크 생필품 배달위한 택배주<br>
+박스 제지주<br>
+조금 어거지끼워맞추기식으로말햇지만.....</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>무용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+05:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>소박</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부자가즈자!</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부자가즈자!</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+즐건ㅇㅣㄹ 되세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오공이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>hygia/昌</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>소소한수익</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니자</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사랑행복</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쿤보</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>지식재산</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초코맛푸딩</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오리</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>필승99</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노력</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은하루 보내세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스카이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+종은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>장대장</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>도신(170519)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다이빙매니아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>앵자두</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다하누</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하늘이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>웰컴투수익</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>진쫘주식초보</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요~~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식꿈나무</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침 입니당~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신사</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침 입니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>첫빳따에누워</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+날씨 좋네요 좋은하루 보내세요!!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>민지사랑</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다.^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로드스톤</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>조민혜</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침 입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>슈슈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아람</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라이언즈으~</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침 입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>큰꿈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>상승VI</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+샵검색: #방탄소년단</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>상승VI</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대단하네요 방탄형들!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>헤이샤르트</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>단순하게</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>밤하늘</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>짱앙구</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침이네요ㅋㄱ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>앙수금띠</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>봄날</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다~!!<br>
+모두 건강한 주말 보내세요~!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이닝</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>임지훈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>매너킴</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+인사하기도 무서운 아침이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스마일</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침 입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>업투업</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:04</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+편의점가느라 잠깐 나갔는데 사람들 거의 없네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>파란하늘</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어제 남편 결혼식갔는데 앞에서 하객들 돋을 축의금 받아야되서 마스크에 실리콘장갑 끼고갔어요 ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>파란하늘</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아 진짜 신천지랑 코로나 너무 무섭네요 다들 조심하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저두 담주 토요일에 예식장가야되는데 가야될지 축의금만 보낼지 망설여지네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하라하이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>율리</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다  생활규칙지키고 넘 겁먹지맙시다 이또한 지나가겠지요~~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>딱구</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>까멜리아?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[속보] 국내 코로나19 4번째 사망자 발생 (끝) [이 시각 많이 본 기사] <저작권자(c) 연합뉴스, 무단 전재-재배포 금지></div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>♡부자됩시다♡</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어휴..ㅠㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>♡부자됩시다♡</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다들조심하세요..ㅠㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+큰일이네요 진짜....ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>몽몽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>결단</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+코로나 조심하시고 좋은 주말 보내세요~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>니가가라하와이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+556명</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>니가가라하와이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+심각하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>공부하는주린이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>버디버디</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>동이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>동이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조은아침인데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>동이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+너무 ...우울한 아침인듯 ㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어서오셔요!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투_내일은 수퍼개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>냥냥집사</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은아침입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>원칙</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투_내일은 수퍼개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘은 주식안하는 날이니깐 이런것도 참조해보세요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투_내일은 수퍼개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://youtu.be/x45GbS98y9I</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+즐거운주말되세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>도신(170519)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우한연구소로 파견되는 곽구영의 글입니다. 꼭 많이 전달해주십시오.<br>
+그는 무한 폐렴 바이러스 연구로 가고 있습니다.  방금 전화를 걸어ㅡ 감기에 걸렸을 때는 콧물과 가래가 있으며, 코로나 바이러스 폐렴은 콧물이 없는 마른 기침이므로 새로운 유형의 코로나 바이러스 폐렴이다.  이것이 가장 간단한 식별 방법이다.  이런 의료 지식에 대해 더 많이 알면 예방에 도움이 될 것입니다. <br>
+  이번에 우한 바이러스는 내열성이 아니며 26-27 도의 온도에서 죽습니다.  따라서 따뜻한 물을 많이 마신다. 친척들에게 더운 물을 마시도록 하면 예방할 수 있다. 햇빛 아래로 가세요. 찬물  특히 얼음물을 마시지 마세요. 따뜻한 물을 마시는 것은 모든 바이러스에 효과적입니다. 꼭 기억하십시오!<br>
+ <br>
+코로나 바이러스에 대한 의사의 조언 :<br>
+ 1. 크기가 매우 크며 (셀의 직경은 약 400-500nm), 모든 일반 마스크 (N95 기능뿐만 아니라)도 이를 필터링 할 수 있습니다.  그러나 감염된 사람이 당신 앞에서 재채기를하면 3미터 멀리 떨어지니 조심하세요.<br>
+ 2. 바이러스가 금속 표면에 떨어지면 12 시간 이상 생존합니다.  금속에 닿은 경우 비누로 손을 씻으십시오.<br>
+ 3. 바이러스는 옷에서 6-12 시간 동안 활성 상태를 유지할 수 있습니다. 세탁 세제는 바이러스를 죽입니다.  매일 씻을 필요가없는 겨울 옷의 경우, 태양 아래서 두어 바이러스를 죽일 수 있습니다.<br>
+ 코로나 바이러스로 인한 폐렴 증상 :<br>
+ 1. 목구멍을 먼저 감염시켜 목구멍이 3 ~ 4 일 동안 지속되는 건조한 인후통 느낌을 갖게됩니다.<br>
+ 2. 그러면 바이러스가 코액에 혼합되어 기관으로 흘러 들어가 폐로 들어가 폐렴을 일으킵니다.  이 과정은 5-6 일이 소요됩니다.<br>
+ 3. 폐렴으로 고열과 호흡 곤란이 발생합니다.  비강 혼잡은 정상적인 종류와 다릅니다.  물에 빠진 것처럼 답답하게 느껴질 것입니다.  이런 느낌이 든다면 즉시 의사의 진료를 받아야합니다.<br>
+ 예방에 관하여 :<br>
+ 1. 감염되는 가장 일반적인 방법은 공개적으로 물건을 만지는 것이므로 손을 자주 씻어야합니다.  바이러스는 5-10 분 동안 만 손에 살 수 있지만, 5-10 분 동안 많은 일이 발생할 수 있습니다 (눈을 비비거나 의도하지 않게 코를 만질 수 있음).<br>
+ 2. 손을 자주 씻는 것 외에도 Betadine Sore Throat Gargle로 가글 양치질을하여 목구멍에 있는 동안 세균을 제거하거나 최소화 할 수 있습니다 (폐로 떨어지기 전).<br>
+ 따뜻한물 마시기 전달합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>화이팅</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대박가자구용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배서</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>웰컴투수익</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>돌파</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+정보 감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초보</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>달자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+걈사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뿐이고</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+모두 건강한하루였길 바랍니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>까멜리아?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[2보] 전국 유치원·초중고 개학 일주일 연기..다음달 9일로 (서울·세종=연합뉴스) 이효석 이재영 기자 = 신종 코로나바이러스 감염증(코로나19) 확산을 막고자 전국 학교 개학이 일주일 연기된다. 정부는 23일 정부서울청사에서 브리핑을 열고 문재인 대통령 주재 코로나19 확대 중앙사고수습본부회의에서 전국 유치원과 초중고, 특수학교에 2020학년도 개학을 다음 달 2일에서 9일로 일주일 미루라고 명령하기로 했다고 밝혔</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저희집앞 스타벅스입니다..평소 사람들 꽉차야정상인데..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+단 한명도 없습니다..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>완드?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사람이 1도 없네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>카와이이펭</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와아...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>카와이이펭</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+거리가 썰렁하긴 하던데..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+신기할정도네요.저도 애기데리고 자주가는데..마트왔다가 보니..단 한명도없어요.....</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>완드?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+요즘 매체마다 난리니 사람 모인 곳은 피하는게 좋긴하죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사람모이는곳은 가는게 아니에요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금 막창 한개 사갑니당 와이프랑 애기 재우고 먹을까싶어서^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이시국에 포항 마트갔는데  마스크안낀사람 .생각보다 많더라고요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+면마스크만 10개있어서 쓸어왔네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 150개샀어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+부럽습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노야</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+약국 마트 돌아다녀봐도 면마스크 말고는 없더라구요.. 마스크들은 다 어디갔을까요..?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+편의점이고 약국이고 다없네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대박터짐 꿀개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜 무서워요ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>눈떠보니 상한가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다 쓸어가더라고요<br>
+온라인도 다 품절이고<br>
+급한분들은 중고나라에서 웃돈주고 산다네요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+옳은건지 모르겠는데..5개 마스크에 1번2번3번4번5번 써놓고 월화수목금 번갈아 써래요!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주맨</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 장염걸렸는데 이게 코로나랑 관련없겠죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노야</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마스크 못 구해서 만들어 쓰려고 원단 주문했는데 이건 좀 빨리 왔으면 좋겠어요 ㅠ ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>후니짱!</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+한번만..  이른 결단을 했더라면... 국민들이 이렇게 고생 안 해두 될것을...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내일부터 대구경북 마스크 물량이 좀 풀린다고는 하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사재기 압류 물량 400만 중에 100만개? 200만개? 먼저 대구경북 약국 등지에 제공한다고...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제 와이프는 대구 31번확진자 생기자마자 사재기 해놓아서 집에 100개는 있는것같애요ㅡㅡ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+난 괜찮을거야..라는 생각이 제일나쁜생각입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 맞아요!!남들에게 피해안주게 해요 다들!!마스크꼭 끼고 사람 많은곳에 가시지 마시구요^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜 이거만지켜도 우리는 더욱 안전할거라믿습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노야</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동생이 경산에 있어서 요즘 너무 걱정되요 ㅠ ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대박터짐 꿀개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저희는 시부모님이...ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대박터짐 꿀개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[속보] 김포서 16개월 여아 코로나19 확진…최연소 감염 출처 : SBS | 네이버 뉴스</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대박터짐 꿀개미</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜 다들 조심하세요 휴..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 마스크 100개 정도 확보해두고 있는데 경상도 사는 친척들이 걱정이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+택배로라도 좀 보내야겠어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아 광고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅡㅡ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋ먹고살아야져 마스크살라면 열심히해야죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성투</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+차라리 마스크 광고였으면 좋겠어욬ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러면 난 바로  들어갑니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노야</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 마스크 광고면 바로 들어가봤을듯 ㅋㅋㅋㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런마스크라도 사야될듯해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 이거도 샀어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+살수있는 마스크는 다 사모으는중이요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+괜찮나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+필터마스크예요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하하(복룡)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+16개월 애기..ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+장당390원</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+나도 괜찮은지모르겠는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마스크라서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+행운님 써보셨나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아뇨 아직안왔어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>루디아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>행운?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+모든것들이 오긴올건지..ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오태식이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마스크 굳이 황사 마스크 안써도 될거인데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오태식이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+샵검색: #마스크</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오태식이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런것도 무방</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:07</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

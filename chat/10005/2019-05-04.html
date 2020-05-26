@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+yjh 오늘의 생활정보 소식 yjh<br>
+# 알면 돈되는 금융 꿀팁 <br>
+1. ‘건강보험 직장가입자 임의계속 가입제도’<br>
+퇴직시 직장가입자→지역가입자 변경 건보료 폭탄 방지<br>
+건보료 인상을 3년간 유예, 1년 이상 다닌 직장에서 퇴직 후에 <br>
+이 제도에 가입하면 3년간(36개월) 건보료의 50%만 부담<br>
+2. 건강을 잘 관리하면 보험료를 깎아주는 건강증진형 상품 ‘애니핏’<br>
+ 활동량 측정 앱 ‘애니핏’을 스마트폰이나 스마트워치에 설치하고 하루 8천 보 이상 걸은 가입자에게 현금처럼 쓸 수 있는 100포인트를 지급, 월 목표 달성시 최대 4천500포인트 적립<br>
+3. ‘청년우대형 청약통장’<br>
+10년간 연 최대 3.3%의 금리를 주고, 이자소득에도 세금을 물리지 않는다. 요건은 만 19세~34세, 연소득 3천만 원 이하, 무주택 세대주 또는 세대원, 3년 내 세대주 예정자다. 가입기한은 2021년<br>
+4.  ‘청년내일채움공제’<br>
+중소·중견기업에 정규직으로 취업한 만 15~34세 청년이 2~3년 근속하는 게 요건이다. 2년형의 경우 청년이 월 12만5천 원씩 2년간 300만 원을 적립하면 정부 지원금을 더해 만기 시 1천600만 원을 탈 수 있다. 3년형은 총 600만 원을 적립하면 만기 시 3천만 원을 수령<br>
+5. 생계급여를 지원받고 있는 청년은 ‘청년희망키움통장’<br>
+매달 10만 원씩 3년간 360만 원을 저금하면 만기 때 1천440만 원이 지급<br>
+현재 서울, 경기, 부산, 인천, 광주, 대전, 대구, 울산, 강원/충북, 충남, 전북, 전남, 경남/경북, 제주가 청년통장을 운용 중이다. 요건은 각각 달라<br>
+# 자동차 교통사고 시 손해 안 보는 합의 꿀팁<br>
+1.장해진단은 '내가 원하는 병원'에서<br>
+2.진료기록 열람 동의? 함부로 사인 No!<br>
+3.손해액만? 무슨 소리! 월급까지 청구할 것<br>
+2주 진단시 월급여의 50% 청구 가능 <br>
+4.합의금은 보험사 측에서 '먼저 제시하도록 유도'(먼저 제시하지말 것)<br>
+5.X-ray·MRI·CT…필요한 모든 촬영 가능<br>
+6.합의와 퇴원은 빠를수록 좋다고?…사고일로부터 '최장 3년'까지<br>
+법적 보험금 청구 시효는 사고일로부터 종합보험 3년, 그 외 보험은 2년<br>
+의사의 진단과 후유증까지 고려 충분한 기간을 두고 경과 지켜볼 것<br>
+7.변호사와 손해사정사의 차이는 무엇?<br>
+ 손해사정사는 소송보다 수수료가 저렴하고 보상금을 빠르게 지급받는다는 장점이 있다. <br>
+소송으로 넘어가면 수수료를 받지 못해 적당한 선에서 합의를 끌어내려 하는 단점<br>
+변호사는 최대한 많은 보상금을 받아낼 수 있는 장점 <br>
+보통 합의금의 10%정도 수수료를 줘야 하기 때문에 금전적 부담이 크고 <br>
+항소할 시 기간이 2~3년으로 늘어날 수 있는 단점<br>
+8.월말·연말 합의를 노리자!<br>
+보험사는 보상담당 직원이 합의를 완료하지 못하면 미결 건으로 남기 때문에 이 시기에는 보험사가 합의금을 높여서라도 합의할 가능성이 높다.<br>
+# em용액 활용법 <br>
+1.욕실청소<br>
+EM용액을 분무기에 담아 곰팡이가 있는 곳에 뿌려주고, 휴지를 타일 틈새에 적셔준 뒤 다시 EM용액을 뿌려주고 20분 방치 후 칫솔을 문지르기<br>
+2.와이셔츠 찌든 때<br>
+ EM용액을 분무기로 뿌려주고 20분간 내버려둔 후, 다른 세탁물들과 함께 세탁기로 빨것<br>
+3.세차<br>
+ EM용액과 물을 1대 10 비율로 섞은 뒤 분무기로 차에 뿌려주고 수건으로 닦을 것<br>
+# 나이 들면 자다가 깨서 수시로 소변 보는 이유<br>
+1. 콩팥 기능 떨어져 소변량 증가<br>
+2. 밤중에 소변 더 많이 만들어져<br>
+3. 전립선비대증이 '야간 빈뇨' 유발키도<br>
+yjh</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+yjh 5월 4일 토요일 경제주요뉴스 yjh<br>
+ESS 화재에 기술탈취 소송까지…혼돈의 韓 배터리<br>
+ESS 연쇄화재… '원인 규명' 못하는 정부<br>
+가동, 수주 중단에 1분기 업계 실적 '초토화'<br>
+이와중에 LG와 SK는 '기술 탈취' 소송전<br>
+주력사업이자 미래 먹거리 '배터리'… 총력전<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=079&aid=0003223565<br>
+환경호르몬 기준치 최대 220배 어린이용품 13만점 적발<br>
+피부 닿거나 입 닿으면 아토피, 신장 및 생식기관 장애 유발 가능성<br>
+적발된 어린이 제품은 캐릭터 연필세트가 6만9,000점으로 가장 많았고, 그 외 연필과 도형자, 샤프펜슬 등이 함께 포장된 문구세트(3만3,000점), 다트총(2만3,000점) 순<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=011&aid=0003548764<br>
+'블루보틀' 앞에서 밤샘 기다림…비싼데 왜 열광하나?<br>
+[전문가 가심비가 중요하게 여겨지는 사례 중 하나…다른 커피 전문점도 고급화 전략 추진]<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004213854<br>
+전국 휘발유가 11주 연속 상승…서울 리터당 1554원<br>
+국제유가 하락했지만 과거 상승분 시차 반영<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=421&aid=0003973217<br>
+'아프리카돼지열병' 확산… 동물용 의약품 종목 주목<br>
+ ▲중앙백신 ▲대성미생물 ▲옵티팜 ▲우진비앤지 ▲진바이오텍 등<br>
+ 돼지열병 백신이나 치료제를 개발할 수 있는 동물용 백신·의약품개발업체<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=417&aid=0000406194<br>
+다이소, 오프라인 매장서 1000원짜리 팔고도 연매출 2조<br>
+연평균 매출 성장률 20% 넘어 탕진잼·가잼비 등 신조어 양산 SNS 이벤트로 시너지 노려<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=366&aid=0000433352<br>
+신흥 골목상권 잔혹사... 경리단길, 봄은 짧았다<br>
+2013년 무렵 ‘핫플’로 떴지만 지금은 손님 뚝, 공실 넘쳐나<br>
+임대료에 쫓겨난 정체성… 기존 점주들 떠나고 특색 잃어<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=469&aid=0000385763<br>
+美 실업률 3.6%…반세기만에 최저, 왜?<br>
+[이민 억제 등으로 노동시장 참여인구 감소…4월 일자리 26만개 증가]<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004213837<br>
+경영난 시달리는 한진重도 통상임금 소송서 졌다<br>
+법원 '신의성실의 원칙' 엄격 적용… 다른 기업 사건에도 영향줄 듯<br>
+잘못된 수치로 판결 논란도<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=023&aid=0003444045<br>
+유전자 봉인 푼 인구 500만 핀란드, 헬스기업 500개 ‘빅뱅’<br>
+정부 주도로 ‘핀젠 프로젝트’ 진행 국민 유전자 정보 빅데이터 축적<br>
+의료·사회 정보 2차 이용법 제정 화이자·GE 등과도 진료기록 공유<br>
+헬스케어 급성장, 작년 수출 3조원 헬싱키, 원격 진료로 연 119억 절감<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=353&aid=0000033985<br>
+추락하는 원화···경제 안좋아 1,200원까지 갈수도”<br>
+원·달러 환율 1,170원 돌파<br>
+강달러 여파 2년3개월만에 최고<br>
+근본 원인은 韓경제 신뢰상실 탓<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=011&aid=0003549194<br>
+yjh</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+yjh 5월 4일 토요일 부동산 주요뉴스 yjh<br>
+주금공, 부동산PF 보증율 100%로 확대추진…후분양 활성화<br>
+대출 한도를 총사업비의 70%에서 80%까지 늘리고, <br>
+주금공이 지는 보증책임 비율을 기존 90%에서 100%까지로 확대<br>
+후분양을 통해 하자 등 리스크 방지, 분양가 감소 효과 기대  <br>
+6월 중 사업자보증규정 및 시행세칙을 최종 개정 예정<br>
+https://news.naver.com/main/read.nhn?mode=LPOD&mid=sec&oid=001&aid=0010805171&isYeonhapFlash=Y&rc=N<br>
+[분양캘린더]방배·위례 주목…다음주 3763가구 분양<br>
+수도권 2734가구·지방 1029가구 청약 진행<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=421&aid=0003973233<br>
+불황과 규제 비웃는 '강남 재건축'… 청약 결과는요?<br>
+방배그랑자이 사전 무순위 청약에는 총 6738명이 신청<br>
+총 256가구가 일반분양된 가운데 26배가 넘는 수요 몰려<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=417&aid=0000406195<br>
+5월 전국 6만2천가구 분양…2000년 이후 역대 ‘최대’<br>
+수도권 3만9270가구, 지방 2만3311가구 분양 예정<br>
+작년比 2배 증가…서울·경기·세종 등 인기지역 청약 쏠림 현상 뚜렷<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=119&aid=0002326968<br>
+직거래장서 중개소 전락한 '피터팬', 변신은 무죄?<br>
+[간판서비스 '안심직거래' 중단…중개소 추천 매물 비중 점차 높아져]<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=008&aid=0004213846<br>
+서울 중랑구 망우본동, 도시재생 희망지사업 선정<br>
+시로부터 약 7개월 간 최대 8000만원의 사업비를 지원<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=018&aid=0004369692<br>
+[김용일의 부동산톡]부부·가족·친족 간 부동산을 저가 또는 고가로 매매시 증여세가 부과되는 경우<br>
+배우자, 가족, 친족 등 특수관계자에게 부동산을 시가 보다 저렴하게 또는 비싸게 매도하는 경우, 그 정도에 따라 일정부분은 증여로 간주되어 증여세가 부과<br>
+증여금액 = (시가와 매매대금간 차액) - (시가의 30%와 3억원 중 적은 금액)<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=018&aid=0004369690<br>
+서울 아파트 0.01%↓, 작년 11월 이후 최소 하락폭<br>
+송파구 잠실주공5단지, 강남구 개포주공1단지 등 <br>
+랜드마크 아파트들이 오름세로 돌아선 데 따른 것<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=022&aid=0003360069<br>
+yjh</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+yjh 주요신문사 헤드라인 뉴스 모음 yjh<br>
+#강공이냐 우회냐…`조기귀국` 문무일이 꺼낼 카드는<br>
+신속처리안건 '민주 원리에 반한다' 발언 이후 파문 확산<br>
+법무부 국민 입장에서 논의해야 진화 나서<br>
+文총장 싸우려는 게 아니라 (법안)문제점 지적<br>
+귀국 후 발언 취지 설명, 내부 의견 수렴할 듯<br>
+yjh<br>
+#트럼프 푸틴과 '러시아 사기극'도 논의…선거개입은 얘기 안해   <br>
+#대북 구호단체 이사장 방북…북한 식량생산 10년 사이 최저   <br>
+#'4대강 보 해체 반대' 집회서 논란…김무성 靑 폭파하자   <br>
+#박유천 거짓말 죄송…황하나 와는 '진실 공방'   <br>
+#한국당 호남선 투쟁…광주서 물세례   <br>
+yjh<br>
+정치<br>
+'4대강 보 해체 반대' 집회서 논란…김무성 靑 폭파하자<br>
+[팩트체크 K] 한국당 빼고 패스트트랙 지정” 北 지령?…또 가짜뉴스  KBS<br>
+바른미래당, 출구 없는 대치... 양측 모두 감정싸움만  포토 서울신문<br>
+[정알못 가이드]민주당은 왜 자유한국당을 '자한당'이라 부를까?  포토 이데일리<br>
+이해찬 측 유시민-심재철 공박, 沈의 노이즈마케팅  포토 노컷뉴스<br>
+물세례·거센 항의… 광주 간 황교안 ‘곤욕’  포토 세계일보<br>
+경제<br>
+中·日 황금연휴에 관광객 '북적'…매출 예년만 못할 듯  SBS<br>
+'억 소리나는 수입차, 서비스는 엉망'…부품 없어 수리 하세월  포토 연합뉴스<br>
+공짜라더니…'칵테일주사' 맞고 보험사기범 된 사연  포토 머니투데이<br>
+직장인 경기전망 개선에도 자영업자는 악화…전망격차 최대  포토 연합뉴스<br>
+ESS 화재에 기술탈취 소송까지…혼돈의 韓 배터리  포토 노컷뉴스<br>
+yjh<br>
+사회<br>
+[취재후] 4년 전 ‘놓쳐준’ 황하나의 나비효과  포토 KBS<br>
+[영농철 인력난] 일당 12만원, 말 안 통하는 외국인도 감지덕지  포토 연합뉴스<br>
+미세먼지 속 '불청객' 꽃가루까지…알레르기 유발 나무는?  포토 연합뉴스<br>
+[영상] 왕진진이 검거 전 유튜브 통해 윤지오에게 한 말  포토 국민일보<br>
+yjh<br>
+생활/문화<br>
+나이 들면 자다가 깨서 수시로 소변 보는 이유  포토 헬스조선<br>
+중국 '전기차'는 한국에서 성공할 수 있을까  포토 머니S<br>
+박보영, '어비스'로 안방 복귀...더할 나위 없는 선택  YTN<br>
+[건강] 오래 앉아서 일하면 근골격계 질환 노출 쉬워  포토 머니S<br>
+김진명 국민이 국가와 싸울 때 '심판' 왜 흔드는가  포토 노컷뉴스<br>
+yjh<br>
+세계<br>
+트럼프 푸틴과 '러시아 사기극'도 논의…선거개입은 얘기 안해  포토 연합뉴스<br>
+트럼프 對北압박 Vs 푸틴 제재완화…미·러 신경전 치열  포토 이데일리<br>
+신의 직장? 구글·페이스북·우버 노동자의 불만  포토 머니투데이<br>
+북한 식량난 10년만에 최악...136만t 지원 필요  YTN<br>
+'대립'에서 '협력'으로?…트럼프·푸틴 장시간 통화(종합)  포토 뉴스1<br>
+yjh<br>
+it/과학<br>
+[주말N수학] 수학자 다빈치 수학이 빠진 과학에는 확실성이 없다  포토 동아사이언스<br>
+[잇츠IT] '삼성 스마트폰'은 지금 위기일까  포토 머니S<br>
+스마트폰·전장 '쌍끌이 적자'...버릴 수도 없고 답답한 LG전자  포토 조선비즈<br>
+삼성전자가 '밀레니얼 세대' 공략하려고 손 잡은 이 스타트업  포토 조선비즈<br>
+SF까지 넘보는 대륙의 힘 '유랑지구'  포토 동아사이언스<br>
+yjh</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+부동산 뉴스 모음 5월 4일(토)<br>
+ <br>
+매일경제신문<br>
+경기 아닌 서울…`송파위례`의 힘<br>
+ 계룡리슈빌 청약 최저점<br>
+하남권역보다 6점 높아<br>
+만점 육박 82점 당첨자도<br>
+서울역 `노른자땅` 청파동 15년 만에 재개발 `불씨`<br>
+ 청파1구역 해제될 뻔하다<br>
+새 추진위 발족 후 재추진<br>
+뉴욕 첼시마켓 옮긴 듯…광교의 `특별한 상가`<br>
+ 네오밸류 앨리웨이 광교 오픈<br>
+첫날만 2만명 넘는 인파 방문<br>
+마트·유명 프랜차이즈 대신<br>
+동네빵집·벼룩시장·서점…<br>
+지역밀착형 상가로 꾸미고<br>
+문화·예술공연도 상시 전시 <br>
+한국경제신문<br>
+노량진 역세권에 청년주택 299가구<br>
+서울시, 도시관리계획 가결<br>
+판치는 태양광 분양 사기-----------------------------------------------------<br>
+'月200만원 수입' 믿고 투자했는데…은퇴자 등친 '태양광 기획부동산'<br>
+2억 투자하면 月 200만원 수익<br>
+허위·과장 광고에 피해자 속출<br>
+사업 추진돼도 인허가 '높은 벽'<br>
+ 임야에 설치된 태양광발전소 패널<br>
+'脫원전 과속' 후유증…태양광 사업 돈 풀리자 비리도 급증<br>
+ 태양광 비리 2년여 간 42건<br>
+시설·운영업체서 거액 뇌물 받고<br>
+가족 명의 발전소 운영하다 적발 <br>
+태양광 사기 안 당하려면…<br>
+'개발행위허가' 없으면 발전사업 추진 어려워<br>
+무상 설치는 허위 광고<br>
+서울경제신문<br>
+조합 민원에 상향...HUG '고무줄 분양가' 논란<br>
+ 길음동 '롯데캐슬클라시아'<br>
+3.3㎡당 2,289만원에 승인<br>
+성북구 역대 최고 분양가 기록<br>
+강남서도 고분양가 승인 잇따라<br>
+저분양가 기조 접었나 지적도 <br>
+더 높아진 북위례 청약가점<br>
+ '송파 리슈빌' 105㎡T 최저 82점<br>
+분양가 높은 111㎡형도 68점<br>
+'우미린 1차' 분양가 1,871만원<br>
+서울 아파트값 0.01%↓…11월 이후 최소 하락폭<br>
+잠실주공5·개포주공1 등 오름세로 돌아서<br>
+부동산114 자료</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황석현</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유진호님 감사합니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+별말씀을 ㅎ<br>
+이렇게라도 해야 제가 신문을 보기에 <br>
+좋은하루 되시기 바랍니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>36789</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김영식</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김영식</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘은 뉴스가 진호님 이름을 달고 퍼지겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요 어버이날 스승의날 선물 관련해서 광고 하나 올립니다<br>
+어버이날 스승의날 선물 준비들 하셨나요?<br>
+특판가로 선물 몇 개 제안드리려고 합니다<br>
+◆ 베르티니 24k 황금 골프공 <br>
+구성품 : 24k 황금 도금 골프공 3ea+ 왕관 볼마커 1ea + 클립 1ea + 보증서<br>
+소비자가 : 8만원(현재 롯데백화점 입점 제품)<br>
+제안가 : 42,300원<br>
+상품 상세 정보 : http://reurl.kr/1F72FE29RA<br>
+실제 샷도 가능한 제품입니다 순금으로 도금되어 색도 이쁩니다<br>
+부모님이나 은사님 또는 소중한분에게 선물용으로 매우 좋습니다.<br>
+◆ 수사 뷔페 외식 상품권 <br>
+(다음주 발송가능)<br>
+2인 식사권 소비자가 : 39,800원 <br>
+2인 식사권 제안가 : 24,000원<br>
+수사 뷔페(스시) 외식 상품권입니다 <br>
+전국에 지점이 있구요 평일/주말 저녁까지도 언제든지 사용 가능합니다<br>
+수량이 한정되있기에 선착순 마감입니다 2매 단위로 구매가능합니다.<br>
+◆ 피자몰 외식 상품권 (마감)<br>
+2인 식사권 소비자가 : 29,800원 <br>
+2인 식사권 제안가 : 14,000원<br>
+피자몰 외식 상품권입니다 <br>
+역시 전국에 지점이 있구요 평일/주말 저녁까지도 언제든지 사용 가능합니다<br>
+수량이 한정되있기에 선착순 마감입니다 2매 단위로 구매가능합니다.<br>
+구매가 가능하신 분들은 010-8239-1517로 연락주시면 구매 안내해 드리겠습니다<br>
+오늘도 좋은 하루 보내세요!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+운영진분께 허락 맡았습니다 꾸벅</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김준수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+샵검색: #북한 미사일</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김준수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내 대북주...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>심문정</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅎ...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 수사 식사 상품권 주문했어요. 어린이날 딸과 식사하려고요. ^ - ^ )*<br>
+제가 즐겨 방문하는 핫딜이란 곳입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그나 저나 허리통증이 좀 완화되야 식사를 하러 갈텐데 아직.. ㅜ ㅜ^;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+고생많으시네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+합참 北, 단거리 발사체 수발 발사…70~200㎞ 비행(속보)<br>
+2019-05-04 10:07:19</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황석현</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+얼른 나으셔야할텐데.. 저도 허리통증이 있긴 합니다. 고통스럽죠.. ㅜㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>지노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+미사일 쐈군요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+미국이 원하는 덜 안들어주니 소위 땡깡을 부리는 거지요. 철닥서니가 없는 북한같으니...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+삐쳐서 하는 짓이 늘 촌스럽네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최창민</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감시합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나금배</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+소식 감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://youtu.be/QYj43ja8qI8</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+나름 그래도 연수가 쌓이고 있는 페스티발 입니다 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성실과 유능</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김창수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+3</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김민형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+5</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이재관</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+7</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>세원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강성원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+9</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>s</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+10</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>상진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+11</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+6</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+12</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강성원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+13</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+14</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강성원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+15</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+3년동안 수고했고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(택향)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+16</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+17</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>닌수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+18</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>june</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+19</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+20</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강성원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+21</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최범석</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+22!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>에텔곰</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+23</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박용근</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+24</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최범석</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+25!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>36789</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+26</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황고흐</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+27</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이명준꧁⍤⃝꧂</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+8</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+갑작스런 눈치게임ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>s</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김민형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+눈치게임으로 2킬</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+나간분들 걸려서 나가신듯</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>한성안</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+눈치겜 이제 그만 ^^;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+외식상품권과 베르티니 황금 골프공 필요하신분들 연락주세요♡♡</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저는 외식상품권 구입했어요. 내일 그걸로 수사뷔페 아이들과 갑니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다!!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이번이 두번째인데 인천 수사는 제 입맛에 맞고 아이들도 좋아해서 매우 만족스러운 식사였죠. 내일 기대되요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>reon</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 뷔페권 부탁드릴수있을까요? 부모님모시고가보려구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김창수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 뷔페권 부탁드릴수 있을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김현동</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 부탁드립니다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저두 부탁드려요~|</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랑 ⃢이?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+벌써 상품권 도착했나보네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+카카오톡 프로필</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+식사권 구매하시고 싶으신분들 프로필로 연락주세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://news.kmib.co.kr/article/view.asp?arcid=0013286060&code=61111111&sid1=pol</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>01033950028</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>01033950028</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+싸네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강혜성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+머에요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랑 ⃢이?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그냥도 싼데 할인권이라니...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랑 ⃢이?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 강서점은 왜 더 싸죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박요셉</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2인식사니까 저렴한거아닌가요...?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김현동</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2인식사가 1인식사 가격인거예요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저기는 1인식사가격입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랑 ⃢이?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아닙니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저희가 더 저렴해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1인 19,900원이 맞네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>seul</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저 2장신청이요~문자드림될까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>희수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+언제까지 구매가능한가요~?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+문자주세요 다음주까지만 받겠습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:39</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

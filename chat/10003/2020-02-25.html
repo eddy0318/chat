@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>룰루랄라</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그짓말</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>봄날은간다</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+미래에셋 접속 됩니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>베르사체</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+강선임 잠자라</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록이형 사랑합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요 드디어 방이 열린거같아 왔습니다 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>권영준</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다 엄청 느리네요 마소 엄청빠져서 살랬더니 올라왔네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>봄날은간다</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내일 항의전화 해야 할듯</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마소가 뭐에유</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>CMC</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+MSFT</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록이형~~~~~~~~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+꿀잠 자세요~~~~~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘도 좋은 말씀들 감사합니다. 안녕히들 주무세요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+01:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>너구리</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+03:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와 심각하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+04:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유툽에서 강의 하는 어느분이 3프로 빠지면 한달 들어가지 말랬는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+04:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라이프</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다우도 폭망했군요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>ryan</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라이프</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저점매수의기회네요 문제는 어느섹터의 종목이 빠르게회복하냐인데.... 상승장에 소외받을까봐 겁나네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>ryan</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그렇겠죠 저도 어제 기술주를 좀 사긴했는데 더 빠졌네요..쩝</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+06:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>허지원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이른 아침에 와서 죄송하고, 반갑습니다.<br>
+다들 건강챙기십시오 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+호두 밤새 돈 벌었나요? 보다가 자서 결말이 궁금하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나나노노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돈벌었습니다 2400만원으로 마무리했습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나나노노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조던이라는 분이 그랬습니다. 실효성은 글쎄요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마켓 다 빨간색인데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2000이 지지선인가봐요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이재호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+팜스빌 NHN사이버 계속 가네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>emp</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+밤새 달러인덱스랑 금 떨어져서 그런듯요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+비가 와서 바이러스가 다 죽었나</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+nhn보고있엇는데 ㅠ 자금이없네요 물려서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스웩</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+카카오는 어디까지갈까요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이재호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+NHN말고 NHN사이버 입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+넵 사이버결제요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어제 사경인 회계사님 방송(4번째) 너무 잘 봤습니다~ 천대표님 '100%공감합니다'를 연달아 하시더군요~ 저도 그 느낌을 느꼈습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+개인적으로 엑셀 실력이 매크로 다루기 전 단계 정도라, 자동매도시스템으로 짜는 걸 어떻게 시도해야 할지 엄두가 안 나네요~ 이런 과정을 실제 볼 수 있는 강의나 책이 있을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+호오 있었네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+말로만 듣던 엑셀매매가 여기있네</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>귀마개</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://m.yes24.com/Goods/Detail/8640606</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>귀마개</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+관련서적은 이 책이 유일한거 같습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘 코스피</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조정 났네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+앞으로 어케될지 ㅇㅅㅇ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일단 저는 팔았습니다. ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+자동 트레이딩 시스템 저거 유용한가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+해보신분있으신분?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+기영이차트가 참 유명하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+해본적은 없지만 공부하는 분야에서 다루기는 합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+불릴레오가 자동 트레이딩 시스템이죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영상에서도 언급을 하시기에</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가치투자 목적이라면 엑셀로도 충분하지만 기술분석 중심의 단타를 하고 싶으시다면 엑셀로는 부족하실거에요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘 장 생각보다 잘 버텨주네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+잠깐의 조정일수도 있어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다우랑 많이떨어져서 걱정했더니</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+개인이 하는데 사경인회계사님 3개컴퓨터 돌리신다길래 놀랐어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+보통 트레이더들은 모니터 4개 들고 도 허시더라구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+장인은 장비탓을하지않는다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+cf를 10년치 흐름을 본다는 말도 좋았습니다~ 현금흐름표의 중요성은 알았지만, 막상 기업의 cf를 보고 투자한 적이 거의 없었던 거 같네요,,,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+천대표님의 인터뷰 및 술방 인터뷰 영상들을 보면서(변두매니저, 사경인회계사 등) '냉철tv'님과 한번 해보시면 어떨까라는 생각이 문득 들었습니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 진짜 궁금하긴 합니다. 트레이더들은 그 많은 모니터들에 대체 뭘 띄워두고 작업을 하는 걸까요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+관심종목 ㅎㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스노우볼</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+딜링룸 있을 때 블름버그 모니터 2개, 연합인포맥스 모니터 1-2개, 업무단말 모니터 1-2개, 메신저용 모니터, 알파로 데이터스트림 등 달고들 썼었습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Mins Jang</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뿌잉</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2개만 써도 눈 엄청 건조하던데 ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어제부터 외국인은 엄청팔고 개인,기관이 엄청사네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+힝 속았지 느낌이라 못사겠네요 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘도 개인이 끌어올리고 있는것같네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+닉넴 재밋으시다 배불리오님 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+언제나 배가 불러있어서 ㅋㅋ 배고프네요 배는 불러있는디..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>i LikE YoUR mIND?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돈배 부르시길 기원~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>청년A</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘은 니케이가 폭락하는군요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+건강들 조심하시구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>i LikE YoUR mIND?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다들 조심하세요~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+힝 속았지하고 이번주 내내 파란불 보고싶네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>i LikE YoUR mIND?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+건강이란 단어가 빠졌네요ㅠ<br>
+건강 유의하시고 <br>
+조심하세요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+역시 젤 많이 빠진애들이 젤 마니 올라오네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록좌</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록좌만 믿고 갑니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+손실나도 상수역 사무실 찾아가시면 안됩니다..ㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박준석</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋ간만에 피식했습니자</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박준석</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+했습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+파파라치 역시 안됩니다ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅎㅎ 저는 매도 했습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+반대로 어제 오른 친구들은 삥 뜯기는중이죠...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 매도했습니다ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+매도하신 분들이 많군요ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>청년A</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와 코스피 1퍼가 올라가네 이시기에 ㅎㄷㄷ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초보투자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+더 안떨어지네영 더 떨어지면 살려고 했었는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+더 떨어질 전초 일지도 모르죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 어직 목표 먀수 치가 아니여서 펄기만 했습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일부 물린 것도 있어서요 ㅇㅅㅇ;;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뭔가 팔면서 느낀건데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이때가 최적이다 하고 조금씩 사시는 ㅂ ㄴ들이 많더라구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+나쁘진 않아보여요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+길게 보면 맞아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 회복이 더딜것 같다고 생각이 강하게 들기도 하구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+길게 본다면 매수기회가 될수도 있죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+문제는 손절 혹은 익절 가격을 얼마로 잡을지가 문제죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+보통 선행해서 가격이 먼저오르는데 경기가 좋으면 지금은 변동 성이 커서 미리 빠지고 크게 오를지 혹은 더 빠질지 가늠할수 없네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그래서 부분 매도 했습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대신 뺀돈을 불릴레오에 넣을 계획입니다. ㅎㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사스나 메르스때와 비교해보면 괜찮을듯요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+불리오한번 해봣는데 어렵네요 @.@ 공부하려면 ㅎ열심히해야하는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 일부 매도 중인데,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사스와 메르스 흠...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저는 조금 다른 시각에서 보고 있어서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주식 채권 금 크게 세가지 포지션에서 비중조절이 문제인데 알수가 없긴해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+팍스 아메리카 전초전 같기도 해서요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사실 주식은 예측보다 대응이라,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 오히려 공부 안할 친구한테 불리오 추천해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주린이님</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사실 코로나19가 한번도 경험해 보지 못한 전염병이라는 점에서 향후 상황 예측이 불확실하긴 하지만 과거 사스, 신종플루, 메르스 사태에서 전염병이라는 리스크는 주식시장의 장기 약화요인이 되지 못하긴 했어요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+거기 그냥 넣어!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+예측의 확률을 점점 높여야 하는데, 국내주식은 한치앞을 모르겠네요,,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 전염병이 장기 악화된 적은 없었죠,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+환율 전쟁이라는것도 빼놓을수 없어서...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금 주춤 하지만</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주린이님</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+환율 문제도...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+달러가 너무 힘이쎄서 말이죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주린이님</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원달러 환율이 1,220원을 돌파했다는 점도 시장 불안 가중요인이나 역사적으로 원달러 환율이 1,200원선을 넘었던 시기는 2010년 유로존 재정위기, 2011년 미국 신용등급 강등, 2019년 8월 미중무역분쟁 심화 등 대형 이벤트를 제외하고 없었기때문에..<br>
+ 또한 있었어도 1,200원대를 상회했던 기간도 짧았음을 감안할 때 현재의 환율수준은 고점이라 생각되고 오히려  외국인 입장에서도 환차익을 노리고 들어올만한 타이밍일지도 모릅니다..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+간단하게 이평선 기준으로 20이평 넘으면 매수 하고 이탈하면 파는 전략도 있고 특정 가격대에서 사고 팔고 하시는 분도 있고 그냥 분할로 우량주 존버하시는 분도 있고 다양하죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주린이님</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뭐 이모든게 물론 사태가 진정이 되야겠지만요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+환율에 대한 생각은 루니님 의견에 공감합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내일 오를지 안오를지 워렌 버핏도 천대표님도 모릅니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+신만 알죠 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+천대표님은 아실라나? ㅇㅅㅇㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>곱버스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+(굿)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+공부안하는 애들한테는 불릴레오 추천하려고요 ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+양단우로 최악 최적을 보면...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Hello</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅑㅜ리.  ㅠ. 혀ㅠㅕ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+etf 30만원넣으면 2만원 쿠폰주던데 하나 넣어볼까..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우리나라가 봉쇄를 안하고 버티는 시나리오가 가능은 한지 그것도 고려중입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+박스피라고 하지만 과거부터 보면 계속 우상향중이니 장기적으로는 은행금리보다야 낫죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내일 증시를 보면 대략 흐름이 보일 듯 한데, 뭐 이러다 갑자기 확진자 수백명 터지면,,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오히려 세계는 한국을 경계를하니</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+수출 하는 입장에서는 부정적 요인으로 각인되어 버릴가능성이 많아보여서요 (물론 중국이 가장 문제지만요...)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+종목에 대한 토킹은 안 하는 분위기죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+종목 추천운 허지 말라고 하셨으니까요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초보투자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+해외 주식 삿으니 좀 낫죠 환율도 나름</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금 해외 들어가기에 달러가 비싼거같아 좀낮아진다음 들어가도되려나</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+힝 속았지 빔 나왔으면 좋겠네요 갠적으로 ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+불릴레오 위기를 기회로 해볼까하는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>해피레인보우</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 추가 매수 하고싶은데요<br>
+환율이 어케될지 몰라서 고민이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정은혜</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+삼전우 매수하려고 하는데 3월초까지 기다릴지 지금 매수해야하는지 고민되는데 의견 주실분 계실까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>‮</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금 지수</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>‮</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우리나라는 개인이올리는거라</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>‮</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좀더기다려보시는게</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>CMC</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저는 조금씩 분할 매수 중</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+종목얘기는 최대한 안하시는게좋을거같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대표님도 그러길바라시고..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>침여자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+개인이 올린다는 걸 어떻게 확인하시나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정은혜</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아, 그렇군요! 이런 방에 들어와본게 처음이라 몰랐습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아니예요 ㅋㅋ  서로 확답도안되곺민감할수도있으니 ㅎㅎ  저도 처음이예요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+개인매수 외국인매도 기관매도</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런 저런 얘기 나누는 곳이죠 ~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일별 매매주체 나오잖아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다들 돈 벌자는 하나의 목표는 동일한 사람들입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>침여자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그게 매도를 받는 물량일지 매수로 올리는 물량일지 판단이 확실하게 판단은 불가능한거죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+친절하십니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+윗글들 보니 천대표님도 간간히 대화를 하는군요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+매수매도 주체가 나오는데 판단기준도 다 달라요 보통은 외국인들이 살때 따라들어가는 분들이 많긴합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+참고로 환율이 1200원 넘으면 외국인 환차익 얻으려고 매도세가 강해지고 환율이 1000원대면 외국인들이 매수하는 경향 있다고 알고 있습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>룰루랄라</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://www.youtube.com/watch?v=fAbdCR-r9LI</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>룰루랄라</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+3번 반복 학습하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저분 책 괜찮나요? 후기 궁금해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+외인 입장에선 환율이 비쌀때 팔면 손해 아닌지요? 지금이 외인입장에서는 쌀때 아닌가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+달러를 원화로 바꿔요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원화 쌀때는 코스피 매수하구요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>침여자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 그렇게 생각했는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러니까 지금 이 원화가 쌀때 잖아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부자되기</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제가 제대로 알고 있는지 모르겠으나 일반적으로 환율이 1000원대가 되면 환차익을 얻으려고 들어오고 1200원대가 되면 매도를 하려고 한다고 알고 있는데, 그래서 이머징 국가에서 함부로 돈을 풀어서 환율을 절상시킬 수 없는이유(환율 1200대로 만드는)가 이렇게 되면 외국인들의 자금이 빠져나가기 때문이라고 알고 있는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주식은 열심히 공부하는데 확실히 얽혀있는게 많아서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어렵네요 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미주모</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 환율 너무 비싸서 국내주식 조금씩 사고있습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제생각엔 달러가 더 상승 가능하리라 보는거같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>침여자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원화가 쌀 때 보다는 비쌀 때를 선호한다는건가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+외국인 입장에선 1000원대 매수해서 1200원대에 팔고 나가면 20퍼는 환차익으로 먹을수가 있다는거죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부자되기</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원화가 쌀 떄 수출에는 유리하지만 수입에는 불리한 측면이 있듯이 양쪽으로 모두 영향이 있는 것 아닐까요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오잉님</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+샵검색: #외국인 환차익</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원화를 1000원대에 매수해서 1200원대에 팔고나가면 손해보는거 아닌지요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+손해죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아무리 봐도 오잉님이 환율을 거꾸로 생각하시는거 같은데...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2천원에 샀다가 천원에 팔면 안올라도 두배이익인데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+만약 환율을 박스권으로 안보고 돌파방향으로 본다면야 납득이 가는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1000원대일때 사서 1200원일때 팔면 이득인건 한국인 입장에서 달러를 그렇게 매매하면 이득인거고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+외인입장에선 반대죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>잠시익명</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오잉님 반대인거같습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노후준비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록이형은 어디갔나요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 그리들었거든요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+인사라도 한번해주시지</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+올리신 글 읽어볼께요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가끔해요 인사 ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>노후준비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다른분 올려주신 글에서 캡쳐했어요<br>
+잘 모르는 분들도 많으니 이참에 여러의견 듣고 좋은것 같습니다^^ 저도 몰라서 잘 배웠어요!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+중간에 로맨스님이 말씀하신대로</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1달러로 2천원 원화을 산다, 2천원 들고 있다가 2달러로 바꾼다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+앞으로 더 달러가 오를거라 생각해서 빠져나간다고 하면 납득이 됩니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>새벽</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 단순히 1200원에선 어떻다 1000원에선 어떻다...고 일률적으로 볼수 없는 문제인듯하메요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>침여자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+환율이 올라서 빠지는게 아니라 한국이 불안해서 빠지는거 아닌가요? 그래서 환율은 더 올라가고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+외인들이 빠지니까 주가는 쭉 빠지고 코스피 빠지고 원화 저평가되고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그걸 지금 국내 개인투자자들이 받아 먹고 있는거 아닐까요 ㅋㅋ뇌피셜입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>5G 구요</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+환율을 결과입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주린이라서 ㅎㅎ 관망 중인데 재미지네요 오늘은 뭘 사볼까 고민중입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+올리신 글 읽어보니 제가 반대로 말씀드린거 맞내요<br>
+환율상승하면 환차손 위험 줄이려 주식매도 환율하락하면 환차익 얻으려 주식매수 그리고 두가지의 상관성은 어느것이 먼저라기엔 애매하다는 거내요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그때그때 외인들이 추세봐가며 하는듯해료</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>천영록</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘도 프리미어를 합니다! 3시에요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아직 달러상승으로 보더라고요 월가쪽..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뉴스에서..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>천영록</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사경인 회계사님 마지막 편입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가경</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사경인 회계사님 책 읽고 있는데 좀 어렵네요 ^^;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록이형 무사하신가요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>천영록</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://youtu.be/vknJlNNsy0g</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>파스타장인</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜 귀한 책 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가경</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영상 봐여 것어여 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+퇴근 길에 볼께요!! 좋아요 필수!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사경인 회계사는 자산규모가 얼마쯤 될려나,,,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>자본가</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+본인 입으로 경제적 자유를 얻었다고 하시는 거 보면 규모가 궁금하네요~ 제주도로 가시는 것도 멋지십니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:04</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+경제적 자유</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+100억 정도만 있으면 가능하지 않을까요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>화이트</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+51억도 가능항듯요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아니면 건물 월세 월 500이라든지</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>영록팬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영록이형 프리미어가 뭐에요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+형만 아는 되게 좋은 것 하는 느낌...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+영상편집 프로그램... 시사회... 프리미어.. ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미주모</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주린이에 소액투자자라 흑흑 ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그냥</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+최촉ㅇ개로</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+같이 채팅하면서 영상보는 거예요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유튜브에 가능해요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>기회를 위기로</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+5편 무한반복  해야겠습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아이스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+또 빗나간 증권사 전망..8조 매수 개미들 어쩌나 | 다음뉴스 - https://news.v.daum.net/v/20200225142015991</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+자자 비관 뉴스떴습니다. 풀매수 시그널입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용용갓</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+복습하는 오늘의 코스피</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>심플이</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그래도 오늘 2100선 다시 회복했네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>베르사체</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+개인투자자들 돈 많네요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>베르사체</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+수급이 좋지 않은데,,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용용갓</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+바닥이다! 하고 매수한 것 같네요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>토치도치</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그대로 주도주랑 대형주에 투자하니 다행인거같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>청년A</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+딱 2월3일이 이느낌이었는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>우연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2월3일과는 느낌이 다르죠 주봉이 과매수입니다 여러분</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>청년A</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용용갓</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2월3일날부터 제가 엄청 매수했거든요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용용갓</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그리고 손절때리니까 눈물이 앞을가리네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+힝 속았지입니까</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>라이프</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저는 오늘 현금비중을 늘렸습니다 .작지만 수익챙기고 다 뺐네요 폭락 한번 더오면좋겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>귀마개</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>귀마개</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>귀마개</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+트럼프 형님 트윗한방에 시장을 돌려세우심 크... 이번엔 과연</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>.</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+코스피 200 평단가 287.2 괜찮은것같나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+럼프형</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+살살 말아올려주세여</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가진자</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+럼푸형 가주아</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+자기한테 좋다는거아니에요..?^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지켜보면알겠죠 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+미국만 안전한 것!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ 아시아 폭풍 눈물</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>북찬</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금 미국이 증시가 많이 빠진게 코로나때문인가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그게 크다고 하던데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+산업에 영향이 있어서 빠졌어요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유럽에서도 홍역을 치루고 있어서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그것도 영향이 많이 갔을겁니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+물론 아직 아니지만</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쿵스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+의료시스템보면 한국이 빠른편이라</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유럽은 이제 시작</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쿵스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러지않을까라는 개인적인 추측을하고있습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우리나라는 진입중</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+중국도 비슷하고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일본은 크루즈를 빼서 3등</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>파스타장인</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+코스피 2000은 유지 하길 바래봅니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+02/25 다우지수, 2년내 처음으로 1,000pt 넘게 급락<br>
+키움증권<br>
+미 증시 변화 요인: 공포, 고 밸류, 규제 강화<br>
+미 증시는 중국을 제외한 한국과 이란, 이탈리아 등에서 코로나 확진자 수가 급증한 여파로 매물 출회되며 급락. 코로나 이슈가 글로벌로 확대되면서 공급망 훼손에 따른 경기 둔화 우려가 높아졌다는 평가. 그 외에 민주당 대선 경선, 디지털세를 둘러싼 우려 또한 영향. 이 결과 2018년 10월 이후 처음으로 다우지수가 1,000pt 넘게 급락(다우 -3.56%, 나스닥 -3.71%, S&P500 -3.35%, 러셀2000 -3.01%)<br>
+https://www.kiwoom.co.kr/nkw.template.do?m=m0601020101&s_menu=SD&s_sqno=7248</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>배불리오</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좀더 빠져주렴</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:04</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쥴리어수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일본 크루즈 합해도 우리나라 확진자 수가 더 많은데요;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로맨스</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일본은.. 정보를 지금 공개하지 않아서 인거같아요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쥴리어수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+??</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>지하철왕</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이끄요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내려갈때도 올라갔다 내려가고 올라갈때도 내려갔다 올라가고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+등산이네요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>함께성장</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대표님 2020년 초인데 불릴레오 아이폰앱은 곧나올까요?? 상반기 말쯤나오려나요!? ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>저스틴</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 이게 궁금하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>덕클베리</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 궁굼하네요 투자하려는데 아이폰입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주식할래용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 이 점이 궁금합니다...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>머가이마</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미주모</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아이폰은 사과에서 승인이 되야 앱출시 가능하지 않나요 예전에 그래서 앱개발하다가 못했는데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Dive</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+반려되면 모자란점 보완하면되죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:01</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

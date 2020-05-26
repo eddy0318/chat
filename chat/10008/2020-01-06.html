@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>으매/태영/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>으매/태영/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+무슨상황일까여 화력지원해야겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다리를 덮는게 원래 계획에 있었나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호.40대.여</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+분당에 내는 세금이 얼만데. 세금 올려놓고 이런 기본적인것도 안해주니 넘 화나네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원래 계획에 없는데 해달라는 요구 아닌가요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원래부터 다리를 덮는건 계획에 없었어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호.40대.여</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+분진설치공사 원래있었던것 같은데요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔 설치계획이 원래 있었다고요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호.40대.여</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔은 잘 모르겠어요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>덕구 / 아름풍림 / 30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://m.blog.naver.com/cece5175/221755455539</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>덕구 / 아름풍림 / 30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런것도있네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+굿팍이 중간에 뚝 끊어지면 공원 가치도 뚝 떨어지죠. 명소가 된 경의선 숲길이 중간에 다리로 뚝 떨어졌으면 어땠을까 생각해 보면..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원래 계확대로 좀 빨리 지어지도록 합시다 제발</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+하고 있는데 뭘 또 만드나요 ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+서울고가공원 망한 케이스도 있고 전체적으로 공원이 잘 만들어지도록 하는게 분당주민이든 이매동주민 모두가 이익입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔설치못하면 공원가치 많이 떨어지지 않나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름/401동/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원래 계획은 있었습니다<br>
+제가아는게 맞는지 모르지만<br>
+한국가스공사관이 매송교에 걸려있습니다<br>
+하여 이설을 해야하는데 이 비용이 많이 들어갑니다 하여 성남시에서 버티는걸로 알고있습니다 맞는지요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름/401동/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가스공사 내부적으로 법적으로 비용부담을 안해도된다는 법적다문을 받은상태여서 시에서 고민하는거 아닌가합니다 은시장은 구도심과 공공주택에 모든 예산을 ...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름/401동/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다문-자문</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그녀석/아름선경/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그녀석/아름선경/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+원래 돔은 계획에 없던거 아닌가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아삼</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사실 원래 계획 여부와 상관없이 돔은 당연히 설치해야한다고 봅니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저게 뚝 끊기면 무슨 의미가있나 싶네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아삼</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+길이라는건 연결이 되어야하는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조감도 너무 좋은데여.. 저 돔으로 이 지역의 랜드마크도 될수있겠는데요.. 사람들 사진찍고 많이 할듯</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매사랑/매수희망/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+설치가 안되는 이유가 예산때문인가요 구조적 문제인가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아삼</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+맞습니다 엄청난 예산을 들여 만들어놓고 사용하기 불편하면 너무나 아깝죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+연결이  안전성  부터.. 어렵다하여  두산 구간.  탑대우 구간  2곳  연결 안되는걸로 알고 있었어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+연결된다고 하지않았어요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+시청에 문의햇엇자나요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+연결 3미타 폭으로 다리 설치해서 된다고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔이 설치 안된다는거지</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다리로는 연결된다고했어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔은 그 다음인거잖아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일단 굿모닝파크</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그리고 돔 설치해달라고하면되죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다리라도 되면 다행이네요. 연결이 뚝뚝 끊기는줄 알고 걱정했어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+무슨 말씀이신지.. 저는  굿모닝파크  연결 구간  말씀  드린건데..  효성부터  탑선경까지  연결  안된다고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매사랑/매수희망/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔 구간 조감도는 설계도면 없이 작업한거군요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아로미/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+연결되지 않나요? 얼마전에 시청에 문의주셨던 분이 연결된다고 말씀해주셨던거 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오늘도소중히/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아로미/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+인도교가 붙는데, 고속도로 옆이라...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저 굿모닝 파크 관련 얘기중에 다른질문해서 죄송한데요,, 하나만 여쭤볼게요 ㅠㅠ 부린이라서..<br>
+제가 갖고있는 매물 중에 타지역에 전세놓은 집이 있어요. 그당시 시세가 첫입주 2억이었는데 급히 놓느라 1.8에 놨었고 현재는 평균2.8정도여서 금번 재계약때 보증금 1억여원 올려받는 대신 월세로 받고싶다 말하고 싶은데 25만원정도 받으면 적당할까요?? 욕심같아선 35만원정도 받고싶은데 말이죠.. ㅇ_ㅇ<br>
+현재 분당집은 1억 빼주고 반전세로 30씩받고있어요;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>큰빛/진흥/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+20대이신데<br>
+대단하시네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요 벌써 두채라니 ㄷㄷ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요 ㅎㅎ 원래</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+35받고 싶고 25 사이면 30을 부르는 것도 방법 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+월급쟁이인데 월급보다 부동산이 자금불리는데 좋을거 같아서 취업하자마자 월급 거의다 적금넣고 대출이것저것 다 껴서 하나 한거에요ㅠㅠ 제가 여쭤본 한채는 아직 혼인신고안한 남편꺼에요 ^^;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사실 저는 다리놔준다고했는데 추가로 돔 덮어달라고하면 공사 더 지연될까봐 걱정이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+맘같아선 효성이나 진흥 제일 매수하고 싶었는데 자력이 안되었네요 ㅠㅠ..<br>
+우선 세입자에게 반전세30 혹은 보증금1억추가로 얘기해봐야겠네요... 저는 예금이자율로 계산해서 대략 맞는 선에 받았었는데 이게 맞는지도 잘 모르겠어서 질문해봤습니다. ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:04</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매/효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+30도 쎈건 아닌 것 같아요~ 잘 얘기되시길요^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오 혼인신고 안하고 각각 한채있으면 혼인신고시 한채는 양도세 없지않나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>닥터킴/효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+세입자가 전세자금대출 진행할경우, 금리 2.6프로라 계산하면 1억 = 약30만원 정도로 받아들이겠네요. (단 유주택자일 경우 전세자금대출 어려워 위 금리보다 높음)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그것도 5년내에 팔면 되니깐 여유도 있구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제가 부동산스터디에 쓴 댓글입니다.<br>
+굿팍 건설시간이 있는만큼 다가도로 여러 시뮬레이션을 돌려 최선의 방행으로 되면 좋겠습니다<br>
+조감도도 멋지네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 근데 그냥 저희는 신고는 미뤄뒀어요.. :)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아르미/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔 생기면 두산삼호에서 수서고속도로 진입 안되지않나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+세입자분들은 무주택자로 알고있어요. 상세한 답변 감사드립니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔이 건설되어도 굿팍에서 들고나는 부분은 있는 구조가 되어야겠지요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그쵸 돔보다도 중요한게 진입로겠죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진입로가 있어서 얼마나 편하고 바로 고속화도로 탈 수있어서 좋은지</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>꿈부자/이매한신/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+연결이 구조상 차량과 공원이용인 모두에게 위험하지 않게, 흉물스럽지 않도록 잘 연결되길 바라는 마음입니다..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일단 제 개인적 생각은 건설에 차질이 없기를 바래봅니다..안그래도 건설사와 줄다리기로 많이 늦어 졌으므로 더이상 딜레이없이 조속한 공사 되길 바랍니다.<br>
+예산보다 1원이라도 더 늘어나는 부분을 시공사 공짜로 지어주진 않을테고<br>
+세금들어가는만큼 맘대로 증액해서 측정도 안되니 voc를 지속적으로 주민들이 건의는 해서 추후 추가로 재시공되길 바라는거죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+예산확보가 젤 중요할것 같아요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뚜껑/아름두삼/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+돔 없이 연결교량만 있으면 추락사고 위험성도 있을테고...정 안되면 돔이 아니더라도 뭐라도 막아놓긴 해야하지 않을까 싶네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 그렇게생각했어요<br>
+추락위험이 있으니  차라리 방음벽을 <br>
+인도교 양옆까지 늘려 막아버리면 안전도하고 1석3조 아닐까하구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뚜껑/아름두삼/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네네<br>
+어차피 돔이 있어도 그 공간을 사용할 수는 없을테니...<br>
+잘 막아놓고 양쪽 통행만 편리했으면(부디 보행교량 폭이 좀 넓었으면) 좋겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>감동인생/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅎㅎ 그러게요 2.5에서 3미터라고 전화할때 듣고는 첨엔 그거라도 어디냐하다가 넘 폭이 작은데??!!!!! 나중에 실소가 나오더라구요<br>
+모양새도 고려하고 안전한 다리 만들어주길바래요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>짹쓰/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름 풍림 소형은 매물이나 거래소식 없을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+금년말 아름마을  입주예정이고<br>
+수년간 내곡지구에 거주중인데<br>
+공원관련해서<br>
+지난해 주민들노력으로 내곡지구에서  일어난 일들을<br>
+참고 할만해서<br>
+공유  합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+기존  유휴공공 용지엔<br>
+철제담벼락에 <br>
+잡초만 무성햇던것을<br>
+작년봄에  메밀을  식재후<br>
+메밀꽃 밭으로<br>
+사진위처럼<br>
+가을엔  코스모스를  식재 한후<br>
+동네가 아주  좋아졌습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+코스모스 가 활짝폇던  10~11월동안엔<br>
+주변 동네서  꽃놀이들 많이  오셨고 <br>
+서리플  일부축제를<br>
+성대히  치렇면서<br>
+명소로 탈바꿈 햇네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호.40대.여</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+코스모스 넘 낭만적이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+꽃 너무 예쁘네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+최근상승장에선<br>
+코스모스 밭 조망되는<br>
+중저층이 가치가 많이 상승된것으로 들었어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네<br>
+단순히  잡초무성한  땅에<br>
+꽃만식재  햇는데도<br>
+많은 변화가 발생하는걸 <br>
+경험 햇네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저렇게 도로 덮고 공원 만드는 케이스가 굿모닝파크가 처음이죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+완공되면 여기저기 뉴스에도 많이 나오고 할것 같네요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네네  ㅎㅎ<br>
+거기다 gtx 도 아마 첫케이스로 ...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름/401동/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+판교하산운교차로 방음벽공사가 최근에 마무리되었습니다<br>
+생각보다 좋은듯하던데요 이런방식이라도 했음 좋겠습니자</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매대박/한신/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+예전에 임장 다닐때 파크공원 둔턱이 분당쪽으로 경사도가 높아 중층 이상이 대략 판교쪽 저층과 비슷한 조망권을 갖는다 라고 들었던 적이 있는데요. 저층도 파크공원 조망이 모두다 가능 한가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+정확하진  않지만<br>
+제가 본바로는<br>
+아름풍림에선<br>
+4층부턴  충분히 가능할것같고요<br>
+아마도  동향 5~8층이 <br>
+굿모닝 파크 조망은<br>
+최고가 아닐까 합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주니퍼/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+향후 굿팍 조망이 탄천조망 못지 않을것 같다는 생각이 드네요. 도심에서 막힘없이 1킬로 이상 뚫려있는건 보기드문 조망이라 생각됩니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아,<br>
+동향이면 그쪽이 거실창문방향이 <br>
+아니겟네요 ㅎ<br>
+층은 5~8층이  맞을것같고요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매골드리버/금강/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매분들에게 임대계약관련 문의좀 드립니다.<br>
+2년월세계약한 세입자가 일년만에 나간다고하는데 제가 계약종료후 들어가살라고했어서요 남은 일년만계약할사람을 찾으면 되는거죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+굿모닝 파크 바라보는 동향 저층은 소음이 있지않을까 싶은데  괜찮을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:04</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+공원에 사람들이 많이 이용하지않을까 싶어서요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데 그사람이 2년산다고하면 어떻게하시려구요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주니퍼/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뒤쪽이라 그리 신경쓸일 아닌듯요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매대박/한신/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니당~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조망 바라보고  동향 임장 갔는데   거실 반대편에다 층에 따라  다르겠지만  넘 붙어 있어   건너편  아파트만  보여요.  매달려야  공원보임요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>주니퍼/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+차라리 지금 살고 있는 집 계약을 미리 종료하는게 더 편할 것 같은데요. 현재 집주인도 전세가 많이 올라서 미리 나간다고 하면 좋아할것 같은데요. 우린 반대의 경우라 지금 집주인과 몇달간 더 사는걸로 협상을 해야하는데 골치아프네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네<br>
+여기 내곡을  보면<br>
+산조망은  높을수록 좋고<br>
+평탄한 공원 조망은<br>
+약간 높은곳에서 보는게<br>
+좋았어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매골드리버/금강/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새 세입자가 1년 계약하고 2년산다고하면 어쩔수없이 그렇게 해야죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일반적으로 어린이놀이터가<br>
+가까이 있으면<br>
+공놀이나,저녁시간 까지<br>
+떠드는 소리로 문제가 될수있겟지만<br>
+공원엔 산책이나 운동 하는공간이 주가될거고 연령층도 낮지않을테고<br>
+또 문제가  발생하면 <br>
+동선조정 등으로<br>
+괜찮지  않을까요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매골드리버/금강/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+현집주인이 저희 들어온후 임대사업자를 내서 현시세로 계약하는거보다 1년뒤계약하시는게 낫다고 못빼게해주면..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+굿모닝파크 근처의 동향들은 수서간 도로 소음이 있었고 어차피 방음벽이 있었기때문에 그것보다는 굿모닝파크가 당연히 훨씬 낫죠. 판교까지 한번에 갈 수도 있고요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>으매/태영/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름 태영까지 // 탑선경까지 각각 일정은 어케 되나요? 한번에 가나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>클블/이매한신/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+혹시 법무사 등기비용이랑 취득세, 부동산 복비는 카드로 결제 가능한가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://m.post.naver.com/viewer/postView.nhn?volumeNo=16674415&memberNo=43209292&vType=VERTICAL</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저같은 경우는 법무사 등기비용은 계좌이체 했고,취득세는 신용카드로 납부했어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아루미/미정/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 제가 전세준집이 계약기간이 1년 남아서 1년 살집을 찾고 있는데 조건이 궁금하네요 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>올라가자/동신9/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주의하실점은 취득세는 카드로 하실거면 전액 카드, 현금으로 하실거면 전액 현금으로 하셔야 합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>올라가자/동신9/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전액 카드로 하실 경우 신용카드+ 체크카드도 가능합니다. 참고하세요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>올라가자/동신9/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이번에 잔금 치르면서 취득세를 카드랑 현금을 섞어서 내려고 준비했다가 그렇게 안된다고 해서 급히 한도 증액하고 난리도 아니였는데.. 취득세 납부 관련 경험이 생겨서 공유 드립니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아 어느 카드사가 되나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 해야 하는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+3개월</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+까지 무이자할부인가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>JAY/풍림❤️/50대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+할부는<br>
+개인실적에 따라 다르므로<br>
+카드사에 요청하면 2주내 결제하라고 한시로 허용해 줍니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>JAY/풍림❤️/50대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주택 취득세 납부 하려 한다고 문의하면 되더라규요.~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+혹시 올수리 하신 분 중에 분배기+온도조절기+난방메인관 교체하신분 계실까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+공사 도중에 분배기가 터졌어요..ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+물이콸콸 ...ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저희 다 교체했어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+공사이후 터진거라 매도인한테 배상도 못물고요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+난방메인관은 교체 하면 좋나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+합해서 130 견적받았는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그정도해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+120~130</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+난방메인관빼면.. 80이라고 하셔서</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+혹시 몰라 캡쳐  했는데  문의해 보세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+교체  보통120~150한다 들었어요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아둘아빠/아름4/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 올수리는 아니고 세입자가 난방이 불편하다해서 위에 3가지 공사해드렸어요. 현금가로 140만원에 했습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+메인관이 정확히는 모르겠으나  외부에서 내부로  들어오는  관이 있는데  이거  교체가 젤  중요하다 들었어요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쵸이스/성지/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매 성지 38 VS 상록 우성 47 출처 : 부동산 스터디' | 네이버 카페</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>쵸이스/성지/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+평수가다른데<br>
+가격이 비슷한가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>GTX/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+효성 48평 매매 13억45백만원 실거래가 떳네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가지관...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아 왜케  싸게 느껴지죠 ㅠㅠ..  30평대가 상승폭이 젤 큰거 같아요. 매물도  별로 없고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>흠흠/삼환/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+넘싸네요 15는 넘어야 할 거 같은데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>GTX/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+작년11월거래건이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>GTX/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지금은 저가격인 아니죠.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매/효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+글고 탑층이요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>그래고래/동신3차/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다.^^ 오늘 잘 공부해서 해야겠어요.<br>
+각오는 했지만 하는 도중에 추가가 어마하네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 /동신 / 40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+공사 다  끝낸  후 보단  나으니까  위로 삼으세요~^^   토닥토닥</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름 풍림 23평은<br>
+지금 내놓으면 얼마가 적정할까요 중층</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+지인이 소유하고 계신데 파실듯하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저거 팔린 지 좀 됐을 거예요. 정말 저렴했네요.37 평이 13억7천에 안 판다고 들어갔다고 단톡방에서 얘기나왔었는데~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름풍림 직전 매매가가 얼마에요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+8억이 최고가</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+9억 어떠세요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매 청구도 직전이 8.4인데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+8억4천에 나가지 않았나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매 청구 소형도 더 뛸거 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>닥터킴/효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+28평이 10억 찍었으니 9.2에 올리고 버티면 자연스래 8억후반대 매물 따라 올라오고, 8억 후반 거래되면 9.2 바로 거래될거같네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+같은 생각입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+9.2~9.3에 올리고 버티시는게</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조언 감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>슬기/풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+29가 10억에 있지 않나요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>슬기/풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+고려해서 내놓으셔야 나갈듯요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일단  호가 9억대로  해보는게  좋죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네네</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가능성있으니까</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가능성 있다고 보고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+서울 광진 급 같은 평수에 비해 분당이 아직 저렴해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+23평  대장이니깐</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+높은 가격 아니라고 생각합니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제가 지금 광진 살아서 ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 9는 해야될거같은데 하나 더 큰퍙수 5층 10이 남향이면 저평가인데 안팔려서 그 가격이랑 좀 차이둬야할거같기도 하고여</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+28평 1층은 9.5에 나왔더라구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요  1층 10억짜리있는데<br>
+9.5하나  올  렸더라구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+23평  9억대  올리고  28평1층  저렴해보이는효과로  바로  팔리겠죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+옙</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+소형 가격 올려주세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매맨/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+24평도 9정도는 올라와야하는데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매맨/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다들  원합니다..9억  원츄</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뚜껑/아름두삼/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+24평은 9억<br>
+48평은 15억 가즈아 ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>피쓰/이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+수내는48평이 15.5-17억까지 내놓으셨던데 이매도 이정돈 가야죠^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[2020 경제정책방향] 광역교통망 확충 내년 6조 신속 집행..GTX A 공기 단축, B·C는 조기 착공 [서울신문]서울 중소 주택 4만가구 단계 승인·착공 노후 공공청사에 청년·고령층 1인가구 수출금융 240조 공급… 중기 7.7조 지원정부가 내년도 사회간접자본(SOC)에 23조 2000억원을 투자하고 교통망 확충과 주택 공급을 최대한 앞당기기로 했다. 내년에도 세계 6대 수출국의 위상을 유지하기 위해 240조 5000억원의 수출금융 지원에 나선다. 기획재정</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+gtx 관련기사 입니다<br>
+정부의  강한의지를  엿볼수 있네요<br>
+A노선은  공기단축도  추진한다니<br>
+23년말 개통도  가능할듯요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매가자/이매/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+짜증나는 소식들 와중에 기분좋은기사네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+맞아요 서현 역에서 11분 엘베도없는 1층 22평이 8이라는데 아름풍림 소형은 더 가야죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안녕하세요!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뒷북인지 모르겠지만~ 풍림 48평 15억 거래 맞나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+헉 .위치상 1억이상  차이나야되겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+맞다네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매/효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+풍림48 15억실거래 올라왔어요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이동네 부동산 통해 거래한게 안닌가보군요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일주일만에 실거래가 올린거 보면</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+12월27일 11층</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+수내랑 너무 차이나서 속상했는데 이제 많이 따라 잡았네요^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+미래 22억가치를 두고 샀다는 카더라는 말을 들었어요~동네분한테 ㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+굿모닝파크와gtx개통되면 날개를 달겠죠~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+실거래 나와있어서 부동산에서도 쉽게 낮춰 말하지 않겠죠~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+분당 재건축의 시작은 올해 선거가 되지 않을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내년까지는 지구단위계획 변경 작업부터 시작해야 할거고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>다인찬민아빠/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그걸 해줄수 있는 국회의원을 뽑아야겠지요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아르미/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+두산도 31평 신고가 나왔네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>반짝반짝/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+풍림 48평 15억인데 효성 59평 16억은...저렴해보이네요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>피쓰/이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+48평이 선호평형이여서 그런것 같아요~~~ 친구가 수내동 이사간다고 같이 다녀봤는데 수내도 60평형대가 16억-17억대더라구요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+관리비 차이 실제는 월 몇만원인데요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+관리비뿐아니라 세금등 차이가 있죠~<br>
+재건축바람 불면 60평은 더 치솟으니 기다려보세요~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>피쓰/이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 그런것 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아삼</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+15억 실거래가 주인분 멋지네요 스웩</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>피쓰/이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+15억 어느 부동산에서 진행하셨을까요? 부동산에서 최대가 14억이라고 하시던데....맞나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Jy/두산삼호/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+부동산은 몰라요~<br>
+14억최대라 말씀 하신곳은 가면안되겠네요<br>
+떡하니 실거래15억 나와있는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+거기  어디죠 ?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+14억  가두리  친  부동산요<br>
+어디죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호롤/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+불매 고고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스리라차/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+실거래가가 그래서 중요한 거예요.<br>
+15억이 실거래되면 사람들 심리가 시세를 15억부터 보게 됩니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스리라차/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+백번 호가보다 한번 실거래가 시장에 영향이 훨씬 큽니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그렇죠<br>
+실거래가의 영향력이 아주 크죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>피쓰/이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+암튼 이매 화이팅입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매가자/이매/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매는 이제 시작입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>매력뿜뿜srt+gtx/아름선경/50대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그렇죠 실거래 한 번이 아주 중요하죠</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>매력뿜뿜srt+gtx/아름선경/50대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+굿팍이 빨리 완공 되어서 전세가도 껑충 점핑했음 싶네요  전세가가 낮은게 좀 거시기 하니까요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스리라차/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매 전세가도 엄청 올랐던데요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매가자/이매/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그리고 일단 매물이없어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>슬기/풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+성지 전세6억에 나간거같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매진흥 소형  전세  1층  하나있네요<br>
+4억2천</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+나머지  평형  전세도  전멸</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>재움스/이매진흥/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아직도 싼거 같아요 ㅎㅎ 좀더 업업 ^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대마왕/아름효성/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내년 5월에 효성 48평 고층 전세 내놓아야 하는데 얼마 정도가 적당할까요? 올수리 상태입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>반짝반짝/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+최근에 59평 전세 9.5억에 나왔던데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매짱/아름/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+한성2단지 엘리베이터있나요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>반짝반짝/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+없는걸로 알아요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매짱/아름/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아하............</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+청구 소형은 전세가 왜이리 안빠질까요... 거래됐는데 안내리는건가 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매맨/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전세 얼마인가요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매맨/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전세도 적지않나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나무/이매진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+풍림 48평이<br>
+15억에 뜬거 말고<br>
+14.5억에도 또 팔렸다고들 하시니<br>
+거래가가 탄탄해지기는 했네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+3.5~4.1이고 6개 정도 남았네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전세는  진흥이 초역세라그런지  더  잘빠지드라구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>민숑/청구/50대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매청구 32평도<br>
+6억 전세 계약 되었다고 들었어요.<br>
+실거래신고는 아직 안 올라왔네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대형평형관련 참고<br>
+내용인데요<br>
+강남권의  경우 <br>
+최근상승장에선  대형이<br>
+중소형과 갭을 다시 벌려서<br>
+자리를 찾아가는중이라고<br>
+어느 부동산전문가가 언급햇는데<br>
+공감가는 부분이 있네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름풍림 512동 동향 14억 매물이 사라졌네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나무/이매진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+정보망에는<br>
+(풍림48평) 3채<br>
+512  동향  7층 14억    <br>
+514  남향10층 14억    <br>
+507  남향11층 14.5억 <br>
+(풍림59평) 1채<br>
+516  남향18층 16.8억 전세7억 <br>
+있다는데 네이버에는 안나오네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+최근몇년간<br>
+중소형이  집중적으로 공급되엇고<br>
+경제력을  갖추고 쾌적한 공간을<br>
+찾는 수요는 잇기에<br>
+즉 세금 과 관리비에<br>
+부담을 덜느끼는 수요층은<br>
+살아있다는 것입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>명당이매/아름풍림/50</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아름마을의 경우도<br>
+18년 보다 평형간 갭이<br>
+좀더  벌어진것을 볼수있어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네이버에 왜 안올리는건지,</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스리라차/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+부동산중계사 정보망인가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나무/이매진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+(풍림29평)은 3채만 떠있답니다<br>
+508동 1층  9.5억<br>
+502동 6층  9.7억<br>
+502동 6층11억   <br>
+1)혹시 2번째 것이 11억으로 올린건지, 다른물건인지는<br>
+모르겠네요<br>
+2)네이버에 올려있는 10억짜리는<br>
+정보망에 없다는데<br>
+걷어들인였느지 팔렸는지모르겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나무/이매진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 정보망에 있는거래요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>스리라차/청구/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+글쿤요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:30</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

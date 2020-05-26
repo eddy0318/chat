@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>임명환</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+세린님의 빠른 쾌유를 진심으로 기원합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>손주헌</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+내가 사망의 음침한 골짜기로<br>
+다닐찌라도 해를 두려워하지 않을 것은 <br>
+주께서 나와 함께 하심이라 <br>
+주의 지팡이와 막대기가 나를 안위하시나이다 (시편 23편 4절)<br>
+부디 삶에 위로가 되고 큰 힘이 되시길 기도합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>MY</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+간절히 기도합니다. 꼭 완쾌하시길 바랍니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>olla</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+낳아지시길 기도합니다 힘내세요!!!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>36789</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+기도 드립니다<br>
+반드시<br>
+좋은일 일어나요<br>
+힘내세요!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>36789</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>In yong Song</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주님께서 긍휼이 여기시고, 사랑으로 안아주시길 소망합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>PMS</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+많이 힘드시겠네요<br>
+아이 건강이 하루빨리 치유될 수 있도록 기도드립니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용⃢형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+기도 드립니다 안아프고 쾌유하시길...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+#헤드라인뉴스<br>
+( 2020. 2. 8. 토요일 )<br>
+■오늘 추위 풀리고 평년 기온 회복…<br>
+서쪽 지역 미세먼지<br>
+■장고 끝 '종로 승부수' 던진 황교안…정권심판론 바람 일으킬까<br>
+■정총리 잠복기 감안시 지금이 분수령…9일 중대 결정할 수도<br>
+■'23번환자 방문' 롯데본점·<br>
+이마트마포·프레지던트호텔 휴업<br>
+■'정치공작' 원세훈 전 국<br>
+정원장 징역 7년…반헌법적 행위<br>
+■국내환자 24명 중 2명은 '우한교민'…<br>
+2명 퇴원·1명 퇴원예정<br>
+■미국도 공소장 전부 공개 <br>
+안한다…<br>
+법무부 연일 해명<br>
+■현대·기아차 중국법인 <br>
+17일부터 공장 재가동<br>
+■코로나 검역기준 강화에 <br>
+11일 첫 크루즈 부산 기항 포기<br>
+■'조현아 흔적지우기'에 反조원태 <br>
+연합군 주총 앞둔 급조 대책<br>
+■문대통령 신종코로나 해결 지원… 中대사 문대통령 발언 감동<br>
+■WHO 사무총장 사퇴 청원<br>
+ 32만명 넘어…정치 중립해야<br>
+■'가족비리·감찰무마 의혹' <br>
+조국 첫 재판 3월로 다시 연기<br>
+■바른미래·대안·평화, <br>
+10일 첫 대면…통합 논의 속도낸다<br>
+■신종코로나, 사스·메르스보다 <br>
+증상 약해…국내 환자는 경증<br>
+■미래한국당 비례대표 선정, <br>
+한국당과 일체 상의 없다<br>
+■후베이성 외 중국 14개 도시 봉쇄…'2단계 대응 조치' 개시<br>
+■통일교육원 전 직원 사칭 해킹 발견…북한 '김수키' 배후 추정<br>
+■확진자 2시간 머문 송도 '혼란'…어린이집 휴원 제각각<br>
+■유승민, 회동 제안…<br>
+황교안 만날 의향 있다<br>
+■한일, 6년 만에 문화외교<br>
+국장 회의…교류 방안 논의<br>
+■'5G 상용화' 지난해 이통3사 <br>
+영업이익 10% 가까이 줄었다<br>
+■MBC 사장 공모에 김영희·<br>
+박성제 등 17명 지원<br>
+■사우디 예멘 반군 기뢰에 <br>
+홍해입구 공해서 어선 피격<br>
+■중국 관광객 수백명 뉴질랜드서 <br>
+발 묶여…항공편 취소 탓<br>
+■신종코로나 '격리 생활수칙' <br>
+중요…'음성' 나와도 격리 유지<br>
+■'우한 교민' 신종코로나 <br>
+확진 2명…환자 또 나오나 '촉각'<br>
+■신종 코로나 확산에 특별<br>
+연장근로 신청 잇따라…32건 접수<br>
+■LG, 중국 베이징 트윈타워 판다… 매각대금 1조3천700억원<br>
+■법원 불법 명의신탁한 부동산, <br>
+못 돌려받아도 횡령죄 못 물어<br>
+■'성폭행·횡령' 정종선 전 고교<br>
+축구연맹 회장 구속적부심 기각<br>
+■'고 장자연씨 성추행 혐의' <br>
+전직 기자 2심도 무죄<br>
+■마트·편의점에 백화점까지 줄휴업…오프라인 유통업계 큰 타격<br>
+■원혜영 임종석, 역할하는 게 좋겠다…일선에서 뛰어야<br>
+■'5·18 헬기 사격' 온몸으로 <br>
+증언한 광주 전일빌딩245<br>
+■말레이시아 신종코로나 확진 총 15명…한국인은 음성판정<br>
+■일본제철, 고로 15기 중 4기 <br>
+폐쇄 추진…공급과잉 대응<br>
+■신종코로나에도 토요일 광화문 <br>
+대규모 집회…감염 확산 우려<br>
+■정부, 마스크 수급위해 단속·심사 총력…해외반출 등 30건 적발<br>
+■1살 아이 양팔 잡고 던져 <br>
+어깨 탈구시킨 보육교사 징역형<br>
+■미행 스캔들' 크레디트 스위스 CEO 사임<br>
+■지원금 줄었다 민원인이 구청 <br>
+찾아와 쇠파이프로 공무원 폭행<br>
+■러시아 등서 삼성 스마트TV <br>
+일부 기능 작동 안해 논란<br>
+■신종코로나 꾀병' 20대 남성, <br>
+경찰관 폭행으로 구속<br>
+■국방부, '한미연합훈련 연기조율' <br>
+보도에 연기 검토한바 없어<br>
+■네이처셀 라정찬 회장 '<br>
+주가조작 혐의' 1심 무죄<br>
+■혼돈의 아이오와서 부티지지 <br>
+0.1%P차 승리…사흘만에 개표완료<br>
+■ 오늘은 굶어야겠네 신종코로나에 취약계층 식생활도 '흔들'<br>
+■코스피 나흘 만에 하락…<br>
+2,210선으로 '뒷걸음'<br>
+■[코스닥]0.06p(0.01%)내린672.63<br>
+■[코스피]15.99p(0.72%)내린2,211.95<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+➡️ 오늘의 영어 한마디    <br>
+isn’t it ~? : ~이지[하지] 않니?<br>
+Isn’t it hot today?<br>
+☞오늘 날씨 덥지 않니?<br>
+Isn’t it good to have <br>
+a brother like Pete?<br>
+☞피트 같은 동생이 있어서 좋지 않니?<br>
+Isn’t it frustrating that we have to stay in this building on such nice weather?<br>
+☞이렇게 좋은 날씨에 이 건물 안에 <br>
+있어야 한다는 게 답답하지 않니?<br>
+➡️ 오늘의 건강상식<br>
+효과적인 코막힘 뚫는 법, 코 세척하기<br>
+https://shealth.life/v4/contentsView?contsId=8849&areaType=DISCOVER_PLUS</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒2월8일 토요일 아침 NEWS❒<br>
+‾‾‾‾‾<br>
+■한파 물러가지만 미세먼지 기습…일부지역 눈·비<br>
+음력 정월대보름인오늘은 전국이 대체로 흐리다가 오전에 중부지방부터 차차 맑아지겠다.<br>
+아침 최저기온은 -8~2도, 낮 최고기온은3~10도다.<br>
+수도권·충청권·호남권·부산·대구·경북·제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통’으로 예상된다.<br>
+■이번 생 마지막 글이다…목숨 걸고 쓴 시진핑 저격글 화제<br>
+중국에서 발원한 신종 코로나바이러스 감염증이 퍼지고 있는 가운데 시진핑 중국 국가주석이 자국의 방역 노력이 전 세계에 큰 공헌을 했다고 '자화자찬'해 비판이 일고<br>
+있다.<br>
+■'18번~23번' 환자 이동 경로 공개...빵집, 치킨집, 호텔 등 방문<br>
+중앙방역대책본부는 7일 정부세종청사에서 열린 일일 정례브리핑에서 현재까지 진행된 우한 폐렴확진 환자에 대한 역학 조사경과와 함께18번부터23번 확진자의 이동 경로를 공개했다. <br>
+■입국 8일만 '속전속결' 중국대사 신임장 제정식…일본 대사는 두달 기다려<br>
+싱하이밍(邢海明) 주한 중국대사가 7일 오전 청와대에서 문재인 대통령에게 시진핑 중국 국가주석의 신임장 정본을 제출했다. 지난달 30일 싱 대사가 한국에 입국한 지 8일 만이다.<br>
+■푹 꺼진 제주 부동산… 반전도 어려워<br>
+제주 부동산이 끝없이 추락하고 있다.불과 수년 전까지만 해도 중국인 관광객이 몰리면서 땅값과 집값이 하늘높은 줄 모르고 치솟았지만, 이제는 투자자들이 거들떠보지 않는 애물단지가 됐다. <br>
+■종로출마 황교안 文 vs 黃 싸움”…이낙연 측 정권 심판론만”<br>
+자유한국당 황교안 대표가 7일 장고 끝에 서울 종로 출마를 선언하기로 하면서 더불어민주당 이낙연 전 국무총리와 대선 전초전 성격의 ‘빅매치’가 성사됐다. <br>
+■이러다 굶어 죽겠네” 北 국경 봉쇄에 물가 폭등→주민 비명<br>
+북한이 신종코로나바이러스 유입을 막기 위해 국경을 봉쇄하면서 일부 지역에서 식료품과 물품가격이 크게 올라 주민들이 아우성이라고 데일리NK와 아시아프레스 등 북한 전문 매체가 보도했다.<br>
+■국내 생산 늘리게 주 52시간제 당장 풀어야”…정부 대책에 차업계 한숨만<br>
+홍남기 경제부총리 겸 기획재정부 장관이 7일 중국우한에서 발생한 신종 코로나바이러스 감염증 관련 대책을 내놓은 데 대해 자동차 업계는 근본적인 해결책이 되지 못한다는 반응을 보였다<br>
+■日 크루즈선 신종코로나 41명 추가 확진…총 61명 감염<br>
+신종 코로나바이러스 확진자가 탔던 일본 대형<br>
+크루즈선에서또 추가 감염자41명이 무더기로<br>
+나왔다.이에 따라 크루즈선 내에서 확인된 감염자 수는 총61명으로 늘었다<br>
+■중국 연구진 천산갑이 신종코로나 중간숙주 가능성<br>
+신종 코로나바이러스가 멸종위기종인 천산갑을 거쳐 인간으로 전파됐을 것이라는 중국 대학의 연구 결과가 나왔다.화난(華南)농업대학은 7일 천산갑이 신종 코로<br>
+나바이러스의 잠재적 중간 숙주라고 밝혔다.<br>
+■새보수당 입당한 검사 내전저자 김웅 전 검사<br>
+지난달 더불어민주당이 검·경 수사권 조정안을 일방 처리하자 거대한 사기극”이라고 비판하며 사표를 냈던 김웅(50) 전 부장검사가 사흘 전 새로운 보수당에 ‘1호 영입 인재’로 입당했다<br>
+■연매출 2억하던지평막걸리, 10년뒤 상전벽해···작년 전통주 1위<br>
+작년에 2위를 차지했던 지평막걸리가 결국 1위에 올랐다. 알코올 도수를 6도에서5도로 낮춘 후 ‘숙취 없는 막걸리’ ‘순하고 부드러운 막걸리’로 손꼽히며 판매량이 수직상승하고 있다.2010년만 해도 직원 3명에 연매출2억원에 불과했던 곳이 올해는 연 매출200억원을 바라보는 양조장으로거듭나고 있으며, 성장세는 더욱 두드러질 것으로 예상된다. <br>
+■‘쌍용’의 귀환, 우선협상·위약금에 태클 걸렸다<br>
+쌍용’ 기성용(31·전 뉴캐슬)과이청용(32·보훔)이 프로축구 K리그 복귀을 타진하고 있다. 기성용은 전북 현대, 이청용은 울산 현대 이적설이 나온다. 두 선수 친정팀은 FC서울이다<br>
+■트리플 악셀 아쉽지만...유영, 4대륙 메달 보인다<br>
+유영은 서울 목동아이스링크에서 열린 4대륙선수권대회 여자 싱글 쇼트프로그램에서 기술점수(TES) 40.81점, 예술점수(PCS) 32.74점을 합해73.55점을기록했다.<br>
+기히라 리카(일본·81.18점), 브레이디테넬<br>
+(미국·75.93점)에 이어 3위에 올랐다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>전유웅</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘의운세는<br>
+없나요ㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Midoban</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://pf.kakao.com/_axjAxmxl</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+매경이 전하는 세상의 지식(매-세-지, 2월8일)<br>
+￼￼<br>
+신종 코로나바이러스 감염증(우한 폐렴) 23번째 확진자가 지난 2일 다녀간 것으로 확인된 서울시 중구 롯데백화점 본점이 7일 오후 2시부터 임시휴업에 들어가면서 고객들이 백화점을 빠져나오고 있다. 백화점 측은 10일에 문을 열 계획이라고 밝혔다. /사진=이승환 기자<br>
+1. 23번째 신종 코로나바이러스 감염증 확진자로 판명된 중국 우한에서 온 여행객이 방문했던 롯데백화점 본점이 7일부터 임시 휴점에 들어감. 교육부는 17개 시도교육청에 초·중·고교 수업일수를 최대 한 달까지 감축할 수 있는 내용의 학사일정 조정 안내문을 이날 발송함.<br>
+2. 중국 내 공장을 가동 중인 국내 기업들이 10일부터 중국으로 복귀할 계획이어서 우려가 커지고 있음. 중국 상무부는 지난 6일 '상업 및 무역기업의 업무 복귀 및 영업에 관한 통지'를 발표하며 기업들은 조속히 조업을 재개하라고 지시함.<br>
+3. 황교안 자유한국당 대표가 서울 종로 지역 출마를 전격 선언함에 따라 앞서 종로 출마를 선언한 이낙연 전 국무총리와 정치 1번지인 종로에서 '역대급 빅매치'가 이뤄지게 됐음. 황교안 대표는 7일 종로를 반드시 정권심판 1번지로 만들겠다며 총선 출마를 선언함.<br>
+4. 건설사와 사모투자펀드(PEF) 운용사 등이 골프장 인수·합병(M&A)에 뛰어들면서 지난해 처음으로 연간 국내 골프장 M&A 규모가 1조원을 넘어섬. 6일 한국레저산업연구소의 통계와 투자은행(IB)업계 등에 따르면 지난해 국내 골프장 매매거래 금액은 1조218억원에 이름.<br>
+5. 일본에 입항한 크루즈선에서 신종 코로나 확진자가 계속 나오면서 국내 주요 항구도 긴장하고 있음. 3일부터 일본 요코하마 앞바다에 정박해 있는 다이아몬드 프린세스호에서 7일 탑승객 41명이 한꺼번에 신종 코로나 판정을 받아 전체 감염 환자가 61명까지 늘어남.<br>
+6. 청와대가 북한 개별관광 문제를 추진하기 위해 백악관을 상대로 설득 작업에 나서고 있음. 김현종 청와대 국가안보실 2차장이 지난 5일 미국 워싱턴을 극비리에 찾았음. 앞서 최종건 청와대 평화기획비서관이 지난 주말 사이에 미국을 다녀온 것으로 알려짐.<br>
+7. 정부가 신종 코로나 확산으로 인한 중국산 부품 수급에 어려움을 겪는 자동차 생산업체들을 지원하기 위해 특별연장근로를 허용하기로 했음. 이번 사태로 어려움을 겪는 중소기업·소상공인에게 정책기관에서 1조9000억원을, 영세업체들에 저리로 1000억원을 대출하는 등 총 2조원을 지원함.<br>
+8. 정부가 신종 코로나바이러스 감염증 사태에 따른 마스크 품귀 현상에 대처하기 위해 다음주 중 긴급수급조정조치를 시행함. 이에 따라 마스크 생산·유통업체는 정부에 매일 생산량과 출고량을 보고하게 될 전망임.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒오늘의 운세, 2월 8일 토요일<br>
+[음력1월15일]일진:신사(辛巳)❒<br>
+‾‾‾‾‾<br>
+〈쥐띠〉<br>
+84년생 단단히 각오를 하지 않고는 원하는 것을 얻기 어려울 것이다. 72년생 철저한 준비를 해야 살 길이 열린다. 직접 가서 확<br>
+인한 후에 결정해야 할 것이다. 60년생 금<br>
+전문제로 이런저런 고민을 하게 된다. 48, 36년생 손재수가 따르니 보증이나 금전관<br>
+계는 일절하지 마라.<br>
+운세지수 51%. 금전 50 건강 55 애정 50<br>
+ <br>
+〈소띠〉<br>
+85년생 자신의 능력을 마음껏 발휘해 볼 때다. 73년생 평소보다 매상이증가한다.자<br>
+영업을 하는 사람은 신이 나서 일하게 된다. 61년생 희망이 보이는 시기로 수입이 늘어<br>
+날 것이다.49, 37년생 결정하기에 앞서서 후회 안 할 자신이 있는지 다시 한 번스스로<br>
+에게 다짐해보라.<br>
+운세지수 96%. 금전 95 건강 95 애정 95<br>
+ <br>
+〈범띠〉<br>
+86년생 사랑 때문에 친구와 멀어질 수있<br>
+다.지켜야 할 것은 반드시 지키는 자세가 필요하다. 74년생 벽에 부딪치는 것 같은 한계가 느껴진다. 앞으로 나가려 하지 말고 기다려라. 62년생 자칫 잘못하다가는 손해 보게 된다. 50, 38년생 스트레스를 받는다<br>
+. 몸의 면역 기능이 약해진다.<br>
+운세지수 37%. 금전 35 건강 35 애정 40<br>
+ <br>
+〈토끼띠〉<br>
+87년생 좀 더 서로에 대해 아는 시간을 갖<br>
+도록 해야 한다. 75년생 평소의 페이스대<br>
+로 나가면 무난하게 지나간다. 63년생 함<br>
+께 살아가는 가까운 이들을 배려하도록 하<br>
+라.이것이 결국에는 자기 자신을 행복하게 하는 지름길이 될 것이다.51,39년생 남의 도움을 받게 되니 수월해진다.<br>
+운세지수 68%. 금전 70 건강 60 애정 70<br>
+ <br>
+〈용띠〉<br>
+88년생 새로운 길이 열린다. 자신의 능력<br>
+을 잘 활용하고 적극적인 자세로 나아가라. 76년생 유리한 입장에 놓인다. 기대치가 넘는 이익을 실현해 줄 것이다.64,52년생 의외의 돈이 들어오니 주머니 사정이 좋아<br>
+진다. 40년생 호박이 넝쿨째 들어오는 운<br>
+세다. 복을 받을 준비를 하라.<br>
+운세지수 89%. 금전 85 건강 85 애정 90<br>
+ <br>
+〈뱀띠〉<br>
+89년생 충동적으로 움직이기 쉽다. 계획<br>
+을 세우고 처리하라. 77년생 예기치 못한 상황으로 전개가 될 수 있다. 미리 대비해<br>
+야 한다.65,53년생 과음이나 과식을 주의<br>
+하라. 자칫하면 큰 병치레를 할 수 있다. 41년생 마무리가 가장 중요하다. 끝까지 긴장을 늦추지 말아야 하겠다.<br>
+운세지수 54%. 금전 60 건강 55 애정 55<br>
+ <br>
+〈말띠〉<br>
+90년생 부드러운 대인관계가 필요하다.넓<br>
+은 마음으로 포용하고 늘 미소를 지어라. 78년생 준비가 철저하다면 실행에 옮겨도 좋은 날이다. 66, 54년생 백짓장도 맞들면 낫다. 협력할수록 성공가능성이 높아진다. 42년생 의외로 간단하게 끝나서 다행이라<br>
+는 생각이 들 것이다.<br>
+운세지수 76%. 금전 75 건강 75 애정 80<br>
+〈양띠〉<br>
+91,79년생 좋은 기회가 다가오고 있다.망<br>
+설이지 말고 빨리 잡아라. 67년생 재물이 점점 쌓이는 형국이다. 그러나 일거양득을 기대하면 실망이 따른다. 55년생 고비가 오더라도 생각보다 잘 넘기게 될 것이다. <br>
+43년생 근심걱정은 잠시 내려놓고 기분 좋은 생각만 하라.<br>
+운세지수 73%. 금전 70 건강 70 애정 75<br>
+〈원숭이띠〉<br>
+92, 80년생 길이 아니라는 생각이 들면 빨리 되돌아 나오는 것이 현명하다. 68년<br>
+생 정보를 적극적으로 교환하라. 모르던 것을 알게 된다. 56년생 민감하게 대응하<br>
+라. 오늘의 행동이 내일의 운을 좌우한다. 44년생 분명히 말하지 않으면 상대가 잘 몰라서 오해가 생길 수 있다.<br>
+운세지수 38%. 금전 40 건강 35 애정 40<br>
+ <br>
+〈닭띠〉<br>
+93, 81년생 시작할 때의 자세로 일하면 충분히 승산이 있다. 69년생 행운이 따른<br>
+다. 과거에 쌓아온 것에 대한 보상이 이제<br>
+야 이루어진다. 57년생 수입이 늘어난다.<br>
+뜻하지 않은 횡재도 할 수 있겠다. 45, 33<br>
+년생 금전 운이 풀리는 날이다. 등산하면 건강을 되찾고 기분전환도 된다.<br>
+운세지수 93%. 금전 90 건강 90 애정 95<br>
+ <br>
+〈개띠〉<br>
+94, 82년생 너무 두드러지게 자존심을 내<br>
+세우지 말고 주위와 조화를 이루도록 노력<br>
+하라. 70년생 고정 관념을 버리고 한 가지 목표에 전력을 다한다. 58년생 천천히 정<br>
+확하게 끈기를 가지고 일처리를 할 때다. 46, 34년생 아닌 밤중에 홍두깨다. 지나친 감정 표현을 억제해야 하겠다.<br>
+운세지수 39%. 금전 35 건강 40 애정 40<br>
+ <br>
+〈돼지띠〉<br>
+95,83년생 별 일도 아닌 일로 오해의 소지<br>
+가 생길 우려가 있다. 71년생 농담 삼아 한 말이 파문을 일으킬 수 있다. 59년생 세상<br>
+을 더 큰 눈으로 바라보아야 한다.47,35년<br>
+생 신중함이 필요하다. 속이는 이들이 비일<br>
+비재하니 다 내 마음 같은 줄 알았다가 믿는 자에게 실망한다.<br>
+운세지수 34%. 금전 35 건강 30 애정 35<br>
+자료출처☞http://:goo.gl/GU8MEk </div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒오늘의 날씨❒<br>
+‾‾‾‾‾<br>
+토요일인 8일 오늘은 전국이 <br>
+대체로 흐리다가 오전에 중부 <br>
+지방부터 차차 맑아지겠습니다.<br>
+새벽부터 아침 사이 충남과 <br>
+전북·전남 북부에는 곳에 따라 5㎜ <br>
+미만의 비나 1㎝ 내외의 눈이 오겠습니다.<br>
+낮에는 울릉도와 독도에도 5㎜ 안팎<br>
+의 비나 1∼5㎝의 눈이 내리겠습니다.<br>
+기상청에 따르면 8일 아침 <br>
+최저기온은 -7~2°C, 낮 최고 기온<br>
+은 4~10°C 로 예보돼 입춘 이후 <br>
+이어졌던 추위는 한풀 꺾이겠습니다.<br>
+미세먼지 농도는 수도권·충청권·호남권·부산<br>
+·대구·경북·제주권은 '나쁨', 그 밖의 <br>
+권역은 '보통'으로 예상됐습니다.<br>
+ 다만 강원 영서는 오전에<br>
+ '나쁨' 수준을 보이겠습니다.<br>
+국립환경과학원은 낮 동안 <br>
+서쪽 지역을 중심으로 국외 미세<br>
+먼지가 유입되어 대부분 지역<br>
+에서 농도가 높겠다고 내다봤습니다.<br>
+이날 오후부터 9일 새벽 사이 동해 먼바다와 제주도 남쪽 먼바다는 바람이 강하게 불고 높은 물결이 일겠습니다.<br>
+항해나 조업하는 선박은 <br>
+각별히 주의해야 합니다.<br>
+또 이날 밤부터 9일까지 동해안에서는 너울에 의한 매우 높은 물결이 해안<br>
+도로나 방파제를 넘는 곳이 있겠습니다. <br>
+해안가 안전사고에도 유의해야 합니다.<br>
+바다의 물결은 서해·남해 앞바다에서 0.5∼1.5ｍ, 동해 앞바다에서 0.5∼2.5ｍ 높이로 일겠습니다. <br>
+먼바다의 파고는 서해 1.0~<br>
+2.0ｍ, 남해 1.0∼2.5ｍ, 동해 <br>
+1.0∼4.0ｍ로 예보됐습니다.<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+https://youtu.be/gLXDvOlMOWE<br>
+다음은 08일 지역별 날씨 전망.<br>
+[오전, 오후] (최저∼최고기온)<br>
+<오전, 오후 강수 확률><br>
+✦서울:[구름많음,맑음](-2~5)<20, 0><br>
+✦인천:[구름많음,맑음](-1~4)<20, 0><br>
+✦수원:[구름많음,맑음](-3~5)<20, 0><br>
+✦춘천:[흐림, 맑음] (-5∼6) <30, 0><br>
+✦강릉:[맑음, 맑음] (0∼7) <0, 0><br>
+✦청주:[흐림, 맑음] (-1∼6) <30, 0><br>
+✦대전:[흐림, 맑음] (-1∼7) <30, 0><br>
+✦세종:[흐림, 맑음] (-3∼7) <30, 0><br>
+✦전주:[가끔 눈,맑음](-1∼7)<60, 0><br>
+✦광주:[흐림, 맑음] (1∼8) <30, 0><br>
+✦대구:[흐림, 맑음] (0∼7) <30, 0<br>
+✦부산:[맑음, 맑음] (1∼10) <0, 0><br>
+✦울산;[맑음, 맑음] (0∼9) <0, 0><br>
+✦창원:[맑음, 맑음] (-1∼8) <0, 0><br>
+✦제주:[흐림,구름많음](6~9)<30,20></div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>전유웅</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+설마 아이가 아픈것과 연관지어 생각하시는 것은 아니시겠지요? ^^;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용⃢형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://www.christiandaily.co.kr/news/아플-때-힘을-주는-성경구절-5가지-70981.html</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용⃢형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://m.blog.naver.com/PostView.nhn?blogId=youn9090&logNo=221122441408&proxyReferer=https%3A%2F%2Fm.search.naver.com%2Fsearch.naver%3Fsm%3Dmtb_hty.top%26where%3Dm%26oquery%3D%25EA%25B8%25B0%25EB%258F%2584%26tqi%3DUB3Whwprv2hssjsymnGssssssTR-214431%26query%3D%25EC%2595%2584%25ED%2594%258C%25EB%2595%258C%2B%25EC%2584%25B1%25EA%25B2%25BD%25EA%25B8%25B0%25EB%258F%2584</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용⃢형</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+얼마나 마음이 답답하셨으면 이곳에 글을 쓰셨을까 생각해봤습니다 냉소적인 사람들이 넘치는 세상이지만 누군가는 힘이되고 싶어한다는 것을 기억해주시고 희망잃지 않고 기도 하며 나아지셨으면 합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>paul</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저는 이런 익명의 공간에 저렇게 개인적인  글을 올린걸 보고 놀랐는데.. 그래도 마음 따뜻한 분들이 생각보다 많다는 사실에 한번더 놀라네요.. 따님께서 꽤차하시길 기도할게요<br>
+익명의 공간이지만 이왕 올리시는거 어떤 병명인지 어떤 증상인지까지 올려주신다면 직접적인 도움도 받을수있지 않을까 기대해봅니다.. <br>
+1000명이 넘게 있는 공간인데 여기 생각보다 의사들도 많을테니까요..<br>
+힘내시고 여기에 다시 좋은 소식 전해주실 것을 기대해봅니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+하루빨리 병명을 찾으셔서 빠른쾌유를 빌겠습니다.?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김민서</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이상현 초대로 들어왔습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황석현</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마음을 다해 기도 드립니다. 분명히 나으실 수 있을거이요!! 힘내세요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>♡샬롬♡김재수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 기도로 함께 했습니다 ㅠㅠ<br>
+힘내세요 힘!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+꼭 나으실꺼라고 기도드리겠습니다. 긍정적으로 생각하다보면 좋은 일은  생길꺼에요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정세린</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+많은 분들께서 기도해 주시고 걱정해주신 덕분에 편안하고 감사한 주말을 보내고 있습니다^^<br>
+다시한번, 같이 응원해주시고 마음을 보태주셔서 진심으로 감사드립니다♡ <br>
+곧 또 좋은소식 들려드릴수 있도록 저역시도 치료와 회복에 집중하겠습니다^^ <br>
+감사합니다♡</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뽀숑</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://naver.me/GhvFvBD6</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+19:16</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

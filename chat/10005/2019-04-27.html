@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+<br>
+[주요 신문 톱뉴스](26일)<br>
+▲ 문화일보(서울) = '생존절벽'… 30大기업 60％ 사라졌다<br>
+▲ 내일신문(서울) = 국회 '강대강' 이틀째 충돌 불가피<br>
+▲ 아시아경제(서울) = 기업투자 살려야 경제성장 회복<br>
+▲ 헤럴드경제(서울) = 녹슨 기계엔 먼지만 수북…발길마저 끊어져 을씨년</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:17</span></div></div>
+<div class='direct-chat-msg'>
+
+  <div class='direct-chat-text'>
+부동산 뉴스 모음 4월 27일(토)<br>
+매일경제신문<br>
+재개발 막지 말라…대법, 서울시 제동<br>
+ 서울 종로 사직2구역 재개발<br>
+문화 보존한다며 2년간 막아<br>
+법정 다툼 조합 측 최종 승소 <br>
+`재개발 해제` 대법서 브레이크<br>
+서울시 재개발 대못 뽑혀…다른 구역도 재개되나<br>
+ 박원순표 정책 변화 불가피<br>
+근거 없이 재개발 해제 못 할 듯<br>
+주거 재생한다며 쓴 혈세<br>
+약 500억원 매몰 비용 될 수도 <br>
+속도 내는 수색증산뉴타운<br>
+ 13구역 재개발 건축심의 통과<br>
+대형 줄이고 중소형 평형 늘려<br>
+증산5·수색8 등도 사업 순풍 <br>
+부담금 때문에… 대치쌍용2차 시공사 선정 무산<br>
+재건축 연기 목소리 커져<br>
+ <br>
+한국경제신문<br>
+사직2구역 재개발 직권해제 무효 최종 판결<br>
+ 대법, 서울시·종로구 상고 기각<br>
+역사 문화 보존과 관계 없어<br>
+조합, 오늘 총회 … 사업 박차<br>
+지하 2층~지상 12층 12개동 486가구 계획<br>
+충신1구역 등 소송 잇따를 듯<br>
+강남 2개 단지 모델하우스 문 열어…중도금 대출 불가 비교적 한산<br>
+방배그랑자이·일원 포레센트<br>
+지금 집 사도 되나 불안한 시장에 질문 쏟아져<br>
+ 2회 집코노미 부동산 콘서트<br>
+이상우 서울 분양 적극 공략을<br>
+채상욱 저가 소형은 오를 것<br>
+조영광 하락폭 3% 넘지 않아<br>
+원종훈 비거주 고가, 연내 매각 <br>
+ <br>
+서울경제신문<br>
+대법 사직2구역 직권해제 무효”··· 조합, 재개발사업 다시 추진<br>
+법원에 막힌 '사직2 정비구역' 직권해제<br>
+봉천·성북 등 곳곳서 잡음...서울시 도시재생 제동 걸리나<br>
+ 서울 시내 170곳 정비구역 해제<br>
+무분별한 빌라 건축 등 환경 악화<br>
+'장위11' 등 재개발 재추진 나서<br>
+서울시 '사직2'에만 300억 지출<br>
+직권해제 무효로 '혈세 낭비' 비판<br>
+줄잇는 알짜 분양에... 다시 뜨는 청약통장<br>
+ 지난달 가입자 2,300만 육박<br>
+9억 이상 고가 아파트 겨냥<br>
+현금부자 가입 증가도 한몫<br>
+1인 가구 '셰어하우스' 사업 뛰어드는 직방<br>
+ 소셜 하우징 기업 셰어하우스우주㈜ 인수 <br>
+[토요 워치] 기획부동산=============================================<br>
+두 '큰손' 기획부동산, 年 1조 어치 땅 판매 '쥐락펴락'···갖고 보니 '기획된 땅'<br>
+ 공유 필지 상위 50개 무려 90%나 독식<br>
+케이비·우리·하나 등 시중銀 이름 사용<br>
+수십곳 연합 기획부동산 '큰손' 드러나<br>
+심각한 서민 생활 침해 범죄···수사 나서야<br>
+수천억대 토지 어떻게 팔아먹나<br>
+37개 업체가 지분 수없이 쪼개 판매...청년들에 '땅 다단계 영업'도 버젓이<br>
+ '케이비' '우리' '신한' 등 이름으로<br>
+수십개 계열 업체들이 땅 사들여<br>
+개인들에 3~7배 뻥튀기해 팔아<br>
+한 필지에 소유자 3,000명 되기도<br>
+자금 넉넉지 않은 서민층이 타깃<br>
+매매 땅 대부분 개발 가능성 적어<br>
+시대별 기획부동산<br>
+경부고속도...88올림픽...GTX·신도시 개발 들먹이며 현혹<br>
+ 60~70년대 SOC 투자 빌미로<br>
+땅값 파동·강남 '복부인' 판쳐<br>
+80년대 3저 호황 속 '딱지 사기'<br>
+90년대 이후 '지분 쪼개기' 극성<br>
+왜 수사 어렵고 처벌 쉽지 않나<br>
+기획부동산 사건 전담 수사 부서 없어...사업 근거 갖춰 사기죄 대부분 무혐의<br>
+ 피해액 커 사회 문제로 떠오르지만<br>
+정상 분양 사업에 혐의 입증 난관<br>
+고객에 손실 가능성 충분히 설명<br>
+사기단 무죄 주장하며 법망 피해<br>
+계약서에 특약사항 적시 요구 등<br>
+사기 혐의 입증하려면 기록 남겨야</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4월 27일 부동산 주요뉴스<br>
+5월 분양시장에 물량 폭탄…4만 6천가구 예정<br>
+수도권이 2만8,000가구로 전체의 60.5%를 차지할 만큼 많다. <br>
+전년 동월대비 147% 증가한 수준 <br>
+광역시도 1만700여가구로 48% 가량 증가한 반면 <br>
+지방도시는 21% 가량 줄어들 전망<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=079&aid=0003221034<br>
+대법 사직2구역 직권해제 무효”··· 조합, 재개발사업 다시 추진<br>
+‘뉴타운 출구전략’을 선언하면서 현재까지 서울시내 170여곳이 정비구역에서 직권해제<br>
+정비구역 직권해제에 주민 반발이 극심했던 ‘사직2구역’ 대법원으로부터 직권해제 무효 판결<br>
+매몰 비용 보전에 대한 서울시의 재정 부담과 업체들의 불만 문제, 구역 해제를 전제로 서울시가 투자한 돈이 300억원이 넘어<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=011&aid=0003545548<br>
+서울 재건축아파트값 2주째 상승<br>
+서울 재건축아파트 매매값이 2주 연속 올랐다. 급매물이 소진된 이후 매물이 줄어든 덕분<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=018&aid=0004364225<br>
+비싸다” vs 현금부자 충분”…‘방배그랑자이’를 보는 엇갈린 시선<br>
+모델하우스 개관 첫날 입장객 ‘썰렁’<br>
+3.3㎡당 4787만원… 주변시세와 비슷<br>
+중도금 대출 불가로 가점 낮은 현금부자 관심<br>
+무순위 청약 실시…모집 가구수는 채울 듯<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=018&aid=0004364218<br>
+가점 '18점'도 서울 분양 아파트 당첨된 이유<br>
+대출 규제 강화, 청약 제도 개편 등과 맞물려 주택 <br>
+수요자들의 옥석 고르기가 한층 높아졌다는 관측<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=008&aid=0004210628<br>
+기대 vs 반대… 수도권 3기신도시 '엇박자’<br>
+3기신도시 지정 이후 오히려 집값이 하락<br>
+공급과잉 우려가 확산돼 매수심리가 위축<br>
+원주민 재정착률을 높이기 위해 현금 대신 토지로 보<br>
+상하는 '대토보상' 확대방안도 검토 중<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=417&aid=0000403951<br>
+지방 분양시장 불황 속 양극화 심화…되는 곳만 된다”<br>
+광주·대구·대전·세종 등 청약 완판지역으로만 쏠림 현상 두드러져<br>
+불확실성 증가로 검증된 투자처로 수요자들 관심 커져<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=119&aid=0002325591<br>
+LH, 파주 운정신도시 공동주택용지·상업용지 공급<br>
+운정3지구 공동주택용지 2필지 및 운정지구 중심상업용지 13필지를 공급<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=022&aid=0003358236<br>
+[김용일의 부동산톡] 부부, 가족간 부동산 증여 후 양도시 절세방안<br>
+배우자로부터 증여 받은 시점부터 5년(등기부상 소유기간 기준)이 <br>
+지난 후에 제3자에게 양도해야<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=018&aid=0004364198</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4월 27일 토요일 경제 주요뉴스<br>
+WTO, '후쿠시마 수산물 수입금지' 한국 승소 최종 확정<br>
+상소기구 2심 판정 공식 채택…한일 분쟁 당사국에 효력<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=001&aid=0010790651<br>
+[뉴욕마감] 美 '깜짝성장'에 S&P·나스닥 '사상최고치' 경신<br>
+[美 1분기 3.2% 성장 '서프라이즈'…트럼프 OPEC에 기름값 내리라. 증산동의 유가 급락]<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004210611<br>
+돼지고기 생산 30% 줄어들 중국 ‘단백질 블랙홀’ 된다<br>
+축산 투자전략가 셰라드 중, 세계 최대 돼지 사육·소비국<br>
+1억5000만~2억 마리 감염된 듯<br>
+각국 수입 제한하고 수출 꺼려 글로벌 고기 가격 고삐 풀릴 수도<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=353&aid=0000033941<br>
+5월 상장 우버, 몸값 기대치 더 낮아졌다<br>
+[로이터, 관계자 인용 공모가 44~50달러 예상 <br>
+경쟁사 '리프트' 주가 고전에 눈높이 계속 낮춰]<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004210207<br>
+폐업 속출 주유소는 진화 중…개인창고·전기충전·편의점까지<br>
+8년간 10곳 중 1곳 문 닫아…정유업만으론 경쟁력 없다<br>
+현대오일뱅크, 주유소 유휴공간 활용한 창고사업 추진<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=421&aid=0003961364<br>
+블록체인으로 주식대차 서비스…개인 공매도 쉬워진다<br>
+블록체인 기술을 활용한 '개인투자자간(P2P) 거래방식'의 주식 대차거래가 가능<br>
+'금융규제 샌드박스' 신사업을 추진하는 기업에 일정 기간 규제를 면제<br>
+개인 투자자들에겐 높기만 하던 공매도 시장 진입 장벽이 낮아질 것<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004210638<br>
+사람들은 왜 명품 브랜드의 짝퉁 가방을 살까<br>
+클래식 명품은 진품, 시즌 상품만 짝퉁 사”<br>
+명품 브랜드들, 짝퉁을 인기 척도로 여겨<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=020&aid=0003213578<br>
+[2등의 반란] 8년 만에 2억→166억 매출…지평막걸리의 반전스토리<br>
+젊은 소비층을 공략하기 위해 2016년 도수를 1도 낮춘 5도 막걸리를 내놔<br>
+'부드럽고 숙취 없는 막걸리'로 젊은층 사이에서 입소문이 퍼져<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=015&aid=0004132279<br>
+[금융꿀팁]보험사기, 동조하면 '범죄'·신고하면 '포상'<br>
+[병원관련 보험사기 제보 포상금액 가장 커…상위 10건 중 6건이 '허위입원']<br>
+금감원 및 보험회사 홈페이지의 '보험사기 신고센터', 금감원에 전화 및 방문(1332→4번→4번)<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004210632<br>
+[알쓸신통]빗장 푼 메르코수르…브라질산 치킨값은<br>
+메르코수르는 브라질, 아르헨티나, 우루과이, 파라과이, 베네수엘라 등 <br>
+남미 5개국이 관세 등 무역장벽을 전면 철폐해 1995년 출범한 공동시장<br>
+수출 확대가 기대되는 분야는 자동차 및 부품, 가전제품, 전자부품, 철강, 기계 등 <br>
+우리의 주력품목인 제조업 분야 <br>
+수입 확대는 대두, 옥수수 등 곡물류부터 쇠고기, 닭고기 등 축산품까지 농축산 분야<br>
+채식 열풍에 '베지노믹스(채소+경제)' 뜬다…'대체肉'도 인기<br>
+동물성 원료 대체재 '콩' 활용한 제품 주목…'대체육' 미래 먹거리 각광<br>
+국내 채식 인구 100만∼150만 명으로, 10년 전인 2008년 15만 명 비해 10배 가까이 증가<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=031&aid=0000490572<br>
+무모했던 1983년 '삼성 반도체 진출'…2030년 '반도체 황제' 자리 오른다<br>
+이병철 삼성 창업주의 '도쿄선언', 반도체 진출<br>
+이건희 회장의 비전2020, 메모리 압도적 1위<br>
+이재용 부회장, 시스템 반도체까지 1위 달성 계획<br>
+전후방 생태계 확대까지, '반도체 코리아' 만든다<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=277&aid=0004457702<br>
+원화 약세 수혜주는? IT가전, 2차전지, 바이오시밀러<br>
+신흥국 지수 변경 이벤트 등을 감안, 시가총액 상위 반도체, <br>
+자동차보다는 수출하는 내수주 등이 부각될 것<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=014&aid=0004218776<br>
+[똑똑보험] 또 오르는 車보험료, 저렴하게 올라타는 법<br>
+자동차보험, ‘다이렉트’ 가입이 저렴<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=417&aid=0000403944<br>
+폐기물 처리·미세먼지 저감···증시 ‘친환경株’ 주목<br>
+글로벌 트렌드로 자리잡은 ‘환경’…추경 이슈까지 더해져 관련 종목 눈길<br>
+폐기물처리업체 코엔텍·와이엔텍, 미세먼지 관련 환경기업 나노 등 추천”<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=119&aid=0002325594<br>
+'레드오션 가속' 자영업 대출 부실 '경고등'<br>
+제 2금융권 자영업 대출 비중 지속 확대 먹구름<br>
+건전성 악화 흐름…생활밀착형 업종 부실 가시화<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=119&aid=0002325588<br>
+'탈원전 경영난' 한수원, 올 1조2000억 회사채 발행<br>
+지난해 영업이익은 1조1456억원으로 전년 대비 18% 줄었고 <br>
+당기순익은 1020억원 순손실을 기록<br>
+2030년까지 신재생에 20조 투자… 한전, 3월 말 현재 2조2500억 사채 발행<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=023&aid=0003442411<br>
+농협물류, 화물 배송기사와 극적 합의…운송료 5% 인상<br>
+▲ 계약 만료로 미계약된 배송기사 35명 전원 재계약 ▲ 운송료 5% 인상 ▲ 장거리 운행수당 확대·차량 연령 제한 연장 등 합의<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=001&aid=0010790526</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4월 27일 토요일 창업뉴스 단신<br>
+⚫소상공인시장진흥공단 이용매뉴얼 <br>
+재창업패키지, 교육과 멘토링 6천명 지원<br>
+수료생 69.7% 재창업 의지증가, 59.5% 재창업<br>
+소상공인시장진흥공단 지식배움터 홈페이지에서 회원가입 후 신청<br>
+⚫연안식당’ 디딤, ‘공화춘’ 본격 영업 시작<br>
+지난 해 프랜차이즈 사업을 위한 업무협약 이후 첫 매장 오픈<br>
+⚫주휴시간도 근로시간에 포함해야<br>
+주휴시간 포함하면 월 소정근로시간 209시간<br>
+급여산정 : 시급 * 209<br>
+⚫자영업자가 ‘오해’하기 쉬운 세금 관리 상식<br>
+부가세 공제 안 되는 차량 주의<br>
+세금계산서 주민등록번호로 받으면 공제 안돼<br>
+⚫5월 장려금∙종소세, ‘손안에 홈택스’로 간편하게 신고<br>
+국세청, 5월 1일부터 모바일 홈택스(앱) 서비스 확대<br>
+신고 안내문 및 근로소득 스마트폰으로 조회<br>
+⚫오피스텔 임대 일반vs간이vs면세…현명한 선택은?<br>
+임대료 적으면 장기적으로 볼 때 간이과세자 유리할 수도<br>
+주거용 오피스텔 임대 시 중과세 여부 검토해야<br>
+⚫중기부, 개인·법인 포괄 창업통계 개발<br>
+개인·법인기업 등 창업 전반의 현황 분석 위해 신규통계 개발<br>
+2018년 창업기업, 134만개로 2년 연속 증가</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://1boon.kakao.com/wngproject/5cc28e0aed94d20001127ad7?view=katalk</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>황석현</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+유진호님 감사합니다. ^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘의 생활문화 소식<br>
+♦땅속의 사과 '감자' 보관법…양파와 함께 두면 안 된다?<br>
+싹이 나는 것을 방지하기 위해 사과와 함께 보관하는 것도 좋은 방법<br>
+감자와 함께 두면 둘 다 금방 상하므로 같은 공간에 두지 않는 것이 좋아<br>
+박스째 구매시 일일이 신문지로 싸서 보관 할 것 <br>
+♦'남성 갱년기' 온 걸까?.. 대표 증상과 극복법<br>
+운동과 치료를 병행한 환자군에서는 호르몬 수치가 145% 증가 효과<br>
+*갱년기 증상<br>
+1. 늘 피곤하고 쉽게 지친다. <br>
+2. 일의 능률이 떨어진다. <br>
+3. 우울한 기분과 함께 쉽게 눈물이 난다. <br>
+4. 인지능력이 저하되어 기억력이 감퇴한다. <br>
+5. 근육 감소와 체지방 증가로 체형의 변화가 나타난다. 팔다리는 가늘어지고 배가 나온다. <br>
+6. 성욕이 저하되고 성에 대한 관심이 줄어든다. <br>
+7. 체모가 줄고, 수염 자라는 속도가 늦어진다. <br>
+8. 발기부전, 사정량 감소, 성적 쾌감 저하 등의 성기능 장애가 나타난다.<br>
+♦연예인보다 빛나는 PD… ‘연봉 40억’ 피디테이너 시대<br>
+60代 단톡방 강호동ㆍ유재석보다 나영석에 관심” 압도적<br>
+나PD 여행ㆍ힐링ㆍ먹방 ‘세계관’ 구축… 예능권력 PD로 이동<br>
+제작비 대비 높은 시청률, 예능PD 몸값 드라마PD보다 높아<br>
+♦하체 비만 부르는 생활 습관<br>
+<1> 다리 꼬고 앉기 <br>
+<2> 떡볶이는 나의 소울푸드! 맵고 짠 음식 즐겨 먹기<br>
+<3> 1일1빵. 밀가루 매니아  <br>
+<4> 10분이면 식사 끝. 대강 씹어 넘기는 식습관 <br>
+<5> 양말 안 신기 <br>
+♦치맥 즐기는 男 '바람 스쳐도 아픈 통풍' 조심해야<br>
+육류 내장·생선 등 과다섭취 때<br>
+요산 결정 쌓여 염증·통증 유발<br>
+잦은 치맥·지방간도 위험 높여<br>
+환자92% 남성...40~50대가 절반<br>
+혈중 요산농도 10㎎/㎗이상이면<br>
+꾸준히 약 먹고 술 끊는게 좋아<br>
+♦[남녀+] 가장 참기 힘든 배우자의 태도<br>
+'결혼 후 배우자가 본인을 대하는 태도 중 가장 참기 힘든 사항'에 대한 질문<br>
+남성의 34.2%가 '부정적'인 태도 <br>
+이어 ‘존중심 부족’(27.0%)과 ‘무관심’(20.0%), ‘냉소적’(13.0%) 등의 순<br>
+여성은 36.1% '냉소적'인 태도<br>
+다음으로 ‘무시’(23.2%), ‘무관심’(18.3%), ‘부정적’(15.2%)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+매경이 전하는 세상의 지식(4월 27일)<br>
+1. 한국은행이 1분기 GDP 증가율이 약 10년 만에 최저인 -0.3%를 기록했다고 발표한 직후 노무라증권이 한국의 올해 경제성장률 전망치를 1.8%로 내림. 외국 기관에서부터 한국 경제에 대한 전망이 비관적으로 바뀌고 있는 것을 보여주는 것이어서 주목됨. <br>
+2. 서울시가 2017년 3월 역사문화 보존을 이유로 일방적으로 밀어붙인 종로구 사직2구역 직권해제를 놓고 조합과 벌인 소송에서 최종 패소함. 박원순 서울시장 취임 이후 추진해온 재개발 출구전략에 제동이 걸림. <br>
+3. 김정은 북한 국무위원장이 푸틴 러시아 대통령과의 정상회담에서 비핵화 협상 교착의 책임을 미국 탓으로 돌림. 조선중앙통신은 26일 김 위원장이 푸틴 대통령과 정상회담을 하면서 조선반도의 평화는 미국의 차후 태도에 따라 좌우될 것이라고 밝혔다고 보도함. <br>
+4. 글로벌 이용자 4억명을 돌파한 토종게임 `배틀그라운드`가 일부 국가에서 유해매체로 지정되며 출시 2년만에 흥행가도에 빨간불이 켜짐. 다음달에는 세계보건기구가 게임중독을 질병으로 분류할 예정이어서 K게임 산업 전체에 대한 위기로도 읽힘. <br>
+인천항 크루즈터미널이 개장한 26일 오후 터미널에 코스타 세레나호가 정박해 있다. /사진=한주형기자<br>
+사진설명인천항 크루즈터미널이 개장한 26일 오후 터미널에 코스타 세레나호가 정박해 있다. /사진=한주형기자<br>
+5. 세계에서 가장 큰 22만5000t급 크루즈선을 수용할 수 있는 수도권 첫 크루즈 전용 터미널이 26일 인천항에 문을 열었음. 인천은 중국인 관광객을 실은 크루즈선이 2016년 62척(16만명) 기항할 정도로 `크루즈 특수`를 견인할 전략적 요충지임. <br>
+6. 조 바이든 전 미국 부통령이 25일 대선 출마를 공식 선언하면서 2020년 미국 대선을 향한 18개월에 걸친 레이스가 본격 점화됨. 바이든 전 부통령은 미국 언론이 실시한 트럼프 대통령과 1대1 가상 대결에서 우위를 점하고 있음. <br>
+7. 증권거래세 인하, 유류세 한시 인하 조치 연장 등 세수 감소를 수반하는 정책이 줄줄이 예정된 가운데 올해 1분기 담뱃세가 작년 같은 기간 대비 4000억원가량 급감한 것으로 나타남. 각종 세수 상황에 이상 신호가 하나씩 감지되는 분위기임. <br>
+8. 생후 15개월 된 여아를 폭행해 숨지게 하고, 생후 18개월 된 남아를 뜨거운 물이 나오는 수도꼭지 밑으로 밀어넣어 화상을 입힌 혐의로 기소된 30대 베이비시터(위탁모)에게 징역 17년의 중형이 선고됨.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호정◡̈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+기린이찌방도없네요 내최애들</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이재훈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그건 방사능 함유</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호정◡̈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+헐</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>호정◡̈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+재훈님은 방사능걱정때문에 일맥주를못마시겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://n.news.naver.com/article/018/0004364269</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이재훈</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+‘방사능 위험도’ 한눈에 확인할 수 있는 일본 맥주 제조공장 지역 코드 만일 이 지역에서 생산된 음식이라면 두말할 것도 없이 방사능에 오염됐다고 봐도 무방하다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>채원병</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오홍</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>채원병</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+귿귿</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뽐뿌 [옥수수]  극한직업 (주말 무료/무료)<br>
+http://m.ppomppu.co.kr/new/bbs_view.php?id=ppomppu&no=315778</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+극한직업 무료네요 즐거운 주말 보내시기 바랍니다 ㅎㅎ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:10</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>채원병</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘 저녁에 또 봐야겠네요 감사합니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:11</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+금일 몸살이 너무 심해 뉴스를 쉬겠습니다. 다른분들께 부탁드립니다 ㅜ ㅜ;;</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>윤상진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+푹 쉬시고 쾌차하세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진 15장</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+■ 4월 4일 아이보스 마케팅 뉴스클리핑<br>
+1. 구글플러스, 8년 만에 서비스 종료<br>
+구글이 페이스북·트위터에 대항할 SNS로 야심 차게 선보였던 구글플러스(G+)의 서비스 종료를 선언했다고 미 IT매체들이 전했다. IT매체 안드로이드 폴리스는 구글플러스는 오늘 사망했다라며 2011년 6월 28일~2019년 4월 2일이라는 생존기간을 표시했다. 구글은 오늘 아침부터 구글플러스의 폐쇄 절차가 시작됐다라면서 사용자 계정 정보가 플랫폼에서 순차적으로 삭제될 것이라고 말했다.<br>
+2. 네이버, 늦은밤 2시간 넘게 불통... 이용자 불편 호소<br>
+네이버에 따르면 2일 오후 10시 20분부터 다음 날 0시 30분까지 2시간 10분가량 블로그 접속이 정상적으로 이뤄지지 않았다. 관련 내용이 포털 실시간 검색어 1위를 차지하기도 했다. 이로 인해 이용자들은 SNS 등에서 불편을 호소했다. 네이버는 이에 대해 갑작스러운 오류로 장시간 불편을 드린 점 진심으로 사과드린다고 말했다. 또 앞으로 이런 일이 발생하지 않도록 최대한 사전에 점검하고 살펴 보다 안정적인 서비스를 제공할 수 있도록 하겠다고 덧붙였다.<br>
+3. 인플루언서 마케팅, 예산 14% 가짜 팔로워에 낭비<br>
+인플루언서 마케팅이 갈수록 확대되는 가운데 예산 중 일부가 가짜 팔로워에 낭비되고 있는 것으로 나타났다. 미국 인플루언서 마케팅 에이전시 미디어킥스(Mediakix)에 따르면 미국 내 마케팅 담당자의 2명 중 1명이 인플루언서 마케팅의 주된 과제는 가짜 팔로워를 가려내는 것이라고 답했다. 가짜 계정이 빈번한 인플루언서 계정이지만 앞으로도 인플루언서를 활용한 마케팅은 증가할 것으로 보인다. 식품의약품안전처와 공정거래위원회 등에 따르면 올해 인스타그램·페이스북 등 주요 소셜미디어 업체와 협력해 인플루언서가 유통하는 제품과 광고를 단속한다고 밝혔다.<br>
+4. 서울시, 여성 창업자 최대 700만원 지원<br>
+서울시는 최대 700만원을 지원받을 서울 여성 스타트업 참여자를 20일까지 모집한다고 밝혔다. 서울 여성 스타트업은 기업가정신, 마케팅, 세무 등을 교육한 뒤 심사를 거쳐 15명에게 자금을 지원해주는 프로그램이다. 관심 있는 여성 예비 창업자는 서울시 여성 능력개발원 홈페이지에서 자세한 사항을 확인해 이메일로 접수하면 된다.<br>
+5. 창업지원 기업, 5년 생존율 일반 기업 2배 높아<br>
+창업진흥원이 중소기업연구원에 위탁해 실시한 창업지원기업 이력·성과 조사에 따르면, 2017년 기준 창업 지원 기업의 5년 생존율은 53.1%로 일반 창업 기업의 생존율 28.5% 보다 높았다. 이번 조사는 창업지원사업을 수행한 창업기업을 대상으로 생존율, 고용성과, 재무성과 및 혁신성과 등을 추적하는 방식이다. 2009년부터 2017년까지 지원받은 기업 2만2334개를 대상으로 실시했다.<br>
+6. 미 소매판매, 시장점유율 사상 첫 온라인이 오프라인 앞서<br>
+미국의 소매판매에서 온라인 쇼핑이 차지하는 시장 점유율이 사상 처음으로 오프라인 판매를 넘어섰다. 베스포크 투자그룹이 미 상무부가 전날 발표한 2월 소매판매 보고서를 분석해 투자자들에게 보낸 메모에 따르면 온라인 쇼핑은 새로운 이정표를 세웠다. 상무부 통계 보고서를 보면 지난 2월 미국 소매판매에서 온라인 매출 부문이 전통적인 오프라인 소매판매 부문을 근소한 차이로 제쳤다. 베스포크 투자그룹 공동창업자 히키는 CNBC와의 인터뷰에서 전자상거래의 거대 기업인 아마존이 온라인 매출 증대의 주요 요인으로 작용했다고 분석했다.<br>
+7. 블록체인 기반 SNS 스낵, 오픈 베타테스트 시작<br>
+블록체인 기술기업 시그마체인은 블록체인 기반 SNS 메신저 스낵(SNAC)의 오픈 베타테스트를 이달 중 시작한다고 밝혔다. 오픈 베타테스트 참가 희망자는 퓨처피아 공식 홈페이지에서 신청하면 된다. 테스트 참가자에게는 보상으로 4000스낵이 지급된다. 보상으로 지급되는 암호화폐는 개당 가치가 원화와 동일한 스테이블 코인 스낵(SNAC)이다. 이용자는 스낵으로 쇼핑, 유료 콘텐츠 구입 등을 할 수 있다.<br>
+---<br>
+[매일 카톡으로 뉴스보기]<br>
+www.i-boss.co.kr/ab-5883-62</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>안성희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+빠른 쾌유를 빕니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+플러스친구 '오소(오늘소식) 경제시사 한줄요약'의 게시글을 공유했습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김우용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+몸조리잘하세요ㅜㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>로아</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1. 낮아진 예타 문턱 정치권 외풍 우려<br>
+https://www.snek.ai/home/topics/economy/27280154<br>
+2. 美中무역협상 낙관 전망에 상승<br>
+https://www.snek.ai/home/topics/economy/27280155<br>
+3. 세계최초 5G 한국 3일밤 전격 상용화<br>
+https://www.snek.ai/home/topics/economy/27280156<br>
+4. 작년 코스피 상장사 순이익 6.7% 감소<br>
+https://www.snek.ai/home/topics/economy/27280157<br>
+5. SKT도 5G 무제한 요금제 출격<br>
+https://www.snek.ai/home/topics/economy/27280158<br>
+6. 부동산 공시가격 논란 제도 선진화로 해법 찾아야<br>
+https://www.snek.ai/home/topics/economy/27280159<br>
+7. 작년 보험사 대출 16조 증가 연체율도 상승<br>
+https://www.snek.ai/home/topics/economy/27280160<br>
+8. 남성·세명전기공업 명문장수기업으로 선정<br>
+https://www.snek.ai/home/topics/economy/27280161<br>
+9. 최태원 부당대출 의혹 한투증권 기관경고<br>
+https://www.snek.ai/home/topics/economy/27280162<br>
+10. 내년부터 스마트폰 보증기간 1년 → 2년<br>
+https://www.snek.ai/home/topics/economy/27280163<br>
+부동산경제토론방<br>
+https://open.kakao.com/o/gyV9n0ab<br>
+비번 bmw7</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김준희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년 4월 4일 뉴스/정책 브리핑<br>
+ <br>
+잠깐의 실수로 사람 한번 놓치면 그런 사람 다시 얻기가 너무 힘든 세상입니다. 선함을 가지고 이용하지 말것이며 진심을 가지고 농담하지 말아야합니다. ” <br>
+ <br>
+ <br>
+[ 정치/외교 ]​<br>
+1. 창원시 성산구와 통영시·고성군에서 치러지는 4.3 국회의원 보궐선거 잠정 투표율이 51.2%로 잠정 집계됐으며, 정의당 여영국 후보와 자한당 정점식 후보가 당선됐다고함<br>
+민주당은 이번 선거에 단 한곳도 승리를 하지 못해 청와대 책임론이 불거질 것으로 보이며 민주당 내부 단합도 빠르게 와해될 가능성이 높음<br>
+ <br>
+2. 한국행에 나선 탈북민 3명이 지난 1일 베트남에서 체포돼 우리정부에 도움을 요청했지만 기다리라며 사실상 방치를 하다 결국 탈북자들은 중국으로 추방 당해 강제 북송위기에 처해졌다고함<br>
+ <br>
+3. 북한이 중국 해운업체에 남포항과 중국 산둥·랴오둥반도 간 항로 독점운영권을 넘겼으며 이를 시작으로 중국의 ‘일대일로 구상’에 참여하려한다고함<br>
+ <br>
+ <br>
+[ 정부/정책/지자체 ]<br>
+ <br>
+1. 정부가 DMZ를 처음으로 민간에 개방하기로 했지만 DMZ 관할권을 지닌 유엔군사령부는 북한군 사정권이어서 관광객에 대한 안전 대책 확보를 이유로 이 같은 계획에 승인을 미룬 상태라고함<br>
+ <br>
+2. 경찰서 내 민감한 정보의 유출을 사전에 차단하기 위해 경찰이 서울과 부산·인천 등 주요 도시의 일선 경찰서 서장실과 회의실에 무선 도청 탐지시스템을 구축한다고함<br>
+ <br>
+ <br>
+[ 경기종합 ]<br>
+1. 40년동안 매년 임금 가이드라인을 발표했던 경총이 최저임금이 급격하게 인상되면서 경총의 가이드라인이 무력화되자 이 가이드라인을 올해부터 폐지시킨다고함<br>
+ <br>
+2. 지난 2017년 사상 최대치를 갈아치웠던 기업 이익이 1년 만에 급격히 악화되며 지난해 코스피 상장사의 순이익이 10조원이나 감소했으며 올해도 상장사 이익은 악화할 가능성이 높다고함<br>
+ <br>
+3. LG화학과 삼성SDI가 최근 국내에서 발생한 에너지저장장치(ESS) 화재사고로 인한 판매중단 영향 탓으로 올해 1분기 중대형 배터리 사업에서 적자를 기록할 전망이라고함<br>
+ <br>
+4. 현대자동차가 2017년 노동조합이 임금인상을 요구하며 기록적인 파업을 한 탓에 신차가 나오며 판매시기를 놓쳐 지난해 구형 차량 약 3만 대가 재고로 쌓였다고함<br>
+- 지난해 현대차 국내외 법인의 완성차 재고는 6조 4,866억원으로 2017년(9,613억원)보다 6,043억원(62.8%) 증가했음<br>
+ <br>
+5. 멀티플렉스 극장체인 메가박스가 코스닥 입성을 목표로 IPO에 나서는 가운데 시장에서는 메가박스의 밸류에이션(가치평가)을 7500~8500억 원 수준으로 보고 있다고함<br>
+ <br>
+ <br>
+[ 금융/교통/부동산 ]<br>
+1. 3일(현지시간) 야간선물이 전일과 같은 286.85에 마감해 4일 코스피는 강보합 출발이 예상된다고함<br>
+ <br>
+2. 오는 29일부터 주식시장 개장 전 시간 외 종가 매매 운영 시간이 1시간에서 10분으로 줄어들고 개장 전 시간 외 대량 매매 시간은 1시간 30분에서 1시간으로 단축된다고함<br>
+ <br>
+3. 금감원이 김의겸 전 청와대 대변인의 특혜대출 의혹이 사실로 밝혀지면 대출을 취급한 KB국민은행에 대한 특별 검사에 착수한다고함<br>
+- 김 전 대변인이 ‘부동산 투기 논란’으로 사퇴했지만 아내 명의로 나간 대출이 김 전 대변인의 군산 제일고 1년 후배의 ‘지점장 전결’로 처리됐다는 점에서 유착 의혹이 제기되고 있음<br>
+ <br>
+4. 제3 인터넷전문은행에 대한 본격적인 심사가 시작됐으나 토스뱅크의 경우 대주주인 비바리퍼블리카의 기업등급이 ‘CCC+’로 낮아 적격성 심사를 넘지 못할것으로 예상된다고함<br>
+ <br>
+5. 신한카드가 카카오페이와 함께 '종이 없는(Paperless)' 환경을 구축하기 위해 카드 영수증 디지털화를 추진한다고함<br>
+ <br>
+6. 제주항공이 여름 성수기를 앞두고 1인당 10㎏ 이하의 짐만 반입이 가능하도록 수하물 규정을 강화한다고함<br>
+ <br>
+7. SRT(수서고속철도)가 오가는 국내 최장의 율현터널(50.3㎞) 일부 구간에서 선로가 상하좌우로 휘는 '궤도 뒤틀림' 현상이 발생해 한 달째 심야 보수 공사가 진행 중이라고함<br>
+- 궤도 뒤틀림은 심할 경우 탈선이나 전복 사고로 이어질 가능성도 있음<br>
+ <br>
+8. 오는 7월 주 52시간 근무제 확대 시행을 앞두고 경기도 버스업체들이 '운전기사 확보 대란'을 맞고 있어 노선 폐지나 축소도 우려된다고함<br>
+- 지금은 격일제 근무지만 1일 2교대로 전환해야 위법을 벗어날 수 있기 때문임<br>
+ <br>
+[ 사회/이슈 ]<br>
+1. 우리나라 양육비 지급 이행률은 32%로, 10명 중 7명은 비양육자로부터 양육비를 지급받지 못하고 있다고함<br>
+ <br>
+2. 김명환 민노총 위원장 등 민노총 조합원 25명이 3일 ‘탄력근로제 확대 반대’ 집회 중 국회 경내로 무단진입을 시도하다 국회 담장이 파손되고, 경찰과 민노총 조합원들 간에 몸싸움이 벌어졌다고함<br>
+ <br>
+ <br>
+[ 국 제 ]<br>
+1. 3일(현지시간) 뉴욕증시 3대지수는 미중 무역협상 타결 가시권으로 0.15~0.60% 상승 마감했다고함<br>
+ <br>
+2. 데이터센터용 CPU 시장에서 90% 이상의 점유율을 확보하고 있는 인텔이 메모리, 솔리드스테이트드라이브(SSD) 등 데이터센터용 제품을 대거 출시하면서 900조원 데이터센터 시장을 공략한다고함<br>
+ <br>
+ <br>
+[ 궁금한 이야기 ]<br>
+1. 내년부터 스마트폰과 노트북 메인보드의 품질보증기간이 2년으로 연장되며, 일반열차가 지연될 때도 KTX 지연 시와 동일한 수준으로 보상하고, 열차에 탑승하지 못했을 경우 열차 출발 후 경과 시간에 따라 환불액이 결정된다고함<br>
+ <br>
+2. 환자 몸에서 채취한 면역세포 등을 배양한 뒤 다시 넣어주는 세포 치료가 국내에선 불법이지만 일본 등 해외에선 허용되기 때문에 국내에선 금지된 치료를 받기 위해 해외로 나가는 말기 암 환자가 늘고 있다고함 게다가 진료비가 수천만원에서 수억원에 달해 환자들의 부담도 커지고 있다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이장희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 자료 올려주시는 분들 항상 감사드립니다. 방장님 쾌차하시구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>태원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+★★4월 4일 주요신문 헤드라인★★<br>
+《경 제》<br>
+☞공무원·군인연금에 내줄 돈 눈덩이처럼 불어 작년 940조...`연금충당부채`가 전체의 56%...국가부채 증가액의 74% 차지...공무원 17만명 늘리는 文정부...부채 증가 속도 더 빨라질수도<br>
+☞`깡통호텔` 급증…초라한 관광한국...숙박시설 경매 5년만에 최대...감정가 90억 평창군 호텔...12회 유찰끝에 15억 낙찰...평창올림픽 앞서 과잉공급...사드로 中관광객 줄어들자...지방 숙박시설 버티지 못해<br>
+☞ADB, 한국 올해 성장률 2.6%→2.5%로 하향...2020년도 2.5%...국회예산정책처도 올해 2.7%-2.5%로 낮춰<br>
+☞탄력근무제 1년 도입하면 일자리 29만개 늘어나...파이터치연구원 연구보고서...탄력근무제 실시하지 않을 때보다...임금소득 4조원 증가할 걸로 추산...기업수 등 '노동수요' 부문도 활성화<br>
+ <br>
+《금 융》<br>
+☞우리은행 핀테크랩 출범…최종구 금융위원장 핀테크 내실화 시작 단계...우리은행 핀테크랩 '디노랩' 출범식 참석...기존 금융권-핀테크업체 협력 주문<br>
+☞공공성 큰데...대형병원도 카드수수료 인상 반기...병원協, 대형병원 예외적용 요청...수익성 낮아 수수료인상 부담 커...일부는 상한선 2.3%까지 통보받아...당국은 타업종 반발 고려해 난색<br>
+☞미래에셋스마트알파 펀드, 단기채로 안정적 수익…주식에 20~30% 베팅...페어트레이딩으로 초과수익...출시 4개월만에 1000억 몰려<br>
+☞亞오피스 활황에 `신상` 리츠펀드도 훨훨...미국發 긴축 우려 해소되자...아시아 리츠펀드에 훈풍...日·싱가포르 부동산 견고해...1개월 수익률 3% 넘기도<br>
+ <br>
+《기 업》<br>
+☞SK하이닉스, 직원 1인당 영업익 8억원…100대 기업 중 `톱`...SK하이닉스가 지난해 직원 1인당 영업이익이 가장 높았던 기업으로 선정됐다.<br>
+☞금감원, 소송 중인 사안은 종합검사 대상서 제외...2019년 유인부합적 종합감사 세부방안 확정...삼성생명 즉시연금처럼 소송중인 사안...준법성 검사 실시 않기로...금융사 수검부담 완화<br>
+☞홍콩투자청, 365mc 인공지능 지방흡입 시스템에 `러브콜`...AI는 비만치료 데이터·연구력, 마이크로소프트 IT기술력 집약...홍콩 사이언스&테크놀로지 파크, 과기대·홍콩대 공동연구 의향<br>
+☞대한항공, 트립어드바이저 평가 10위권 밖으로...‘2019 세계 톱10 항공사’ 순위발표...스카이트랙스 평가 이어 줄줄이 하락<br>
+ <br>
+《부동산》<br>
+☞재개발 등 정비사업 손실 합리적 보상기준 만든다..서울시 '제도개선 용역' 이달 돌입<br>
+☞예타제도 20년만에 개편, '균형발전'에 방점…'지방 SOC' 심폐소생..인구과밀 해소·주민 생활여건 개선 교통 인프라 탄력..영일만 대교 포함한 동해안고속도로 사업에 관심..1월 예타 면제 대상 규모만 24조…무분별한 개발 우려도<br>
+☞1분기 지식산업센터 신규승인 역대 최다량 기록..3월 말 기준 전국 지자체 및 관리기관에서 신설 또는 변경 승인(최초승인일 기준)을 받은 지식산업센터는 총 1053곳..올 1분기 32건의 신규 승인이 이뤄져 지난 2018년 2분기 및 3분기(각 30건)에 세운 기록 넘어<br>
+ <br>
+《사회.유통》<br>
+☞공무원 2022년까지 17만명 증원...연금부담액 최대 28조 추가 필요..‘스노볼’ 나랏빚 무서움 잃은 정부..2017년 신규채용 공무원 2.8만명 충당부채 750억<br>
+☞‘나트륨 범벅’ 편의점 도시락…소금 가장 많은 제품은 세븐일레븐 ‘대장부도시락 치킨편’..1인 권장량은 2,000㎎이하, 하나에 2,397㎎에 달하기도..15종 평균은 1,393㎎..나트륨 과다 섭취 시 고혈압 및 뇌졸중, 골다공증 확률 높아져..라면, 짜장면 등도 고나트륨 식품<br>
+☞방송사에 부는 온라인화 바람...짧은 콘텐츠 소비 맞춰..CJ ENM·JTBC, 디지털 스튜디오 채널 다양화..SBS는 온라인 24시간 뉴스채널 개설 예정<br>
+☞소리만 요란했던 인터넷은행 2년.. 中, 대출심사 위해 SNS까지 보는데…韓은 빅데이터 꿈도 못꿔..빅데이터 규제에 중금리 대출 등 새 금융서비스 도입 못해..수수료 수익 전체 90% 차지하는데 금융당국 개입도 심해..내년부터 시중銀과 동일한 잣대…자본건전성 문제도 부담<br>
+ <br>
+《국 제》<br>
+☞미중 무역협상 중대 분수령…합의문 초안검토 개시<br>
+관세철회·강제이행장치 난제…트럼프 잘 돼간다 낙관<br>
+IMF·WTO 경기악화 경고…무디스 3개월 내 안 풀리면 경기침체<br>
+☞백악관 이어 美합참 한미동맹은 동북아 안정과 안보의 린치핀<br>
+던퍼드-정경두, 긴밀한 협력 지속-안보 이슈 긴밀한 조율 유지<br>
+☞삼각파도속 나토 '70돌'…美동맹 '흔들' 러 '압박' 中 '새 위협'<br>
+트럼프 일방주의 드라이브 속 美-유럽회원국 방위비 분담 문제 놓고 갈등<br>
+러시아 2008년 조지아 무력 침공·2014년 크림반도 강제병합 등 군사적 위협<br>
+화웨이 통신장비·중국 일대일로 참여 등 중국 새로운 위협으로 부상<br>
+☞美, 中일대일로 정상포럼 보이콧…'불순한 차이나머니' 비난<br>
+국무부 고위관리 불참…2017년 포럼 땐 백악관 선임보좌관 파견</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>옌</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+# 제 1294호 신문브리핑(2019년 4월 4일) #<br>
+* 이번 주 금~토 양일간 대전 출장 관계로 4월 5일(금) 신문브리핑 및 해양뉴스브리핑은 휴간 예정이니 양해 부탁드립니다.<br>
+촛불에 감사하면 전등불을 주시고, 전등불에 감사하면 달빛을 주시고, 달빛에 감사하면 햇빛을 주시고, 햇빛에 감사하면 천국을 주신다.<br>
+- C.H. 스펄전<br>
+<< 정치/외교 >><br>
+특이내용 없음<br>
+<< 경제 일반 >><br>
+1. 한국이 3일 세계 최초로 5세대(5G) 통신 상용화에 성공함<br>
+- SK텔레콤, KT, LG유플러스 등 통신 3사는 이날 오후 11시에 갤럭시S10 5G 사전예약 가입자를 대상으로 개통을 시작했으며, 이로써 정부가 작년 12월 1일 5G 모바일 핫스팟을 통해 기업 대상(B2B) 서비스를 제공한 데 이어 일반 소비자도 스마트폰을 통해 5G를 이용할 수 있게 됨<br>
+2. 정부가 3일 홍남기 부총리 겸 기획재정부 장관 주재로 경제활력대책점검회의를 열어 선심성 예산의 낭비를 막기 위해 도입된 공공사업에 대한 사업성 검증(예비타당성조사·예타) 제도 개편방안을 확정함<br>
+- 예타를 통과하는 데 걸림돌이었던 경제성 및 지역균형발전 평가 항목 비중을 줄이거나 없애는 방식으로 이 제도를 완화하는 게 골자임<br>
+3. 정부가 향후 10년 안에 전체 석탄발전소의 37%인 22기를 폐쇄하기로 결정함<br>
+- 종전 관행과 달리 수명 연장을 막는 방법을 통해서이며, 신. 미세먼지 문제가 심각해서라지만 탈(脫)원전에 이어 탈석탄까지 공식화하면서 전기요금 인상이 불가피할 전망임<br>
+<< 금융/부동산 >><br>
+1. 금융위원회가 증권업을 핀테크(금융기술) 기업에 개방하는 방안을 검토하기로 함<br>
+- 핀테크 기업이 증권업에 쉽게 뛰어들 수 있도록 진입규제 개선 방안 등을 마련할 방침이며, 이에 따라 증권업 진출을 준비해온 카카오, 비바리퍼블리카 등의 수혜가 예상됨<br>
+2. 회사 경영권을 넘기는 과정에서 편의상 한 명이 여러 주주의 주식을 모은 뒤 한꺼번에 양도한 경우에는 과점주주 취득세를 부과할 수 없다는 대법원 판결이 나옴<br>
+- 아파트 건축업체 A사의 최대주주인 원씨는 2009년 12월 다른 주주들의 주식을 모두 사들인 뒤 주식 전부를 A사의 경영권을 양수하려던 STX건설에 전부 양도했으며, 용인시는 원씨가 회사 주식의 절반 이상을 소유하는 과점주주가 됐다고 보고 취득세 4억8000여만원 등을 부과했었음<br>
+<< 국제 >><br>
+1. 도요타자동차가 자체 보유하고 있는 하이브리드차(HV) 관련 기술 특허를 경쟁업체들에 무상으로 개방키로 함<br>
+- 글로벌 자동차 시장이 전기차(EV) 위주로 빠르게 재편되는 상황에서 도요타가 우위를 점하고 있는 하이브리드 시장을 키워 시장 변화에 대처하기 위한 조치로 분석되고 있음<br>
+2. 세계 최대 자산운용사인 미국의 블랙록이 주력인 주식·채권펀드로 유입되는 자금 증가세가 둔화되고 극심한 수수료 경쟁으로 실적이 악화되면서 부동산, 사모펀드 등 대체투자 사업을 대폭 강화하기로 함<br>
+- 블랙록의 운용 자산 규모는 지난 10년간 증시가 꾸준히 상승세를 타면서 작년 말 기준 6조달러(약 6800조원)까지 불어났으나 지난해 피델리티, 뱅가드 등이 수수료 무료 펀드를 내놓는 등 수수료 경쟁이 격화되면서 굴려야 하는 자산만 많고, 돈은 전처럼 많이 벌지 못해 압박을 받아왔음<br>
+3. 종합 부동산회사 미쓰비시지쇼(三菱地所)가 일본 역사상 가장 만기가 긴 채권인 50년 만기 회사채 발행에 나섰다고 3일 니혼게이자이신문이 보도함<br>
+- 발행 규모는 100억~150억엔(약 1000억~1500억원)이며, 미국에선 코카콜라 등이 100년 만기 회사채를 발행한 사례가 있지만 일본에서 만기가 50년 이상인 채권이 발행되는 것은 처음임<br>
+4. 구글이 2일(현지시간) 페이스북·트위터의 대항마로 야심차게 선보였던 소셜미디어 ‘구글플러스(G+)’의 서비스를 종료함<br>
+- 구글플러스는 구글이 사용자 간 메시지 전송, 뉴스 공유 기능 등을 추가해 페이스북과 같은 소셜미디어를 만들기 위해 개발한 서비스였으며, 서비스 초반엔 구글의 자회사인 유튜브와 자사 이메일 서비스인 지메일(Gmail) 사용자들을 기반으로 빠르게 성장할 수 있을 것으로 기대를 모았으나 결국 종료됨<br>
+<< 오늘 신문의 경제관련 용어 >><br>
+* 대체투자<br>
+- 채권이나 주식과 같이 전통적인 투자 상품 대신 부동산, 인프라스트럭처, 사모펀드 등에 투자하는 형태임. 국내 증시가 장기적인 침체를 벗어나지 못하고 2015년 3월 들어 기준 금리가 1%대로 하락하면서 채권 투자로 인한 수익 발생이 어려워지자, 투자자들이 안정성이 다소 떨어져도 수익성이 높은 곳으로 눈을 돌리면서 대체투자가 활발해졌음. <br>
+사회간접펀드, 벤처 기업, 원자재, 사모펀드, 선박, 테마파크, 항공기, 기숙사 등으로 대체투자 범위가 넓어지는 추세에 있음.<br>
+- 정보 출처 : 시사상식사전, pmg 지식엔진연구소</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년 4월 4일 최신마케팅뉴스<br>
+#1<br>
+Marketing Tip by Peter 현지화된 마케팅 7P 믹스가 필요하다.<br>
+시대가 변하면서 우리가 아는 4P믹스가 아닌 이제는 새로운 마케팅 7P 믹스의 시대가 도래하였습니다. 기존의 4P에 더하여 사람(People), 과정 관리(Process Management), 실체적 증거(Physical Evidence)를 더하여 마케팅 7P가 되는 것입니다. 만일 기업에서 영업이나 마케팅을 진행하고 있다면, 이제는 우리의 목표 고객이 누구인지를 먼저 파악한 다음에, 어떻게 하면 경쟁사와 다른 방법으로 선정한 목표 고객에 맞는 영업과 마케팅 전략을 수립하여 실행할 것인지 심각하게 고민해 보아야 합니다. <br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/adYBP<br>
+#2<br>
+'클릭 쇼핑' 美 오프라인 소매 매출 사상 첫 추월<br>
+미국 전자상거래 업계의 매출액이 지난 2월 오프라인 유통업계의 매출액을 추월했습니다. 온-오프라인 소매업계 매출액 역전은 사상 처음 발생한 것으로, 전자상거래 시장이 새로운 이정표를 세웠다는 평가인데 아울러 소위 ‘아마존 시대’가 한층 더 가속화되고 있다는 의견이 힘을 얻고 있습니다. 관계자는 아마존의 아성에 오프라인 유통업계가 곤욕을 치르고 있다”며 대형 매장이 특히 커다란 충격을 받는 상황”이라고 설명했습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/41DA9<br>
+#3<br>
+건강 식품 최신 트렌드 습득 통로 ‘소셜 미디어’<br>
+건강한 소비자들의 17%와 건강하지 못한 소비자들의 20%가 건강한 식품에 관한 최신 트렌드를 처음 접하게(first hear) 되는 채널로 ‘페이스북’을 꼽은 것으로 나타났습니다. 관계자는 건강한 식품과 관련한 최신 트렌드에 대해 소셜 네트워크가 한층 중요한 역할을 하고 있는 것으로 나타남에 따라 타깃 소비자층에 반향을 불러일으키고 정보를 공유할 수 있도록 유도하기 위한 방안을 제품 개발이나 겉포장, 브랜드 및 광고를 제작하는 과정에 제대로 반영하는 일이 중요해 보인다”고 이야기 했습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/UNHhE<br>
+#4<br>
+통신 세대 교체 선도할 것”...KT가 내놓은 5G 마케팅 전략 통할까?<br>
+불과 4년 전만해도 세계 통신업계는 5G에 대해 냉소적인 입장이었습니다. 당시 황창규 KT회장은 KT가 2018년 평창 동계올림픽에서 5G 시대를 먼저 선보이겠다”고 선언했습니다. 오는 5일 세계 최초 5G 서비스 론칭을 앞두고 KT는 자신감을 내비쳤는데 마케팅부문장인 이필재 부사장은 KT가 5G 준비에 가장 앞섰는데, 향후 패러다임과 시스템, 구조의 변화를 통해 융합플랫폼으로 새로운 경험이 될 것”이라고 말했습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/bPK8D<br>
+#5<br>
+돈 냈는데 광고나오네…오류난 유튜브 프리미엄<br>
+4월 2일 오후 12시부터 유튜브 프리미엄 가입자들을 대상으로 광고가 등장하는 오류가 발생했습니다. 앱 화면을 닫은 뒤에도 영상을 재생해 소리를 들을 수 있는 백그라운드 재생 서비스 및 결제 방식 변경 등도 '먹통'인 상태지만 아직까지 구글 측은 오류 원인이나 복구 시점 등에 대해 아무런 설명도 하지 않고 있어 이용자들의 불편이 계속되고 있습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/o4rfQ<br>
+#6<br>
+온라인에 고객 뺏기고 힘 못 쓰는 오프라인 유통株…ROE도 절반 수준<br>
+스마트폰·인터넷 대중화와 함께 열린 온라인 쇼핑 시대에 백화점·대형마트·편의점 등 오프라인 유통주들이 힘을 못 쓰고 있습니다. 고객들이 온라인 쇼핑 채널로 대거 이동하면서 실적 부진이 이어지고 있어서인데 기업의 이익창출 능력을 알 수 있는 자기자본이익률(ROE)에서도 오프라인 유통업체들은 온라인 유통업체들의 절반 수준으로 뒤처진 상태입니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/yNJIq<br>
+마케팅뉴스 구독하기<br>
+플러스친구 http://pf.kakao.com/_zGmfl<br>
+밴드   http://band.us/@mktedu<br>
+출처 : www.m-edu.co.kr<br>
+아는 것이 힘이다, 마케팅에듀</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019. 4. 4. (목) 1분 SNS 마케팅 뉴스<br>
+★ 지난 뉴스는 KOSOA 홈페이지 http://www.kosoa.or.kr 에서도 보실 수 있습니다. <br>
+1. 네이버 카카오 등 인터넷 기업 먹거리, 커머스에 있다<br>
+출처 : https://c11.kr/6fpi<br>
+네이버, 카카오 등 인터넷 플랫폼 기업들이 미래 먹거리 사업 중 하나로 커머스에 집중하고 있다. 다수의 이용자를 바탕으로 수익을 올리면서도 플랫폼 영향력까지 강화할 수 있기 때문이다.국내 최대 포털 네이버는 모바일 웹에 검색창만 배치한 구글식 첫 화면을 3일부터 적용했다. 기존 첫 화면에 있던 주요 뉴스와 실시간 급상승 검색어 등은 페이지를 오른쪽으로 넘겨야 볼 수 있다. <br>
+2. 온라인 쇼핑, PC 저물고 모바일이 대세...2030 여성 '시장 주도'<br>
+출처: https://c11.kr/6foy<br>
+온라인 쇼핑 시장 규모가 100조원을 넘어선 가운데 쇼핑 행태가 PC기반에서 모바일로 가파르게 이동하고 있다. 최근 모바일의 온라인 쇼핑 장악은 20~30대 여성이 이끌고 있다.4월 3일 소비자 조사 전문기관인 컨슈머인사이트와 한양대학교 유통연구센터의 '상품구입 행태 및 변화 추적조사'에 따르면 지난해 4분기 온라인 쇼핑시<br>
+모바일 이용은 전년대비 6% 증가한 57%로 나타났다. 반면 PC 이용은 전년대비 7% 감소한 32%로 조사됐다.<br>
+3. 호주 온라인 식료품 쇼핑업계 경쟁… 아마존, 이베이와 더불어 알리바바까지<br>
+출처 : https://c11.kr/6fp0<br>
+호주는 소매점에서 직접 운영하는 온라인 쇼핑몰을 통한 구매가 주를 이루고 있던 호주 식료품업계가 아마존과 중국계 온라인 쇼핑몰의 유입으로 바뀌고 있다고 ‘KATI농식품수출정보’에서 공개했다.이러한 변화의 배경에는 ‘알리바바’, ‘티몰’, ‘제이디닷컴’과 같은 중국계 온라인 쇼핑몰과 ‘코건’ 등 6개의 지역 온라인 쇼핑몰을 중심으로 신규 고객 유치 노력이 주된 이유로 꼽히고 있다. <br>
+4. 전자상거래법 개정, 정말 '진상법'일까<br>
+출처 : https://c11.kr/6foo<br>
+국내 전자상거래시장이 커지면서 관련법 개정 가능성이 높아진다. 소비자가 오픈마켓, 소셜커머스 등에서 물건 구입 후 피해를 입었을 시 판매자뿐만 아니라 플랫폼 제공사업자에게도 책임을 묻는 것을 골자로 한 ‘전자상거래 등에서의 소비자 보호에 관한 법률 전부 개정 법률안’(전상법 개정안)이 연내 통과될 것으로 보여서다.  <br>
+5. '카카오페이·토스' 간편송금 하루 1045억…1년새 3배 ↑<br>
+출처 : https://c11.kr/6fou<br>
+지난해 카카오페이, 토스 등을 활용한 간편송금 이용액이 하루 1045억원에 이르면서 1년새 200% 가까이 증가했다. 여기에 온라인쇼핑 증가로 전자지급결제대행서비스(PG)도 대중화되고 삼성페이, 네이버페이 등 간편결제까지 인기를 끌면서 전체 전자지급서비스 일평균 이용액은 하루 6500억원을 넘어섰다. <br>
+6. 아마존이 바꾼 소비패턴...美 소매판매에서 온라인쇼핑이 재래소매점 첫 추월<br>
+출처: https://c11.kr/6for<br>
+미국의 소매판매에서 온라인 쇼핑이 차지하는 비중이 사상 처음으로 재래식 소매점 부문을 앞지른 것으로 나타났다.미 경제매체 CNBC 방송은 2일(현지시간) 상무부 통계를 인용해 2일 이같이 보도했다.자동차 및 부품 딜러, 음식 및 음료점, 주유소, 일반 상품 소매점(오프라인 재래식 소매점), 온라인 소매점, 음식 서비스 및 주점 등 6개 섹터로 분류한 소매판매에서 온라인에서의 판매가 오프라인 소매점을 눌렀다는 것이다.<br>
+7. 美소매판매 사상 처음 온라인쇼핑이 오프라인 앞질러<br>
+출처 : https://c11.kr/6fox<br>
+사상 처음으로 미국의 전체 소매판매에서 온라인 쇼핑 비중이 전통적인 오프라인 쇼핑 비중을 앞지른 것으로 나타났다.CNBC는 2일(현지시간) 미 상무부 통계를 인용해 역사상 처음으로 상점이 없는 무점포 온라인 판매 비중이 일반 재래식 상점 판매 비중을 뛰어넘었다며 이 같이 보도했다. 소비트렌드를 오프라인에서 온라인으로 전환시킨 가장 주요한 요인으로 온라인상거래 거물인 아마존의 역할도 큰 것으로 평가됐다. <br>
+- 편집 : 사단법인 대한SNS운영자협회  - <br>
+협회가입안내 <br>
+-(사)대한SNS운영자협회 정회원 혜택 및 가입절차 안내 <br>
+http://www.kosoa.co.kr/board/bbs/board.php?bo_table=join_2&wr_id=8 <br>
+협회소식 <br>
+-[알림] 2019 제4회 KOSOA 총회 개최! <br>
+http://www.kosoa.co.kr/board/bbs/board.php?bo_table=news_1&wr_id=104 <br>
+-[알림] KOSOA X 히든프라이스 이벤트 진행! <br>
+http://www.kosoa.co.kr/board/bbs/board.php?bo_table=news_1&wr_id=103 <br>
+-[설문] 중국 티몰입점 중국 위생허가 제품 파악 <br>
+http://www.kosoa.co.kr/board/bbs/board.php?bo_table=news_1&wr_id=102 <br>
+KOSOA뉴스레터 구독하기 <br>
+플러스친구추가 → Kosoa <br>
+http://pf.kakao.com/_akpLd <br>
+밴드 추가 →Kosoa <br>
+https://band.us/n/acafw1N7J6u0Z <br>
+밴드 페이지 추가 → <br>
+https://band.us/@kosoa <br>
+출처 www.kosoa.or.kr <br>
+미래를 보아라 <br>
+소통 공유 사단법인 대한SNS운영자협회</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+매경이 전하는 세상의 지식(매-세-지, 4월 4일)<br>
+1. 13년 전 비슷한 철도 용지 개발계획을 발표했던 두 곳의 운명이 완전히 엇갈림. 뉴욕 허드슨야드가 새 랜드마크로 탈바꿈한 반면 서울 용산철도정비창 용지는 마른 나무와 잡초만 무성한 황량한 모습임. <br>
+2. 스위스 최고 이공계 국립대학인 ETH취리히를 이끌었던 리노 구젤라 전 총장이 매일경제와 단독 인터뷰하면서 스위스 정부가 ETH취리히에 매년 조 단위 예산을 지원하지만 대학 운영에 일절 간섭하지 않는다고 말함. <br>
+3. 정부가 지난 1월 24조1000억원 규모 국책사업에 대한 예비타당성(예타) 조사를 전격 면제한 데 이어 이번에는 지방 국책사업에 대해 경제성 평가를 완화하는 방식으로 예타 조사 장벽을 낮췄음. <br>
+4. 문재인 대통령이 경제계 원로들을 초청해 오찬 간담회를 함. 이날 원로들은 급격한 최저임금 인상, 근로시간 단축은 경제에 악영향이 있을 수 있다며 우려를 표했고 노동계의 무리한 요구에 선을 그어야 한다고 쓴소리를 함. <br>
+5. 지난해 코스피 상장기업 4곳 중 1곳이 적자를 기록한 것으로 나타남. 경기 침체와 인건비 등 비용 증가에 따른 기업 이익 악화가 현실로 드러난 것임. 4일 한국거래소에 따르면 지난해 유가증권시장에 상장된 기업 가운데 약 26%가 당기순손실을 기록함. <br>
+6. 중국 당국이 외자 게임에 대한 허가를 13개월 만에 재개함. 외자 게임 30종이 유통 허가권인 '판호'를 취득했지만 판호 발급이 기대됐던 '배틀그라운드(모바일판)' 등 한국산 게임은 하나도 포함되지 않은 것으로 나타남. <br>
+7. 비무장지대(DMZ)가 민간에 둘레길로 개방됨. 고성(동부)·철원(중부)·파주(서부) 3개 지역 총 42㎞ 구간임. 하지만 관광객 안전 문제가 지속적으로 제기되고 있어 정부가 남북 평화 무드를 지속하기 위해 성급히 추진하는 게 아니냐는 비판이 나옴.<br>
+8. 서울대가 2026년 개통 예정인 서부선경전철(서부선) 노선을 서울대 관악캠퍼스 내부까지 연장하는 방안을 서울시에 건의함. 서울대 정문의 고질적 교통체증을 완화하고 서울대 접근성도 높이겠다는 구상임. </div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4월 4일 간츄린뉴스<br>
+■4·3 보궐선거 창원성산 국회의원 선거에서 더불어민주당과 정의당 단일 후보인 정의당 여영국 후보가 극적 역전에 성공했습니다. 중앙선거관리위원회 최종 개표 결과 여 후보는 득표율 45.8% 기록, 45.21%를 얻은 자유한국당 강기윤 후보를 꺾었습니다.<br>
+■보궐선거에서 여당과 단일화한 정의당과 자유한국당이 한 석씩 나눠 가지면서 여야가 균형을 이뤘다는 평가가 나오고 있습니다. 당장 오늘 국회 운영위 회의부터 인사검증 실패의 책임을 놓고 여야의 격돌이 예상됩니다.<br>
+■문재인 대통령이 경제에 대한 고견을 듣겠다면서 어제 이전 정부의 경제 책임자들을 초청한 자리에서 정운찬 전 총리는 소득주도성장을 경제정책이라기보다는 인권정책으로 규정하며, 고용을 늘리려면 별도의 투자촉진책을 마련해 기업 투자를 활성화 시켜야 한다고 말했습니다. <br>
+■국회에서 탄력 근로 확대 법안 논의가 진통을 겪고 있는 가운데 노동계의 반발이 심해지고 있습니다. 민주노총 조합원들은 국회 앞에서 시위를 벌이다 충돌해 경찰에 연행되기도 했습니다.<br>
+■트럼프 대통령은 북미정상회담 당시 김정은 북한 국무위원장에게 당신은 합의할 준비가 안 돼 있다고 말했다고 밝혔습니다. 하노이 회담 당시 그와 산책을 했는데, 그는 합의 준비가 안 돼 있었다. 괜찮다. 왜냐면 우리는 아주 잘 지내고 있기 때문이라고 회고했습니다.<br>
+■김정은 북한 국무위원장이, 미국과의 비핵화 협상과 핵·미사일 시험 중지를 계속 유지할것인가에 대해, 곧 결정을 내릴 것이라고 북한 고위 관리가 밝혔습니다. 북한이 2차 북미정상회담 이후 비핵화 협상의 결렬 가능성을 언급한 것은 이번이 처음입니다. <br>
+■변종 마약을 상습적으로 투여한 혐의로 SK 창업주의 손자가 구속됐습니다 경찰은 남양유업 외손녀 황하나 씨도 출국금지하고 현대가 3세도 입건하는 등 재벌가 자제들을 상대로 수사를 확대하고 있습니다.<br>
+■버닝썬이 사건 무마를 위해서 전직 경찰관에게 거액을 전달했고 이 중 일부가 현직 경찰로 흘러 들어갔는데, 이런 클럽과 경찰과의 유착이 강남의 최대 클럽인 아레나에도 있었다는 구체적인 목격 제보가 들어왔습니다. <br>
+■가수 정준영 씨와 승리 등이 불법 촬영한 동영상 관련 정준영 씨는 이미 구속됐고, 승리와 최종훈 등을 포함해 7명이 입건됐습니다. 단체 대화방에 참여했던 또 다른 인물, 가수 로이 킴은 서둘러 귀국해 경찰 조사를 받겠다는 입장을 밝혔습니다. <br>
+■전남 고흥군이 지난 2015년 11월 전시 목적으로 4억 6000만 원에 산 윤봉길 의사의 유묵이 법정 다툼 과정에서 가짜로 드러났습니다. 독립을 위해 목숨을 바치겠다는 장부출가생불환이 쓰여진 이 유묵은 감정평가사 3명이 모두 가짜로 판정했습니다.<br>
+■18시간 만에 진화된 부산 해운대 운봉산 산불이 경작지에 처음 시작된 것으로 확인되며 수사가 본격화하고 있습니다. 운봉산 화재 첫 발생지는 반여동 세림어르신의 집 바로 뒤편 경작지인데 65살 A 씨가 논두렁을 태우다 발생한 것으로 보입니다.<br>
+■비트코인 가격이 2일부터 갑자기 치솟은 원인에 대한 분석이 나왔습니다. 4월 1일 만우절 장난에서 비롯된 것으로 가짜뉴스가 퍼지면서 비트코인 가격이 급상승한 것으로 확인됐습니다. 이와 관련해 비트코인 관련 주식들이 일제히 급등했는데 참 큰일입니다.<br>
+■한국도로공사와 경찰청은 탑승자 가운데 한 명이라도 안전띠를 매지 않은 차량에 대해 고속도로 진입을 제한하기로 했습니다. 고속도로를 포함한 모든 도로에서 안전띠 미착용으로 적발되면 운전자와 동승자는 3만 원, 13살 미만 어린이는 6만 원의 범칙금이 부과됩니다.<br>
+■초중고 학생들의 비만과 스트레스 등, 신체적·정신적 건강이 악화되자, 정부가 학생 건강증진 5개년 계획을 마련했습니다. 비만예방 프로그램 보급과 공기정화기 설치, 또 심리 상담 등 다방면으로 관리할 예정입니다. <br>
+■이른바 꿈의 통신으로 불리는 5세대, 5G 서비스가 세계에서 처음으로 국내에서 첫 상용화에 들어갔습니다. 스마트폰으로 음성과 데이터를 주고받는 시대를 넘어 인공지능이나 자율주행차 같은 최첨단 서비스가 우리 일상 곁으로 성큼 다가올 전망입니다.<br>
+■메이저리그 LA 다저스의 류현진 선수, 또 한 번의 호투로, 개막 2연승을 거뒀습니다. 앞으로 박찬호 선수도 이루지 못했던 개막 3연승에 도전합니다. 7이닝 2실점이라는 좋은 결과가 아쉬울만큼, 팀의 1선발로 부족함없는 활약을 펼쳤습니다. <br>
+■서울에도 벚꽃이 피었다고 기상청이 어제 공식 발표했습니다. 지난 달 26일, 경남 진해에서 벚꽃이 만개한 지 일주일이 지난 어제, 서울의 벚나무도 꽃망울을 터뜨린 것입니다. 서울의 벚꽃 개화 기준은 종로구 송월길의 왕벚나무입니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년4월4일 부동산 주요뉴스<br>
+서울 아파트값 5년만에 최대 하락..전세는 10년만 최저<br>
+https://hoy.kr/6sKcN<br>
+서울 속 '중국'.. 한국인 내쫓기는 대림동<br>
+https://hoy.kr/1tzpo<br>
+MB때 만든 방침 때문에 흑자 지방공기업 해체 위기<br>
+김포도시공사, 5년 흑자 불구 행안부 일방적인 '청산'만 주장<br>
+https://hoy.kr/19UpC<br>
+'도보 학세권' 프리미엄 단지 인기몰이<br>
+https://hoy.kr/bmyhq<br>
+세제혜택 줄었지만.. 다주택자 '임사' 해? 말아?<br>
+세제혜택 축소 불구, '6억 이하' 다주택자 고민.. 연내 등록해야 임대료 가산세 안내<br>
+https://hoy.kr/g8dg4<br>
+열 채 중 하나꼴로 산정 오류..단독주택 공시가격 '총체적 부실' 우려<br>
+지자체 산정가격 중 10%가<br>
+검증 단계서 오류 드러나<br>
+표준·개별주택 상승률 큰 차이엔<br>
+감정원 검증, 국토부 총괄 부실<br>
+https://hoy.kr/XDaAs<br>
+[알기쉬운 경제] 도시개발사업과 택지개발사업, 뭐가 다른가요<br>
+https://hoy.kr/2FhpX<br>
+수직 대신 수평 증축으로.. 리모델링 속도전<br>
+https://hoy.kr/lla57<br>
+감정원 부동산연구원장 공시가격엔 '참값' 없다.. 평가자 주관 개입되기 때문<br>
+제도 투명성 논란 일자 반박.. 조세 정책 경직성이 근본 원인<br>
+https://hoy.kr/cCIHP<br>
+비수도권·광역시 예타 문턱 낮아진다.. 선심성 사업은 어쩌나<br>
+갈수록 벌어지는 '격차' 좁히기.. 평가기준 수도권-비수도권 이원화·주관적 평가 항목 늘어 논란<br>
+https://hoy.kr/PlJlV<br>
+공시가 산정기관 일원화 주장에 정부 입맛대로 갈 수도 우려도<br>
+[서울 단독주택 고무줄 공시가]③<br>
+공시가 제도 개선 갑론을박<br>
+https://hoy.kr/QePbJ<br>
+옆집 공시가격은 32% 뛰었는데 우리집은 왜 59% 뛰어?<br>
+[서울 단독주택 고무줄 공시가]②<br>
+국토부 주민 반발 우려한 지자체 ..감사 착수<br>
+지자체 정부 기준 따랐다, 반발 커지자 책임 떠넘겨<br>
+전문가 구체 산정 근거 미공개가 혼란 불러<br>
+https://hoy.kr/ng13r<br>
+검단신도시에 내 집 있을까<br>
+https://hoy.kr/PtSTd<br>
+공시가격 기준, 한국선 집주인에도 비밀.. 미국선 15쪽 설명서 제공<br>
+정부 공개했던 적도 없고 공개해야 할 의무도 없다 <br>
+집주인들 세금 오르는데 이유도 안알려주나 부글.. 이의신청 작년 2배 넘을 듯<br>
+https://hoy.kr/Ne2qa<br>
+3월 분양 단지 43% 청약미달.. 서울 6곳은 모두 1순위 마감<br>
+https://hoy.kr/MS1SF<br>
+서울 4월 첫분양 흥행..'청량리역 해링턴플레이스' 최고 104대 1<br>
+비서울 지역은 희비 엇갈려..검단신도시 '대방노블랜드' 미달<br>
+https://hoy.kr/XlcNo</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[4/4 오늘의 주요 뉴스]<br>
+● 뉴욕증시, 4/3(현지시간) 美/中 무역협상 기대감 등으로 상승… 다우 +39.00(+0.15%) 26,218.13, 나스닥 +46.86(+0.60%) 7,895.55, S&P500 2,873.40(+0.21%), 필라델피아반도체 1,464.19(+2.27%)<br>
+● 국제유가($,배럴), 美 원유재고 증가 등에 약보합… WTI -0.12(-0.19%) 62.46, 브렌트유 -0.06(-0.09%) 69.31<br>
+● 국제금($,온스), 글로벌 증시 상승에 약보합... Gold -0.10(-0.01%) 1295.30<br>
+● 달러 index, 美/中 무역협상 및 브렉시트 우려 경감 등에 하락... -0.24(-0.25%) 97.11<br>
+● 역외환율(원/달러), +0.07(+0.01%) 1,134.67<br>
+● 유럽증시, 영국(+0.37%), 독일(+1.70%), 프랑스(+0.84%)<br>
+● 美 3월 민간고용 12만9천명↑…18개월래 최저<br>
+● 美 3월 마킷 서비스업 PMI 55.3…예비치 상회<br>
+● 美 3월 서비스업 PMI 56.1…18개월래 최저<br>
+● 미·중 무역협상 재개…타결 기대감 고조 속 쟁점 남아 <br>
+● 유로존 3월 서비스업 PMI 53.3…예상치 52.7<br>
+● 유로존 3월 합성 PMI 확정치 51.6…예비치 상회<br>
+● 유로존 2월 소매판매 전월비 0.4%↑…월가 예상 상회<br>
+● 파운드화, 아일랜드 재무장관 발언에 장중 상승폭 확대<br>
+● 독일 분트 수익률 2분기에 0.40% 회복<br>
+● 中, 연간 446억 달러 규모 수수료·세금 감면 방안 발표<br>
+● 금감원, 한투證 발행어음 부당대출 '기관경고'<br>
+● 건조특보에 태풍급 강풍...화재 비상<br>
+[기업/산업]<br>
+● 무주공산 5G폰 치고나간 삼성·LG…애플과 초격차 기회<br>
+● SK텔레콤도 '무제한 요금제'로 반격…'5G 고객 유치戰' 불붙었다<br>
+● LG CNS, 창원시와 스마트도시 조성키로<br>
+● LGU+ '5G 이노베이션 랩' 열어<br>
+● 전기레인지 앞세운 쿠쿠, 올해 '1兆 클럽' 가입 눈앞<br>
+● 락앤락, 美 최대 주방용품 유통사와 독점 공급 계약<br>
+● 현대리바트, 상생형 주방가구 전시장 늘린다<br>
+● 바디프랜드, 갤러리아百에 팝업 스토어…주요 제품 전시<br>
+● '백신名家'로 떠오르는 SK바이오사이언스<br>
+● 일반 의약품 가격 줄줄이 오른다…까스활명수 20%↑<br>
+● 에이티젠과 합병하는 엔케이맥스 NK세포치료제 개발에 전력투구<br>
+● 텔루라이드 효과…현대·기아차 美 판매 회복세<br>
+● KG그룹, 동부제철 인수한다<br>
+● LG전자 유럽서 프리미엄 TV·가전 대거 출시<br>
+● 에어부산, 부산·대구~코타키나발루 5월 신규 취항<br>
+● 우리금융, 국제자산신탁 지분 인수 추진<br>
+● 우리銀 ‘디노랩’ 출범 혁신기업 투자”<br>
+● 황수남 KB캐피탈 사장의 '승부수'…상용차·기업·개인대출 공격 확장<br>
+● 한숨 돌린 MG손해보험…금융위, 경영개선안 승인<br>
+● 정부·産銀, 박삼구 압박…'지분매각 카드' 꺼내나<br>
+● 日게임 SNK, 공모가 낮춰 코스닥 재도전<br>
+● 다이소, 작년 매출 2조원 육박<br>
+● 美서 소·맥 1800만병 팔았다<br>
+● 위기돌파 나선 르노삼성, LPG 신차 드라이브건다<br>
+● LS전선, 유럽 교두보 폴란드공장 가동<br>
+● 카카오, 카뱅 대주주 적격 심사 신청<br>
+● 무한경쟁 LCC…장거리·틈새노선 찾아야 생존<br>
+● 신약 출시 앞당길 첨단바이오법 발목 잡나<br>
+● 인보사 세포 잡아낸 STR검사 의무화<br>
+● 증권업 경쟁 치열해도 핀테크엔 문턱낮춰야<br>
+● 팔 車가 없어서…이달 수입차 판매량 '뚝'<br>
+● 수입차업체에 국내고객은 여전히 호갱?<br>
+● 서울모터쇼 출품 모델, 3대중 1대는 친환경車<br>
+● 中, 외국 게임 유통 허용했지만…한국産은 여전히 안 풀어줘<br>
+● 5G 출혈경쟁 우려…통신株 '뚝뚝'<br>
+● 外人 '반도체 투톱' 1주일 새 4000억 순매수<br>
+● 실적부진 터널 빠져나온 車·美·食 삼총사<br>
+● 수소기술 국제표준, 2030년까지 20% 확보한다<br>
+[경제/증시/부동산]<br>
+● 코스피 상장사 영업益 17분기만에 '뒷걸음질'<br>
+● 코스닥社 순이익, IT업종 늘고…유통·제조업은 크게 줄어<br>
+● 금감원, '즉시연금' 소송은 종합검사서 제외<br>
+● 금감원의 '밀어붙이기式 중징계안' 또 제동<br>
+● 금융위 핀테크 기업에 증권업 개방 검토<br>
+● 큰손의 귀환 교직원공제회 9000억 쏜다<br>
+● 글로벌 ETF, 브라질엔 '물타기' 터키는 '손절'<br>
+● 스톡옵션, 주주에겐 '쪽박'이라고?<br>
+● 정부 경고 안 먹혔나…'無면허' 외국계 IB 영업재개<br>
+● 장 개시전 시간외 거래 단축<br>
+● 脫원전 이어 脫석탄 공식화…미세먼지 대책도 좋지만 전기료 어쩌나<br>
+● SOC사업 '예타 문턱' 확 낮췄다<br>
+● R의 공포 커지지만…AI·빅데이터 등 신산업은 고속성장 이어갈 것<br>
+● 국내외 기관, 일제히 성장률 하향<br>
+● 홍남기 부총리 만난 S&P…최저임금정책 필요하면 보완해야<br>
+● 공공데이터 개방, 量은 늘고 있지만 쓸만한 건 적어<br>
+● 대학생 교육용 국내 빅데이터 '全無'…석·박사급 전문인력도 태부족<br>
+● 칸막이 규제 있는 한국선 아마존·알리바바 못 나와<br>
+● 반기문 시진핑에 미세먼지 우려 전달<br>
+● 원금 1년내 5배 불려준다는 데 혹했다가… 주식투자서비스 피해 50代 '최다'<br>
+● 수도권 균형발전 빼고 경제성 중점평가…신분당선 속도낸다<br>
+● 역품대 될까…서울대內 경전철연장 제안<br>
+● 공시가 논란, 불균형 바로잡는 과정<br>
+● 200m 거리 공시가 상승률 '들쭉날쭉'... 서울 해방촌 9~78% 올라<br>
+[정치/사회/국내 기타]<br>
+● 박삼구 경영 복귀 안돼…쐐기 박은 금융위원장<br>
+● PK 민심의 선택…희비 엇갈린 여야, 총선전쟁 향해 '잰걸음'<br>
+● 창원성산 여영국, 예상 밖 초박빙 승리…통영·고성 정점식 '완승'<br>
+● 대구공항 이전지 연내 선정…대구·경북, 개발 기대감 커져<br>
+● '금단의 땅' 고성 DMZ 둘레길 이달 말 개방된다<br>
+● 암참 내주 워싱턴行…한미회담 힘보탠다<br>
+● 韓 루니스호, 北 선박과 석유제품 불법환적 정황 드러나<br>
+● 北동창리 미사일 복구, 핵협상 활용 목적<br>
+[국제/해외]<br>
+● 나토 70년 생일에…유럽, 분담금 더 내라 청구서 내민 트럼프<br>
+● 인텔 데이터센터 솔루션 대거 내놔<br>
+● EU, 英에 최후통첩…12일까지 합의 못하면 브렉시트 기한 연장 불가<br>
+● 절박한 英 메이, 야당에 'SOS'<br>
+● 도요타, 특허 무상 공개…하이브리드車 시장 키운다<br>
+● '페북 대항마' 구글플러스, 8년 만에 사망<br>
+● 세계 최대 운용사 블랙록마저 대체투자 강화<br>
+● IMF 中, 개도국 빌려준 돈 공개하라…차이나머니 정조준</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒4월4일 목요일<br>
+신문을 통해 알게 된 것 들❒④<br>
+‾‾‾‾‾<br>
+1. 대형병원 MRI·CT 검사 급증 → 건보 혜택 영향. 한달전에 예약했는데 10시, <br>
+새벽 4시 검사도...현대 의학 MRI·CT나 혈액 검사, 생화학 검사 등에 의존하는 쪽<br>
+으로 바뀌는 것도 이유.(중앙) ​<br>
+2. ‘4대강보 연구용역’ 1곳도 참여 안해 →<br>
+ 두 번 째 유찰. 보 철거 등 향후 일정 차질 예상.환경부, 이달 말까지 입찰 연장. 정권 바뀌면 후폭풍... 무응찰은 ‘예상된 결과’.<br>
+(동아) ​​<br>
+3. 부모 유머, 자녀 정서 도움 → 아빠보다 엄마의 유머가 효과 더 커. 아이의 실수를 이용하는 유머나 부모가 자기를 비하하는 유머 등은 도움 안돼. 유아 등 459명 대상 조사.(문화) ​​<br>
+4. 일본의 고교 평균화 → 1967년 공립<br>
+학교만을 대상으로 시행. 우수학생 사립<br>
+학교로... 1964년 도쿄대에 193명 진학<br>
+ ‘히비야’(日比谷)고, 30년 만인 1993년<br>
+에는 단 1명... 전반적인 학력저하 비난<br>
+에 2003년 평준화 폐지.(문화)<br>
+ ​5.나이지리아 부유층, 비행기로 英피자 배달시켜 → 6347㎞. 비행기로도 다섯 시간 이상이 걸리는 거리... 英 일간지들,<br>
+ 나이지리아 농업부 장관의 비난성 발언 인용 보도.(문화)<br>
+ ​6.낙태 年 5만건 → 한국보건사회연구원 실태조사 결과(2017년). 2005년 조사의<br>
+ 7분의 1 수준으로 급감. 그러나 음성적 수술 포함 땐 발표 수치의 10배 추정.<br>
+(아시아경제)*낙태 이유 중 ‘경제적으로 양육어려움’이 2010년 16.4%에서 2017년엔32.9%로 2배... ​​<br>
+7.국제 소믈리에 협회 인증 공식 ‘물 소믈<br>
+리에’ → 물맛만 보고도 빙하수인지 암반<br>
+수인지 해양심층수인지를 구별하는 테스<br>
+트를 통과해야... LG전자 물과학연구소 근무 연구원 3명.(동아) ​​<br>
+8. ‘베이징에 있는 3일 동안 내내 파란 하늘’ → 반기문 ‘미세먼지 해결을 위한 범국가기구’ 위원장 내정자. 시진핑 주석<br>
+, 중국의 미세먼지 농도가 2013년과 비교<br>
+해 지역에 따라 51∼90% 낮아졌다는 구체적인 수치를 제시했다고.(서울) ​<br>
+9. 1조원가치 운운...소유권 분쟁 중 ‘훈민<br>
+정음 상주본’ → 국보 70호 간송본과 같은 판본이면서도 표제와 주석이 16세기에 새롭게 덧글로 씌어 있어 학술적 가치 더 높다고.(경향)▼1조원가치 운운.. 소유권 법적 분쟁 중인 훈민정음 상주본.분쟁 중 소장자 화재로 아랫부분이 불 탔다고...<br>
+10. 기타 → <br>
+① 4.3보선.1대 1.통영고성 한국당 당선,<br>
+ 창원성산은 정의당이 504표차 막판 역<br>
+전승. 지방선거 때 PK 내준 한국당,사실상 수복 평가...​​<br>
+②‘DMZ 둘레길’ 4월 1일 개방. 3곳 중 <br>
+‘동해 금강산권’ 1곳만 먼저 개방. 북 사격<br>
+권... 안전 때문​​<br>
+③‘김의겸 아직 관사에...’ 조국, 박근혜 탄<br>
+핵 땐 ‘반나절도 있으면 안된다. 포장 이사<br>
+하라’ 했다고  <br>
+④자료출처☞http://:goo.gl/GU8MEk <br>
+이상입니다. </div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+고성 산불 강풍 타고 속초 시내로 급속 번져…대피령 확산(속보)<br>
+2019-04-04 20:45:39</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+20:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://bbs.ruliweb.com/best/board/300143/read/41809248</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[매일경제] [속보] 30명 고립·폭발…고성산불 '심각한 재난'<br>
+https://www.mk.co.kr/news/society/view/2019/04/207519/</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:05</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>혀노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+속초 산불 비상사태인데…靑 안보실장 잡고 안보내준 野 - http://m.mt.co.kr/renew/view.html?no=2019040422197698572</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일단 깨어 있을때까지 관련 속보 계속 올리도록 하겠습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:09</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>혀노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[속보] '고성 산불' 전쟁터 방불...심각한 재난<br>
+출처 : YTN | 네이버<br>
+ http://naver.me/F5fUYXP4</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>양태승</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동영상</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>양태승</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동영상</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>양태승</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+실시간이라네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김주영 "한걸음씩 GO!”</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아. 심각하네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정해민</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+재앙이네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+왜이런큰산불이 일어난걸까요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>u장호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+주유소폭발이란 얘기가 있더라고요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아이고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>지노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+음모?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+변압기 사고로 알고 있어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Minjeongkim</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>정해민</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+불이났고 변압기는 이후에 터졌는데요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>P</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+토론방 아닙니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제가괜한소릴했나봅니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+헐</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>혀노</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+토론방 아닙니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:31</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사람들 무사했으면 좋겠다!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>대보 주효진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+인명은 물론 생태도 무사히 건강을 회복하길ㅜㅜ낼식목일인데..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[로봇 패스트푸드 카운트다운]디떽 로봇 셰프 4월에 대구 동성로에 선보일 출처 : 비지트 | 블로그</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+4차산업혁명의 물길이 서서히<br>
+시작이네요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>472</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안타깝네요 불이..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+강원 고성·속초 산불 사망 1명(긴급 1보)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>희수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>양태승</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+더이상의 피해는 없이 완화됐으면 하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+(목동전문^^단비공인)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+예ᆢㅜㅜ아수라장입니다,바람이부는밤중이라,심히걱정입니다!!ㅜ^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>for</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+친구집이 산불 방향이라는데 ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>for</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+군인이고 ㅜㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>+(목동전문^^단비공인)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+에구구!!ᆢ어째요ᆢ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>for</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+통화 해서 대피중 이라고  걱정입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+23:59</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

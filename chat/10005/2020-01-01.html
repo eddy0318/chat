@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>gori</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>gori</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김석진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>강신원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>삼빠</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+올해 베스트짤!!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>gori</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>gori</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요 ☆</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>MY</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>경수</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해복 많이 받으십셔!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>희님♡</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요~~~~~~~~~??</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이정원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다~~새해에도 다들 건강하시구요~새해 복 많이 받으세요~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+00:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이정현</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세용(흡족)</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+01:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>? ????</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+02:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>36789</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒매경이 전하는<br>
+세상의 지식(매-세-지, 1월 1일)❒<br>
+‾‾‾‾‾<br>
+1.2013년 중산층 가운데 30대 가구 비중<br>
+은 21.7%, 40대는 28.9%를 차지했지만 2018년 기준으로 각각 6%P, 4%P 줄어든 15.7%, 24.9%로 나타남. 반면 60대 중산<br>
+층 비중은 같은 기간 19.9%에서 32.6%로 10%P이상 상승함. 이는 젊은 층이 중산층<br>
+에 들어가지 못하면서 기존 자산을 선점한 60대 이상 노년층의 영향력만 커졌다는 것을 의미함.<br>
+2.문재인 대통령은 31일 국민 모두의 삶<br>
+이 더 밝고 더 행복한 새해를 소망한다며 신년 인사를 보냄. 문 대통령은 SNS에 올<br>
+린 글에서 국민들께 보답하는 한 해가 되<br>
+겠다. 어려움 속에서도 소중하게 틔워낸 변화의 싹을 새해에는 확실한 성과로 꽃 피우고 열매를 맺겠다고 다짐함. 또 함께 잘 사는 나라, 도약하는 대한민국을 향해 나아가겠다고 강조함.<br>
+3.2019년 소비자물가 상승률이 역대 최<br>
+저치를 기록함. 정부는 일시적인 공급 요<br>
+인이 크게 작용했다고 봤지만 2012년 이<br>
+후 단 한 차례도 물가안정 목표인 2%를 달성하지 못한 만성 수요 부진에 대한 우<br>
+려가 나오고 있음.<br>
+4.김정은 북한 국무위원장이 7시간에 걸친 '마라톤 회의'를 통해 자주권을 부각하며 '경제·핵무력 병진 노선'으로 돌아갈 수도 있음을 암시함.조선중앙통신은31일 조선<br>
+노동당 위원장 동지께서는 7시간에 걸쳐 조선노동당 중앙위 사업 정형과 국가 건설, 경제 발전, 무력 건설과 관련 보고를 하셨<br>
+다고 보도함.<br>
+리처드 하스 미국 외교협회(CFR) 회장이 지난달 17일(현지시간) 매일경제신문과 인터뷰하면서 새로운 10년을 맞는 전 세계 지정학적 상황에 대해 설명하고 있다. 인터<br>
+뷰는 미국 뉴욕 68번가에 위치한 CFR 건<br>
+물에서 진행됐다. <뉴욕/신헌철 특파원><br>
+5.미국을 대표하는 외교 전략가 리처드 하<br>
+스 미국외교협회(CFR)회장은 북한에 대한 한미 동맹의 억지력을 높이기 위해서는 실<br>
+제로 무력을 사용할 수 있다는 공포를 심어<br>
+줘야 한다고 지적함. 또한 미·북 간 중간 단계 합의를 통해 북한에 긍정적 동기를 만<br>
+들어줄 필요가 있다고 강조함.<br>
+6.조국 전 법무부 장관이 '일가(一家) 비<br>
+리'에 관여한 혐의로 31일 불구속기소됨. 작년 8월 27일 검찰 수사가 시작된 지 126일 만임. 검찰은 조 전 장관을 뇌물 수수, 증거위조·은닉교사 등 혐의로 불구<br>
+속기소했다고 밝히고 조 전 장관과 부인 정경심 씨를 재판에 넘겼다고 설명함.<br>
+7.전국 최고가 오피스텔은 서울 청담동의 '더 리버스 청담'으로 나타남. '더 리버스 청담'의 단위 면적(㎡)당 기준시가는 936<br>
+만9000원에 달함.전년1위였던 '롯데월드<br>
+타워앤드롯데월드몰 월드타워동'은 860<br>
+만1000원을 기록해 2위로 밀림.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+#헤드라인뉴스<br>
+( 2019. 1. 1. 수요일 )<br>
+■반갑다 2020년…<br>
+제야의 종소리와 함께 찾아온 새해<br>
+■새해 첫날 '흐림' 해돋이 보기 어려워…영하 10도 강추위<br>
+■美, 트럼프 치적으로 북미정상회담 꼽으며 강력 제재유지도 거론<br>
+■법원 '선거개입 의혹' 송병기 영장 기각…검찰 납득 어렵다<br>
+■정경두 안보 상황 녹록지 않아…<br>
+힘을 통한 평화 뒷받침할 것<br>
+■검찰 '선거개입 의혹' <br>
+송병기 구속영장 기각<br>
+■트럼프 1월 15일 미중 1단계 <br>
+무역합의 백악관서 서명<br>
+■검찰 최강욱, 조국측 부탁받고 아들 허위 인턴증명서 발급<br>
+■공수처 후폭풍에 꽁꽁 언 정국… 개혁입법 완수 vs 전력투쟁<br>
+■황운하 저질스러운 공격에 수모… 서울에서라도 출마<br>
+■정세균 청문특위, 여야 증인 합의 불발로 파행<br>
+■'靑 앞 집회금지' 경찰 처분에 법원 9시∼22시 집회 일단 허용<br>
+■외환당국, 3분기 28억7천만달러 순매도…시장안정조치<br>
+■황교안, 지역구 출마 시사…<br>
+黨 원하는 어떤 것이든 하겠다<br>
+■美 정찰기, 2019년 마지막 날에도 대북 감시비행<br>
+■주 52시간제 시행 기업에 첫 근로감독…위반율 6.6%에 그쳐<br>
+■'당 대회' 버금가는 北 전원회의… 위기의식 속 '새로운 길' 의지<br>
+■이라크 친이란 시위대 美대사관 공격…트럼프 모두 이란 책임<br>
+■전주 천사' 성금 절도범들에 구속영장…사업자금 쓰려 훔쳤다<br>
+■삼성전자 화성사업장 1분 정전… 일부 반도체 생산라인 가동 중단<br>
+■SKY' 대학 정시경쟁률 4.2대 1… 학령인구 감소로 경쟁률 하락<br>
+■對韓 강경론 선두에 아베…<br>
+징용공 문제 1㎜도 양보 안해<br>
+■12월 서울 아파트값 초강세… 전국도 4년반 만에 최대 상승<br>
+■검찰 '한미정상 통화누설' 강효상 의원 불구속 기소<br>
+■이스탄불發 아시아나 여객기, 기상악화·결함으로 12시간 지연<br>
+■세밑 하늘 위'의 해고 노동자들… 해결될 때까진 못 내려간다<br>
+■'해외 반출 금지' 일반동산문화재 범위·기준 구체화<br>
+■전북대 김양곤 교수, 리만가설 증명 주장…학계 검증절차 거쳐야<br>
+■비례민주당' 창당준비위 결성신고 접수…與 불허해달라<br>
+■정부 민간차원 이산가족교류 적극 지원…기관설립도 검토<br>
+■서울지하철 좀 뜸해졌네?… 2·3·4·7호선 운행 줄었어요<br>
+■레바논 당국 곤 닛산 전 회장, 합법적으로 입국<br>
+■스마트폰 품질 보증기간 내일부터 연장…삼성 '번인' 제외 논란<br>
+■LG헬로비전 하청 근로자 업무 중 숨져…노조 격무 때문<br>
+■해 넘기는 르노삼성차 노사분규…사태 장기화 우려<br>
+■홍콩 새해 첫날 대규모 시위에 긴장 고조…경찰 6천명 투입<br>
+■내년 국가공무원 6천110명 뽑는다…9급 4천985명 선발<br>
+■연천 야생멧돼지 폐사체서 ASF 바이러스…전국 누적 55건<br>
+■김기수 특조위원, 세월호 유족 반발에 또 회의 참석 못 해<br>
+■교육부, '고3 유권자' 선거법 가이드라인 마련…새학기 전 보급<br>
+■KAI, 차세대 중형위성 3기 독자개발 착수…2023년 발사 예정<br>
+■동물병원 진료비 최대 80배 차이… 진료비 사전 게시는 18%<br>
+■한국당, 비례정당 창당 분주… 당직자 대상 회비 10만원 모금<br>
+■차기 대선주자 선호도…<br>
+이낙연 29.4%·황교안 20.1%<br>
+■포항 앞바다서 어선-러 상선 충돌… 인명피해 없어<br>
+■각국 재외동포 학생들, 학교서 '욱일기' 퇴치 앞장<br>
+■인천 주점서 50대, 종업원에 흉기 휘둘러…지인 살해 의심도<br>
+■중국서 원인불명 폐렴 잇따라… '사스' 우려 확산<br>
+■'지구 허파' 아마존 열대우림, 10년 새 한국 60% 면적 사라져<br>
+■입주예정일인데 아파트에 못들어가다니…황당한 입주민들<br>
+■'7명 사상' 국방과학연구소 폭발 원인 규명 해 넘긴다<br>
+■5·18진상조사위 3일 5·18묘지 참배…본격 가동<br>
+■소비자연맹, 폐업 상조업체 대상 집단소송 제기<br>
+■제주 관광객 카드 사용액 비중 서울 줄고 타지역 늘어<br>
+■첫 국제관광도시 한달 앞…<br>
+부산 vs 인천 불꽃 경쟁<br>
+■한남2고가 철거 슬그머니 백지화… 서울시 오락가락 행정<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+➡️ 오늘의 영어 한마디      <br>
+put in one’s best effort : 최선을 다하다<br>
+If she wants to beat Steve, she’ll have to put in her best effort.<br>
+☞그녀가 알라바마를 이기고 싶다면 최선을 다해야 할 것이다.<br>
+Please put in your best effort on this exam. You may start.<br>
+☞이 시험에 최선을 다해 주세요. 시작하세요<br>
+➡️ 오늘의 건강상식<br>
+하지정맥류 환자에게 <br>
+사우나가 안 좋은 이유<br>
+https://shealth.life/v4/contentsView?contsId=8533&areaType=DISCOVER_PLUS</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒1월1일 수요일 손바닥 뉴스❒<br>
+‾‾‾‾‾<br>
+■새해 첫날 전국 가끔 <br>
+구름 많고 일부 중부지방에 눈발<br>
+2020년의 첫날인 1일은 전국에 가끔 구<br>
+름이 많고 강원 영동을 제외한 중부지방<br>
+에 오전까지 산발적으로 눈이 날리겠다.<br>
+낮 최고기온은 1∼8도로 평년(0.7∼8.9)<br>
+과 비슷하겠다.미세먼지 농도는 전 권역이 '보통∼좋음' 수준을 보일 것으로 예상된<br>
+다. <br>
+■트럼프 15일에 <br>
+미·중 1단계 무역합의 서명한다<br>
+도널드 트럼프 미국 대통령은 지난달31일<br>
+(현지시간) 나는 중국과의 아주 크고 포괄<br>
+적인 1단계 무역합의에 1월 15일 서명할 것이라고 트위터를 통해 밝혔다<br>
+■文대통령, 새해 인사 확실한 성과로 꽃 피우고 열매 맺을 것<br>
+문재인 대통령이 2020년 경자년을 맞아 국민 모두의 삶이 더 밝고 더 행복한 새해<br>
+를 소망한다”고 말했다.문 대통령은 새해를 하루 앞둔 31일 공식 SNS를 통해 이같은 새해 인사를 건넸다. <br>
+■멀어지는 북한 비핵화, <br>
+도발·제재 악순환 우려<br>
+미국은 제재 해제 대신 정치적 보상(연락<br>
+사무소 개설, 안전보장 및 평화체제 논의 등)을 해주고, 제재는 실질적 비핵화가 이뤄지면 그때 가서 풀겠다는 입장이다. 하노이 정상회담에서 직접 제재 해제를 요구한 ‘절대 독재자’ 김정은 국무위원장<br>
+으로서는 이런 변형된 역제안은 선뜻 받을 수가 없다.<br>
+■미 육군 올해 ‘야외기동훈련’ 계획에 한국은 빠졌다<br>
+미국 육군의 2020년도 야외기동훈련(F<br>
+TX) 목록이 나왔다. 그러나 미 육군의 신규 훈련 목록에 한국은 빠졌다. 한·미는 매년 봄 야외기동훈련인 ‘독수리 훈련(FE)’을 열<br>
+었지만 지난해 3월 이를 폐지했다<br>
+■공수처 반대한 김병준<br>
+ 이 나라를 삼류로 만들겠단 건가”<br>
+김병준 전 자유한국당 비상대책위원장은 31일 고위공직자범죄수사처(공수처) 설<br>
+치법의 국회 통과를 겨냥해 이 나라를 삼<br>
+류 국가로 만들겠다는 것인가”라며 나쁜 정치, 나쁜 지도자”라고 비판했다.<br>
+■송병기 일단 구속은 면했다··<br>
+·청와대 향한 검찰 수사 제동<br>
+서울중앙지법 명재권 영장전담 부장판사는 31일 11시 53분쯤 현 단계에서 구속의 사유와 필요성, 상당성이 충분히 소명됐다<br>
+고 보기 어렵다”며 송 부시장에 대한 구속 영장을 기각했다고 밝혔다<br>
+■檢 민정수석 조국, 최강욱에 아들 가짜 인턴증명서 발급 요청<br>
+조국 전 법무부 장관 아들의 대학원 입시에 최강욱 청와대 공직기관비서관의 변호사 재직 시절 명의의 허위 인턴활동확인서가 사용된 것으로 나타났다.검찰은 조 전 장관<br>
+이 청와대 민정수석으로 재임하던 시기에<br>
+도 최 비서관 명의의 인턴활동확인서를 꾸<br>
+며낸 것으로 판단했다<br>
+■말기 위암 생존율 4배 뛰었다···<br>
+‘기적의 수술’ 항암제의 비밀<br>
+전체 암 발생의 12.8%를 차지하는 위암의 5년 생존율은 계속 올라간다.1995년 43.9<br>
+%에서 2017년 76.5%로 올랐다. 같은기간<br>
+ 10년 상대 생존율도 40.6%에서 70%로 올랐다. 치료 기술이 좋아지고 약이 좋아지<br>
+고 조기 발견이 늘어나면서다. <br>
+■개밥이던 물메기 ‘魚生역전’···<br>
+대구보다 비싼 ‘金고기’ 됐다<br>
+겨울철 속풀이 국의 대명사로 불리면서 겨울 바다 최고 별미로 손꼽히는 거제 대<br>
+구와 통영 물메기(꼼치)가 수년째 품귀 현상을 빚고 있다. 특히 수온 변화 등으로 인해 지난 2017년에 비해 대구는 50% 이상, 같은 기간 물메기는 80% 이상 위판<br>
+량이 줄어든 것으로 집계됐다<br>
+■송해, 폐렴으로 입원…<br>
+'전국노래자랑' 설특집 진행 어려워<br>
+국민 MC 송해(92)가 폐렴으로 병원에 입<br>
+원했다.31일 스타뉴스에 따르면 최근 송해<br>
+는 폐렴 증세가 평소보다 심해져 이날 서울 한 병원으로 이송돼 치료를 받고 있는 것<br>
+으로 전해졌다. 앞으로 2~4주 정도 치료를 받아야 하는 상황이다<br>
+■정정용호-박항서호, <br>
+FIFA 선정 '2019년 놀라운<br>
+FIFA 홈페이지는  2019년 전세계 축구계<br>
+를 기대 이상의 성과를 거둬 모두를 놀라게<br>
+한 12개 대표팀을 선정했다. 정정용 감독이 이끈 한국 20세 이하 축구대표팀을 6번째, 박항서 감독이 지휘한 베트남 축구대표팀<br>
+을 12번째로 뽑았다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒12월31일 수요일 간추린 아침 소식❒<br>
+‾‾‾‾‾<br>
+■ [단신뉴스] <br>
+✦세밑 한파특보, 서울 -10℃, 해넘이 전국 선명, 해돋이는 동쪽만<br>
+✦추미애 청문회 11시간.. '검찰개혁' 공방.. 보고서 채택 무산<br>
+✦'김기현 측근비리 제보' 송병기 부시장 오늘 밤 구속심사<br>
+✦운전면허 행정처분 170만 명 특별감면.. 음주운전 제외<br>
+✦10년 지난 항공사 마일리지, 4930억원 어치 1월 1일 자동 소멸<br>
+✦상위 카드사 점유율, 신한 1위에 삼성·KB 2위권 형성..<br>
+✦한진家 '모자의 난', 닷새만에 조원태·이명희, 공동명의 사과문<br>
+✦전주 '얼굴없는 천사' 성금 훔친 2인조 도둑들 검거, '계획 범죄'<br>
+✦배우 차인표 친형, 차인혁 CJ올리브네트웍스 수장 낙점<br>
+✦순위조작 CJ ENM, 뒤늦게 사과, 수익 300억원 내놓겠다<br>
+✦뉴욕서 또 유대인 공격.. 美 ‘反유대주의’ 확산 우려<br>
+✦마이니치 여론조사, 日, 美와 가장 친하고 韓이 中보다 못해<br>
+✦美 민주당 트럼프 법원 장악 막아라.. '루스벨트 개혁안' 소환<br>
+✦뉴욕증시, 美中 무역합의 서명 전망에도 피로감에 0.64% 하락<br>
+✦최악의 산불 겪는 호주, 신년 불꽃놀이로 국론 분열까지<br>
+■2019년의 마지막 날인 오늘은 중국 북<br>
+부지방에서 확장하는 찬 대륙성 고기압<br>
+의 영향으로 전국이 대체로 맑고 세밑한파 극성, 서해안과 제주도에는 가끔 구름.. 오늘 서울 기온 -10~-3도 분포, 체감온도 -17도, 수도관 동파 예방 등 시설물 관리에 유의, 건강조심 하시길~~!!<br>
+■文 대통령, 어제 수석·보좌관회의 주재, 저무는 한 해의 끝자락에서 국회를 바라<br>
+보는 국민의 마음은 착잡하기만.. 20대 국회 마지막까지 부끄러운 모습.. 정치적 대립으로 민생 희생 안 돼.. 민생법안 처리 촉구, 검찰 개혁 제도화 마지막 단계.. 3·1 운동 100년 의지를 모아준 국민의 힘.. 日수출규제 전화위복<br>
+■공수처법, 국회 본회의 통과 '4+1협의<br>
+체', 찬성 160표로 가결.. ‘무소불위’ 검찰 권력을 견제할 필요성이 제기된 지 20여<br>
+년만에 새로운 수사기관 탄생,文 대통령의 ‘1호 공약’,시행 준비 등 절차 거쳐 이르면 내년 7월쯤 신설 전망, 고위공직자 수사·<br>
+檢기소권 견제.. 대통령, 총리, 검찰, 국회<br>
+의원 등 고위공직자범죄 수사담당.. 판사·<br>
+검사, 경찰은 기소까지.. 靑 관여 금지.. 檢·<br>
+警이 공직자 범죄 인지시 공수처에 통보.. <br>
+■한국당 불법 날치기에 분노.. '의원직 총사퇴' 결의.. 심재철 강력한 대여투쟁 위해 원내대표단·당 지도부에 사퇴서 일<br>
+임키로.. 장외투쟁 가능성도 제기.. 선거<br>
+법-공수처법,  강행처리에 '최후의 카드'.. 이미 늦었다 비판도..홍준표 의미 없어”<br>
+■조국 前 장관과 檢 반응.. 조국 눈물이 핑, 기쁘다”.. 반발하던 檢, 통과되자 ‘침묵<br>
+’.. 曺 철옹성 檢 기소 독점에 중대 변화.. 국회 결단에 경의” 50여일 만에 페북 글 올려.. 檢 실무자 차원 문제점 의견 낸 것일 뿐”.. 윤석열 신년회서 공수처 언급 여부 주목.. 檢, 민감수사 내사 단계서 잡<br>
+고 있을 수도.. 혼란 계속 땐 다음 정부서 무력화” 전망도..<br>
+■文대통령, 취임후 세번째 특별사면권 행사, 대상자는 선거사범 267명 포함한 5174명, 이광재 前 강원지사, 곽노현 前 서울시 교육감, 공성진·신지호 前 한나라<br>
+당 의원 등도 포함.. '대통령 사면권 제한, 정치인 사면 최소화'를 지향했던 지금까<br>
+지의 기조와 다른 결정.. 靑 정치적 고려 없었다.. 두 차례 불이익 본 '2010년 前 선거사범' 기준.. 형평성 부각, 강원도 총선 판세 맞물려 이광재 출마 카드 주목..<br>
+■한전, 주택용 절전 할인제도 올해말로 종료.. 에너지 정책 바뀌면서 경영 악화, 정부 ‘압박’에도 사실상 전기요금 인상키<br>
+로.. 전기차 할인, 2022년까지 단계적 폐지, 다른 특례도 일몰 맞는 대로 종료 결정.. 요금 인상 없다더니.. ‘적자 누적’ 한전, 서민들에 부담 떠넘기기.. 한전 전통시장 영세상인 지원안 마련”<br>
+■과기부, SK브로드밴드·티브로드 합병 조건부 인가.. 알뜰폰 사업자 결합상품 동<br>
+등 제공 골자,합병 매듭 땐 시장2위 LGU+ 바짝 추격, 유료방송시장 이통3사‘新삼국<br>
+지’시대 개막.. 경쟁사 의식 KT, 딜라이브 인수 속도낼 듯<br>
+■CEO스코어, 상장사 주식보유 개인 2만<br>
+2천327명 지분가치 조사.. 지분가치 총액<br>
+은 '이건희 이재용 서경배 정몽구 최태원' 순.. 이건희 회장, 올해 지분가치 증가 1위.. 4조원 이상 늘어..<br>
+■삼성을 제외한 대부분의 주요 기업 연말 임원 인사 마무리.. ‘여풍’ 강세… 주요 기업 여성 임원 대거 발탁, LG, 34세 심미진 상<br>
+무 등 8명 탄생, 포스코, 공장장 출신 김희 상무 승진, SK는 ‘그룹 역사상 최대’ 7명 임명<br>
+■北, 30일 노동당 제7기 5차 전원회의 사흘째 이어가.. 김정은, 구체적 메시지 없이 ‘자립경제’ 건설과 ‘안전 보장을 위한 공세적 조치’ 강조.. 북한의 향후 대응과 비핵화 협상에 미칠 영향이 주목.. 전문가 北, 미국 반응 보며 협상 여지 남겨두려는 것”.. ‘고강도 도발 자제’ 분석 우세, 김정은 신년사에 관심 쏠려..<br>
+■美, 이란 지원 ‘시아파민병대’ 공습.. 中東 긴장 고조.. 이라크, 시리아내 카타이브 헤즈볼라 기지 5곳 정밀 타격, 이라크 美 민간인 피격 사망 보복.. 폼페이오 미국인 위협 단호히 대응”, 이라크 민병대부대원 19명 숨져”.. KH 가혹한 대응할 것” 보복 암시, 美·이란 관계 악화.. 이라크도 반발, 이란 미군, 점령 멈추고 떠나야”..<br>
+■유엔 안보리, '中.러 대북제재 완화안' 오늘 실무급 비공식 논의.. 두번째 실무급 회의.. 美·佛·英 반대로 채택은 쉽지 않은 상황.. 결의 채택을 위해서는 美·英·프·中·<br>
+러 등 5개 상임이사국의 거부권 행사 없이 15개 상임·비상임 이사국 가운데 9개국 이상의 찬성 필요.. 美 안보리 단합 언론<br>
+성명 초안 제출, 中-러 반대로 무산<br>
+■홍콩 새해 첫날 대규모 집회 계획, 시위<br>
+대·경찰 또 충돌 가능성.. 민간인권전선, 거리행진도 예정, 경찰 폭력사태 땐 행진 즉각 취소” 홍콩 주둔 중국군 훈련영상 공개, 시위대에 대한 경고의미 분석도..<br>
+오늘 출근길 체감온도 -17도, 건강조심 하시고 좋은 인연들과 행복한 연말연시되시길~~^♡^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Midoban</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://pf.kakao.com/_axjAxmxl/44100705</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒오늘의 날씨❒<br>
+‾‾‾‾‾<br>
+2020년 첫날이자 수요일인 1일<br>
+ 오늘은 전국에 가끔 구름이 많고, <br>
+강원 영동과 경상도는 맑겠습니다.<br>
+강원 영동을 제외한 중부<br>
+지방은 흐리고 새벽부터 오전 <br>
+사이에 눈이 날리는 곳이 있겠습니다.<br>
+아침 기온은 -10~-1°C 분포로 <br>
+예상되며, 낮 최고기온은 1~9°C <br>
+로 전날(-4∼4)보다 높겠습니다.<br>
+미세먼지 농도는 원활한 대기 확산으로 <br>
+전 권역이 '좋음'~'보통'으로 예상됩니다.<br>
+대부분 해안과 강원 산지, <br>
+경상 내륙, 제주도는 바람이 매우 <br>
+강하게 불고 그 밖의 지역에도 <br>
+바람이 강하게 부는 곳이 있겠습니다.<br>
+동해상과 남해상에 바람이 매우 강하게 불고 매우 높은 물결이 쳐 항해나 조업을 나가는 선박은 각별히 유의해야 합니다.<br>
+동해안은 너울에 의한 높은 물결이 치면<br>
+서 해안도로나 방파제를 넘는 곳이 있어 안전사고에 각별히 유의해야 합니다.<br>
+바다의 물결은 서해·남해 <br>
+앞바다 0.5∼1.5m, 동해 <br>
+앞바다 0.5∼3.0m로 예상됩니다.<br>
+먼바다 물결은 서해 0.5~<br>
+2.0m, 남해 0.5∼2.5m, <br>
+동해 1.0∼3.5m로 일겠습니다.<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+https://youtu.be/x8rT4BNxqL8<br>
+다음은 1일 지역별 날씨 전망.<br>
+[오전, 오후] (최저∼최고기온)<br>
+<오전, 오후 강수 확률><br>
+✦서울:[흐림, 흐림] (-6∼3) <30, 30><br>
+✦인천:[흐림, 흐림] (-4∼3) <30, 30><br>
+✦수원;[흐림, 흐림] (-7∼3) <30, 30><br>
+✦춘천:[흐림,구름많음](-9∼2)<40,20><br>
+✦강릉:[맑음, 맑음] (-1∼8) <0, 0><br>
+✦청주;[흐림, 흐림] (-6∼4) <30, 30><br>
+✦대전:[흐림, 흐림] (-5∼6) <30, 30><br>
+✦세종:[흐림, 흐림] (-8∼5) <30, 30><br>
+✦전주:[흐림,구름많음](-5~6)<30,20><br>
+✦광주:[흐림,구름많음](-11~2)<40,20><br>
+✦대구:[구름많음,많음](-5~7)<20,20><br>
+✦부산:[맑음, 맑음] (-3∼8) <0, 0><br>
+✦울산:[맑음, 맑음] (-4∼7) <0, 0><br>
+✦창원:[맑음, 맑음] (-4∼7) <0, 0><br>
+✦제주:[구름많음,많음](3∼8)<20,20></div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+#헤드라인뉴스<br>
+( 2019. 1. 1. 수요일 )<br>
+■반갑다 2020년…<br>
+제야의 종소리와 함께 찾아온 새해<br>
+■새해 첫날 '흐림' 해돋이 보기 어려워…영하 10도 강추위<br>
+■美, 트럼프 치적으로 북미정상회담 꼽으며 강력 제재유지도 거론<br>
+■법원 '선거개입 의혹' 송병기 영장 기각…검찰 납득 어렵다<br>
+■정경두 안보 상황 녹록지 않아…<br>
+힘을 통한 평화 뒷받침할 것<br>
+■검찰 '선거개입 의혹' <br>
+송병기 구속영장 기각<br>
+■트럼프 1월 15일 미중 1단계 <br>
+무역합의 백악관서 서명<br>
+■검찰 최강욱, 조국측 부탁받고 아들 허위 인턴증명서 발급<br>
+■공수처 후폭풍에 꽁꽁 언 정국… 개혁입법 완수 vs 전력투쟁<br>
+■황운하 저질스러운 공격에 수모… 서울에서라도 출마<br>
+■정세균 청문특위, 여야 증인 합의 불발로 파행<br>
+■'靑 앞 집회금지' 경찰 처분에 법원 9시∼22시 집회 일단 허용<br>
+■외환당국, 3분기 28억7천만달러 순매도…시장안정조치<br>
+■황교안, 지역구 출마 시사…<br>
+黨 원하는 어떤 것이든 하겠다<br>
+■美 정찰기, 2019년 마지막 날에도 대북 감시비행<br>
+■주 52시간제 시행 기업에 첫 근로감독…위반율 6.6%에 그쳐<br>
+■'당 대회' 버금가는 北 전원회의… 위기의식 속 '새로운 길' 의지<br>
+■이라크 친이란 시위대 美대사관 공격…트럼프 모두 이란 책임<br>
+■전주 천사' 성금 절도범들에 구속영장…사업자금 쓰려 훔쳤다<br>
+■삼성전자 화성사업장 1분 정전… 일부 반도체 생산라인 가동 중단<br>
+■SKY' 대학 정시경쟁률 4.2대 1… 학령인구 감소로 경쟁률 하락<br>
+■對韓 강경론 선두에 아베…<br>
+징용공 문제 1㎜도 양보 안해<br>
+■12월 서울 아파트값 초강세… 전국도 4년반 만에 최대 상승<br>
+■검찰 '한미정상 통화누설' 강효상 의원 불구속 기소<br>
+■이스탄불發 아시아나 여객기, 기상악화·결함으로 12시간 지연<br>
+■세밑 하늘 위'의 해고 노동자들… 해결될 때까진 못 내려간다<br>
+■'해외 반출 금지' 일반동산문화재 범위·기준 구체화<br>
+■전북대 김양곤 교수, 리만가설 증명 주장…학계 검증절차 거쳐야<br>
+■비례민주당' 창당준비위 결성신고 접수…與 불허해달라<br>
+■정부 민간차원 이산가족교류 적극 지원…기관설립도 검토<br>
+■서울지하철 좀 뜸해졌네?… 2·3·4·7호선 운행 줄었어요<br>
+■레바논 당국 곤 닛산 전 회장, 합법적으로 입국<br>
+■스마트폰 품질 보증기간 내일부터 연장…삼성 '번인' 제외 논란<br>
+■LG헬로비전 하청 근로자 업무 중 숨져…노조 격무 때문<br>
+■해 넘기는 르노삼성차 노사분규…사태 장기화 우려<br>
+■홍콩 새해 첫날 대규모 시위에 긴장 고조…경찰 6천명 투입<br>
+■내년 국가공무원 6천110명 뽑는다…9급 4천985명 선발<br>
+■연천 야생멧돼지 폐사체서 ASF 바이러스…전국 누적 55건<br>
+■김기수 특조위원, 세월호 유족 반발에 또 회의 참석 못 해<br>
+■교육부, '고3 유권자' 선거법 가이드라인 마련…새학기 전 보급<br>
+■KAI, 차세대 중형위성 3기 독자개발 착수…2023년 발사 예정<br>
+■동물병원 진료비 최대 80배 차이… 진료비 사전 게시는 18%<br>
+■한국당, 비례정당 창당 분주… 당직자 대상 회비 10만원 모금<br>
+■차기 대선주자 선호도…<br>
+이낙연 29.4%·황교안 20.1%<br>
+■포항 앞바다서 어선-러 상선 충돌… 인명피해 없어<br>
+■각국 재외동포 학생들, 학교서 '욱일기' 퇴치 앞장<br>
+■인천 주점서 50대, 종업원에 흉기 휘둘러…지인 살해 의심도<br>
+■중국서 원인불명 폐렴 잇따라… '사스' 우려 확산<br>
+■'지구 허파' 아마존 열대우림, 10년 새 한국 60% 면적 사라져<br>
+■입주예정일인데 아파트에 못들어가다니…황당한 입주민들<br>
+■'7명 사상' 국방과학연구소 폭발 원인 규명 해 넘긴다<br>
+■5·18진상조사위 3일 5·18묘지 참배…본격 가동<br>
+■소비자연맹, 폐업 상조업체 대상 집단소송 제기<br>
+■제주 관광객 카드 사용액 비중 서울 줄고 타지역 늘어<br>
+■첫 국제관광도시 한달 앞…<br>
+부산 vs 인천 불꽃 경쟁<br>
+■한남2고가 철거 슬그머니 백지화… 서울시 오락가락 행정<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+➡️ 오늘의 영어 한마디      <br>
+put in one’s best effort : 최선을 다하다<br>
+If she wants to beat Steve, she’ll have to put in her best effort.<br>
+☞그녀가 알라바마를 이기고 싶다면 최선을 다해야 할 것이다.<br>
+Please put in your best effort on this exam. You may start.<br>
+☞이 시험에 최선을 다해 주세요. 시작하세요<br>
+➡️ 오늘의 건강상식<br>
+하지정맥류 환자에게 <br>
+사우나가 안 좋은 이유<br>
+https://shealth.life/v4/contentsView?contsId=8533&areaType=DISCOVER_PLUS</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒매경이 전하는<br>
+세상의 지식(매-세-지, 1월 1일)❒<br>
+‾‾‾‾‾<br>
+1.2013년 중산층 가운데 30대 가구 비중<br>
+은 21.7%, 40대는 28.9%를 차지했지만 2018년 기준으로 각각 6%P, 4%P 줄어든 15.7%, 24.9%로 나타남. 반면 60대 중산<br>
+층 비중은 같은 기간 19.9%에서 32.6%로 10%P이상 상승함. 이는 젊은 층이 중산층<br>
+에 들어가지 못하면서 기존 자산을 선점한 60대 이상 노년층의 영향력만 커졌다는 것을 의미함.<br>
+2.문재인 대통령은 31일 국민 모두의 삶<br>
+이 더 밝고 더 행복한 새해를 소망한다며 신년 인사를 보냄. 문 대통령은 SNS에 올<br>
+린 글에서 국민들께 보답하는 한 해가 되<br>
+겠다. 어려움 속에서도 소중하게 틔워낸 변화의 싹을 새해에는 확실한 성과로 꽃 피우고 열매를 맺겠다고 다짐함. 또 함께 잘 사는 나라, 도약하는 대한민국을 향해 나아가겠다고 강조함.<br>
+3.2019년 소비자물가 상승률이 역대 최<br>
+저치를 기록함. 정부는 일시적인 공급 요<br>
+인이 크게 작용했다고 봤지만 2012년 이<br>
+후 단 한 차례도 물가안정 목표인 2%를 달성하지 못한 만성 수요 부진에 대한 우<br>
+려가 나오고 있음.<br>
+4.김정은 북한 국무위원장이 7시간에 걸친 '마라톤 회의'를 통해 자주권을 부각하며 '경제·핵무력 병진 노선'으로 돌아갈 수도 있음을 암시함.조선중앙통신은31일 조선<br>
+노동당 위원장 동지께서는 7시간에 걸쳐 조선노동당 중앙위 사업 정형과 국가 건설, 경제 발전, 무력 건설과 관련 보고를 하셨<br>
+다고 보도함.<br>
+리처드 하스 미국 외교협회(CFR) 회장이 지난달 17일(현지시간) 매일경제신문과 인터뷰하면서 새로운 10년을 맞는 전 세계 지정학적 상황에 대해 설명하고 있다. 인터<br>
+뷰는 미국 뉴욕 68번가에 위치한 CFR 건<br>
+물에서 진행됐다. <뉴욕/신헌철 특파원><br>
+5.미국을 대표하는 외교 전략가 리처드 하<br>
+스 미국외교협회(CFR)회장은 북한에 대한 한미 동맹의 억지력을 높이기 위해서는 실<br>
+제로 무력을 사용할 수 있다는 공포를 심어<br>
+줘야 한다고 지적함. 또한 미·북 간 중간 단계 합의를 통해 북한에 긍정적 동기를 만<br>
+들어줄 필요가 있다고 강조함.<br>
+6.조국 전 법무부 장관이 '일가(一家) 비<br>
+리'에 관여한 혐의로 31일 불구속기소됨. 작년 8월 27일 검찰 수사가 시작된 지 126일 만임. 검찰은 조 전 장관을 뇌물 수수, 증거위조·은닉교사 등 혐의로 불구<br>
+속기소했다고 밝히고 조 전 장관과 부인 정경심 씨를 재판에 넘겼다고 설명함.<br>
+7.전국 최고가 오피스텔은 서울 청담동의 '더 리버스 청담'으로 나타남. '더 리버스 청담'의 단위 면적(㎡)당 기준시가는 936<br>
+만9000원에 달함.전년1위였던 '롯데월드<br>
+타워앤드롯데월드몰 월드타워동'은 860<br>
+만1000원을 기록해 2위로 밀림.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒1월1일 수요일 손바닥 뉴스❒<br>
+‾‾‾‾‾<br>
+■새해 첫날 전국 가끔 <br>
+구름 많고 일부 중부지방에 눈발<br>
+2020년의 첫날인 1일은 전국에 가끔 구<br>
+름이 많고 강원 영동을 제외한 중부지방<br>
+에 오전까지 산발적으로 눈이 날리겠다.<br>
+낮 최고기온은 1∼8도로 평년(0.7∼8.9)<br>
+과 비슷하겠다.미세먼지 농도는 전 권역이 '보통∼좋음' 수준을 보일 것으로 예상된<br>
+다. <br>
+■트럼프 15일에 <br>
+미·중 1단계 무역합의 서명한다<br>
+도널드 트럼프 미국 대통령은 지난달31일<br>
+(현지시간) 나는 중국과의 아주 크고 포괄<br>
+적인 1단계 무역합의에 1월 15일 서명할 것이라고 트위터를 통해 밝혔다<br>
+■文대통령, 새해 인사 확실한 성과로 꽃 피우고 열매 맺을 것<br>
+문재인 대통령이 2020년 경자년을 맞아 국민 모두의 삶이 더 밝고 더 행복한 새해<br>
+를 소망한다”고 말했다.문 대통령은 새해를 하루 앞둔 31일 공식 SNS를 통해 이같은 새해 인사를 건넸다. <br>
+■멀어지는 북한 비핵화, <br>
+도발·제재 악순환 우려<br>
+미국은 제재 해제 대신 정치적 보상(연락<br>
+사무소 개설, 안전보장 및 평화체제 논의 등)을 해주고, 제재는 실질적 비핵화가 이뤄지면 그때 가서 풀겠다는 입장이다. 하노이 정상회담에서 직접 제재 해제를 요구한 ‘절대 독재자’ 김정은 국무위원장<br>
+으로서는 이런 변형된 역제안은 선뜻 받을 수가 없다.<br>
+■미 육군 올해 ‘야외기동훈련’ 계획에 한국은 빠졌다<br>
+미국 육군의 2020년도 야외기동훈련(F<br>
+TX) 목록이 나왔다. 그러나 미 육군의 신규 훈련 목록에 한국은 빠졌다. 한·미는 매년 봄 야외기동훈련인 ‘독수리 훈련(FE)’을 열<br>
+었지만 지난해 3월 이를 폐지했다<br>
+■공수처 반대한 김병준<br>
+ 이 나라를 삼류로 만들겠단 건가”<br>
+김병준 전 자유한국당 비상대책위원장은 31일 고위공직자범죄수사처(공수처) 설<br>
+치법의 국회 통과를 겨냥해 이 나라를 삼<br>
+류 국가로 만들겠다는 것인가”라며 나쁜 정치, 나쁜 지도자”라고 비판했다.<br>
+■송병기 일단 구속은 면했다··<br>
+·청와대 향한 검찰 수사 제동<br>
+서울중앙지법 명재권 영장전담 부장판사는 31일 11시 53분쯤 현 단계에서 구속의 사유와 필요성, 상당성이 충분히 소명됐다<br>
+고 보기 어렵다”며 송 부시장에 대한 구속 영장을 기각했다고 밝혔다<br>
+■檢 민정수석 조국, 최강욱에 아들 가짜 인턴증명서 발급 요청<br>
+조국 전 법무부 장관 아들의 대학원 입시에 최강욱 청와대 공직기관비서관의 변호사 재직 시절 명의의 허위 인턴활동확인서가 사용된 것으로 나타났다.검찰은 조 전 장관<br>
+이 청와대 민정수석으로 재임하던 시기에<br>
+도 최 비서관 명의의 인턴활동확인서를 꾸<br>
+며낸 것으로 판단했다<br>
+■말기 위암 생존율 4배 뛰었다···<br>
+‘기적의 수술’ 항암제의 비밀<br>
+전체 암 발생의 12.8%를 차지하는 위암의 5년 생존율은 계속 올라간다.1995년 43.9<br>
+%에서 2017년 76.5%로 올랐다. 같은기간<br>
+ 10년 상대 생존율도 40.6%에서 70%로 올랐다. 치료 기술이 좋아지고 약이 좋아지<br>
+고 조기 발견이 늘어나면서다. <br>
+■개밥이던 물메기 ‘魚生역전’···<br>
+대구보다 비싼 ‘金고기’ 됐다<br>
+겨울철 속풀이 국의 대명사로 불리면서 겨울 바다 최고 별미로 손꼽히는 거제 대<br>
+구와 통영 물메기(꼼치)가 수년째 품귀 현상을 빚고 있다. 특히 수온 변화 등으로 인해 지난 2017년에 비해 대구는 50% 이상, 같은 기간 물메기는 80% 이상 위판<br>
+량이 줄어든 것으로 집계됐다<br>
+■송해, 폐렴으로 입원…<br>
+'전국노래자랑' 설특집 진행 어려워<br>
+국민 MC 송해(92)가 폐렴으로 병원에 입<br>
+원했다.31일 스타뉴스에 따르면 최근 송해<br>
+는 폐렴 증세가 평소보다 심해져 이날 서울 한 병원으로 이송돼 치료를 받고 있는 것<br>
+으로 전해졌다. 앞으로 2~4주 정도 치료를 받아야 하는 상황이다<br>
+■정정용호-박항서호, <br>
+FIFA 선정 '2019년 놀라운<br>
+FIFA 홈페이지는  2019년 전세계 축구계<br>
+를 기대 이상의 성과를 거둬 모두를 놀라게<br>
+한 12개 대표팀을 선정했다. 정정용 감독이 이끈 한국 20세 이하 축구대표팀을 6번째, 박항서 감독이 지휘한 베트남 축구대표팀<br>
+을 12번째로 뽑았다<br>
+자료출처☞http://:goo.gl/GU8MEk</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+⚘새해에는⚘<br>
+ <br>
+?새해에는 모든 소망이 이루어지고<br>
+만나는 사람마다, 따뜻한<br>
+미소를 건네며 지냈으면 좋겠습니다.?<br>
+ <br>
+?도움은 받는 것보다 주는 것이<br>
+더 행복하다는 것을 깨닫게 하고<br>
+그 행복을 나누는 마음이 생겼으면 좋겠습니다.?<br>
+ <br>
+?내 주위에서 기쁜 소식을 더 많이 듣고<br>
+그 소식에, 내 기쁨이<br>
+묻어갈 수 있었으면 좋겠습니다.?<br>
+ <br>
+?보고 싶은 사람을 가까이서 볼 수 있고<br>
+미소 짓는 모습을 꺼내 볼 수 있는<br>
+아름다운 기억 하나 가졌으면 좋겠습니다.?<br>
+ <br>
+?꽃이 주는 향기보다, 꽃이 가진<br>
+생각을 먼저 읽을 수 있는 지혜를 얻고<br>
+최선을 다하는 열정이 생겼으면 좋겠습니다.?<br>
+ <br>
+?내 안에도, 내 밖에도<br>
+1년 내내 아름다운 사람들이 모여들게<br>
+내 삶에 향기가 났으면 좋겠습니다.?<br>
+?2020/ 1월1일 새해 첫 날?<br>
+?새해<br>
+새날<br>
+새아침?<br>
+?2020년 새해가 힘차게 밝았습니다.?<br>
+?새해의 좋은 에너지 모두 흡수하셔서 꿈을 향해 힘차게 도전하시고, 꼭 뜻하시는 일들 모두 이루시고<br>
+새해에 도 건강하세요?<br>
+?새해 복 많이 받으세요. ?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>초심</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+자고 일어나면 먼저 찾는방입니다.방장님과 여러분께 너무 감사 드립니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으시고<br>
+소망하시는뜻  다 이뤄지시길 기원합니다 ?‍♂️</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동영상</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동영상</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이현성</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동영상</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김영준</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://information-dictionary.tistory.com/74</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김영준</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해복 많이받으세요 바다가 정말 아름답게 이쁘네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>용</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오타로인해 삭제했습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>완연</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+새해 복 많이 받으세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김민지? 이니앤코</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2020년 새해인사<br>
+다사다난한 2019년 한해 동안 <br>
+기쁨과 슬픔을 함께 나눈 모든분들께 다시한번 감사 인사드립니다.<br>
+다가 오는 2020년 경자년에는 <br>
+무조건 건강하시고, 행복하세요.<br>
+항상 베풀어 주신 성원에 <br>
+깊이 감사합니다.<br>
+이니앤코 홀딩스 김민지 올림.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+22:10</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

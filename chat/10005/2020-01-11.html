@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그냥 뉴스만 받겠다고 하면 이방이 존재하는 의미가 뭘까요? 전 이 방이 비슷한 관심사의 분들이 서로 정보를 나누고 서로 돕기도 하며 소통을 할수있는 방이길 원해 시작했습니다.그럼에도 대화가 싫으신분들은 뉴스공감2로 가시면 되지만 그곳도 초대된분이나 초대하신 분의 글은 남겨 주셔야 하니 그정도 불편은 서로 양해해주셨으면 감사하겠습니다. 알림음은 무음 설정으로 하시면 큰 불편 없우시리라 봅니다. 토론방은 너무 긴이야기가 될 이야기가 될 소재가 있을때 대화를 하기 위한 방입니다. 뉴스공감은 '사일런트 룸'이 아님을 말씀드리고 싶네요. 너무 늦은 시간에 죄송합니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+01:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>키즈스콜레/일간대치동 윤지쌤</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+죄송해요 아기가 이상한거 쳐서 보냈어요 ㅜㅜ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+하하하~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박재천</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그럴수있습니다 ^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Brian Bae</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>키즈스콜레/일간대치동 윤지쌤</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>박재천</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다들주말잘보내세요~^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>최하루</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오랫만에 웃었네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:29</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>키즈스콜레/일간대치동 윤지쌤</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+즐거운 주말 보내세요~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>PS</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘은 뉴스 없나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1. 데이터 3법 국회 통과 4차 산업혁명 기반 마련한다<br>
+https://www.snek.ai/home/topics/economy/36774646<br>
+2. 서울 청약종합저축 1순위자 300만명 돌파<br>
+https://www.snek.ai/home/topics/economy/36774647<br>
+3. 반도건설 한진칼 경영 참여 경영권 분쟁 복병됐다<br>
+https://www.snek.ai/home/topics/economy/36774648<br>
+4. 월성 사용후핵연료 보관시설 7기 증설 결정<br>
+https://www.snek.ai/home/topics/economy/36774649<br>
+5. 아시아나 인수자금 조달 HDC현산 4000억 유상증자<br>
+https://www.snek.ai/home/topics/economy/36774650<br>
+6. 12·16대책에도 지난달 가계대출 역대 최대 늘었다<br>
+https://www.snek.ai/home/topics/economy/36774651<br>
+7. 日 액체 불화수소 한국에 추가 수출<br>
+https://www.snek.ai/home/topics/economy/36774652<br>
+8. 라임 투자자들 법적대응 라임·신한금투·우리은행 고소<br>
+https://www.snek.ai/home/topics/economy/36774653<br>
+9. 손안에 세무서가 쏙 손택스로 연말정산 하세요<br>
+https://www.snek.ai/home/topics/economy/36774654<br>
+10. 코스피 2200선 돌파 8개월 만에 최고치<br>
+https://www.snek.ai/home/topics/economy/36774655</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+<br>
+https://n.news.naver.com/article/092/0002178461</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Midoban</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+http://pf.kakao.com/_axjAxmxl/44751762</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>임영덕</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랑 ⃢이?</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이모티콘</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒1월11일 토요일 HeadlineNews❒<br>
+‾‾‾‾‾<br>
+■주말 불청객 미세먼지 기승 …<br>
+밤낮 기온 차 커<br>
+■추미애·윤석열, 檢간부에 다른 메시지…개혁vs수사 연속성<br>
+■강원도, 2024 동계청소년올림픽 유치 성공…'평창 영광' 잇는다<br>
+■월성 사용후핵연료 보관시설 7기 증설…원안위서 확정<br>
+■트럼프, 김정은에 생일축하로 손짓…'톱다운해법' 교착 뚫을까<br>
+■전쟁위기·여객기 추락·지진, 동시다발로 이란 강타<br>
+■검찰, 청와대 자치발전비서관실 압수수색…청 거부에 불발<br>
+■고위 당국자 국민 안전 최우선…청해부대 활용 가능성도<br>
+■'캐스팅보트' 반도건설의 깜짝 선언…한진家 분쟁 '안갯속<br>
+■정세균 청문특위, 파행 속 종료…인준안 본회의 직권상정 전망<br>
+■한국·새보수, '당 대 당' 통추위 구성 추진…통합 속도내기<br>
+■ 주권수호 vs 대만 안전…차이잉원·한궈위 선거전야 총력전<br>
+■지난달 은행 주택대출 4년만에 최대 증가…12·16 대책 시차<br>
+■한미, 14∼15일 방위비 6차 회의…내주 '방위비' 중대 기로<br>
+■'웅동학원 채용비리' 뒷돈 전달책 1심 실형…조국 동생이 공모<br>
+■6월부터 제2금융권 고객도 오픈뱅킹 이용 가능<br>
+■日 자민당 간사장, 올해 8월 전에 1천명 이끌고 방한<br>
+■고종 때 시작된 군 영창제도 역사 속으로…휴가단축 등 대체<br>
+■'기무사 감청' 수사 마무리…전·현직 군인 등 10명 재판에<br>
+■HDC현산 4천억원 유상증자 결의…아시아나 인수자금 마련<br>
+■박지원 안철수, 찻잔 속 태풍…안철수측 그만 은퇴하시라<br>
+■'금강산 철거·정비' 남북협의 사실상 일시중단…관광도 '먼길'<br>
+■전광훈, 한기총 회장 연임 노려…차기 선거 단독 출마<br>
+■4+1 농산어촌 선거구 유지 vs 한국당 호남 의석 줄여야<br>
+■검찰, 옛 삼성 미전실 김종중 사장 소환…'합병 의혹' 수사<br>
+■공시지가 시세반영률' 두고 경실련-국토부 논박<br>
+■1천억대 사기 혐의' MBG 대표에 징역 18년·벌금 3천억 구형<br>
+■익산 유치원서 가스 누출…원생 18명 치료 후 귀가<br>
+■불법촬영물 삭제 요청, 가족도 가능해진다<br>
+■'버닝썬 연루' 가수 승리 영장 재청구…13일 구속심사<br>
+■경찰, 양현석-제보자 대질조사…수사 마무리 수순<br>
+■'블랙 아이스' 사고 상주-영천고속도 관리업체 직원 입건<br>
+■국토부, '무더기 퇴사' 공항 보안검색요원 처우 개선 추진<br>
+■김기현 동생 고발했던 건설업자, 사기죄로 징역 4년 법정구속<br>
+■독감 의심환자 두달새 7배 증가…예방접종 서둘러야<br>
+■한국기술교육대 '취업률 1위' 홍보 1시간여만에 취소 해프닝<br>
+■영국왕실, 해리왕자 부부 '독립 선언' 수용 분위기<br>
+■발리 한국인 관광객 하루 1명꼴 도움 요청…8월 영사관 설치<br>
+■'3살 딸 학대치사' 20대 엄마 첫 재판서 혐의 인정<br>
+■동료 여경 성관계 영상 촬영·유포 순경, 강간 혐의는 부인<br>
+■중국 '최대명절 춘제' 특별수송기간…연인원 30억명 이동 시작<br>
+■日수사당국, 곤 前회장 부인도 인터폴에 국제수배 요청<br>
+■통영 해상서 어선 침수…승선원 17명 모두 구조<br>
+■中 홍콩 연락판공실 주임, 캐리 람 만나 폭력 종식해야<br>
+■'해체' 엑스원, 팬클럽 가입비 전액 돌려준다<br>
+■내 가족이면 안 태워…보잉 직원조차 737맥스 부실심사 조롱<br>
+■인도, '뉴델리 테러 모의' 3명 체포…IS 연계 의혹<br>
+■中日, 시진핑 방일 앞두고 '5번째 정치문서' 논의 본격화<br>
+■프랑스 총파업 36일째…연금개편 반대 4차대회 열려<br>
+■태국 북부 40년 만의 최악 가뭄에 가축도 '헉헉'<br>
+■'전자장치 부착' 조건 달아 구속 피고인 보석…7월부터 시행<br>
+■코스피, 외인 매수에 2,200선 돌파…8개월만에 최고<br>
+■[코스닥]6.94p(1.04%)오른673.03<br>
+■[코스피]19.94p(0.91%)오른2,206.39<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+■오늘의 영어 한마디      <br>
+for the weekend : 주말에<br>
+Do you have any plans for the weekend?<br>
+☞주말에 무슨 계획 있어?<br>
+I would like to go shopping with my friends for the weekend.<br>
+☞주말 동안 내 친구들과 쇼핑 가고 싶다.<br>
+Our children are eager to spend time at the amusement park for the weekend.<br>
+☞우리 아이들은 주말 동안 놀이공원<br>
+에서 시간을 보내길 간절히 원한다<br>
+■오늘의 건강상식<br>
+협심증약, 발기부전약과 함께 복용했다간…<br>
+https://shealth.life/v4/contentsView?contsId=8706&areaType=DISCOVER_PLUS</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒매경이 전하는<br>
+세상의 지식(매-세-지, 1월 11일)❒<br>
+‾‾‾‾‾<br>
+추미애 법무부 장관이 10일 오전 굳은 표<br>
+정을 한 채 정부과천청사로 출근하고 있다<br>
+(왼쪽 사진). 윤석열 검찰총장이 10일 점심<br>
+식사를 하기 위해 대검찰청에서 별관으로 이동하고 있다. /사진=한주형 기자·연합<br>
+뉴스<br>
+1.추미애 법무부 장관이 이낙연 국무총리<br>
+로부터 검찰 고위간부 인사 관련 필요한 대응을 요청받은 후, 법무부 간부에게 '징<br>
+계' 관련 법령을 파악해 보고하라고 지시한 것으로 10일 확인됐음.여권은 검찰의 행태<br>
+에 대해 항명이라고 규정하고 윤석열검찰<br>
+총장을 연일 압박하는 모습임.<br>
+2. 식당 창업자들이 주방 등 창업을 위한 공간과 장비를 큰 돈을 들여서 개별 구입<br>
+하지 않고 소규모 비용으로 빌려쓸 수 있도<br>
+록 하는, 주방을 여러 음식점이 나눠쓰도록 임대해 주는 서비스가 급성장하고 있음. 2017년 4월 4곳에 불과했던 공유주방업<br>
+체가 지난해 말 기준으로 33곳 이상으로 늘었음.<br>
+3. 지난 해부터 대한항공 지주사인 한진칼 지분을 대량 매입해 온 반도건설이 한진칼 경영에 참여하겠다고 전격 선언했음.10일 반도건설은 대호개발 등 3개 계열사가 작<br>
+년 12월 말 기준 한진칼 보유 지분을 8.28<br>
+%까지 늘렸다고 공시함.<br>
+4. 원자력안전위원회가 내년 11월 포화 상태에 달하는 월성 원자력발전소 사용 후 핵연료 건식저장시설(맥스터) 추가 건설을 승인했음. 2016년 한국수력원자력이 원안<br>
+위에 추가 건설을 신청한 지 3년9개월 만<br>
+임.<br>
+5. 한중 합작 미디어 커머스 플랫폼 기업 케이블리(KVLY)가 중국 최대 공연 기획사 '프리고스'와 한류 스타의 중국 공연을 위한 합작법인을 설립함. '한한령' 이후 전면 중<br>
+단된 문화 공연 분야에 해빙 신호탄이 될 전망임.<br>
+6.봉준호 감독의 프랑스 칸영화제 대상 수상작 '기생충'이 미국 HBO 드라마로 제작될 전망임. 영화계에서는 이번 소식이 '기생충'이 아카데미 시상식 후보에 선정<br>
+되는 데 호재로 작용할 것으로 기대하고 있음.<br>
+7. 청와대는 10일 김정은 북한 국무위원<br>
+장에 대한 도널드 트럼프 대통령의 메시지<br>
+를 북한 측에 전달했다고 밝혔음. 정의용 청와대 국가안보실장은 트럼프 대통령이 김 위원장의 생일에 관해 덕담하면서 그에 대한 메시지를 김 위원장에게 전달했으면 좋겠다 당부했다고 말함.<br>
+8. 이란 테헤란 상공에서 지난 8일 오전 추<br>
+락해 탑승객 전원(176명)이 사망한 우크라<br>
+이나 여객기가 의도치 않은 실수로 격추됐<br>
+다는 주장이 공식적으로 제기돼 파장이 일<br>
+고 있음. 미국과 캐나다, 영국은 정상이 공<br>
+ 개적으로 이를 밝혔고 서방 언론은 다양한 추론을 보도하고 있음.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒1월11일 토요일 손바닥 NEWS❒<br>
+‾‾‾‾‾<br>
+■전국 미세먼지 극성…<br>
+중부 낮 한때 ‘매우나쁨’<br>
+토요일인 11일은 제주도를 제외한 전국에<br>
+서 미세먼지가 극성을 부려 대기질이 매우 나쁘겠다. 서울, 인천, 경기, 충북 등 일부 지역은 미세먼지 비상저감조치가 시행된<br>
+다.<br>
+■이란 대사 한국 호르무즈 <br>
+파병하면 양국 관계 악화…단교 가능성도<br>
+한국이 미국 주도 호르무즈 해협 호위연합<br>
+체에 파병할 경우(한국과 단교까지도고려<br>
+할 정도로) 양국 관계에 영향을 줄 수있다”<br>
+고밝혔다. 샤베스타리 대사는 또 (한국을 포함한) 다른 국가가 호르무즈 해협에서 군<br>
+사 활동을 하게 된다면 우리가 가만히 있지 않을 거라는 점은 분명하다”라며 1000년 이상 지속한 이란과 한국 양국 관계 역사 중 현시점이 가장 큰 위기”라고 말했다<br>
+■靑, 한 달만에 검찰 압수수색에 ‘부글부글’…‘정치적 수사’ 의구심<br>
+울산시장 선거 관련 하명수사및 선거 개입 의혹을 수사 중인 검찰이 10일 청와대 대<br>
+통령비서실 정무수석실 산하자치발전비서<br>
+관실을 압수수색하면서 청와대 내부에서는 한 달만에 이뤄진 강제수사에 당혹감을 감추지 못했다<br>
+■법원 영장도 안 통했다… 靑, 검찰 압수수색 거부<br>
+청와대는 자료가 특정되지 않은 보여주<br>
+기식 수사”라며 강한 유감의 뜻을 밝혔다. 반면 검찰은 적법하게 발부받은 영장에다 상세한 목록까지 제출했음에도 거부당했<br>
+다”고 반박했다.<br>
+■그냥 둘 수 없다 추미애의 문자···'<br>
+항명' 윤석열 결국 쳐내나<br>
+추미애 법무부 장관이 지난 9일 국회 본회<br>
+의장에서 법무부 정책보좌관에게 문자메시<br>
+지로 지휘·감독 권한의 적절한 행사를위해<br>
+징계 관련 법령을 찾아 놓으라”고 지시하는 모습이 포착됐다. 직전 문자메시지엔 총리<br>
+의○○○○이 된 만큼 그냥 둘 수는 없지<br>
+요라는 내용도 있다. <br>
+■‘검찰 빅4’ 호남 출신 싹쓸이…‘<br>
+검찰의 꽃’ 검사장 승진 영남 0명<br>
+법무부가 지난 8일 단행한 검찰 고위 간부 인사는 ‘윤석열 사단 해체’와 ‘호남 약진’으<br>
+로 요약된다. 검찰 요직 ‘빅4’가 모두 호남 출신 인사로 채워졌고, ‘검찰의 꽃’이라 불<br>
+리는 검사장 승진자 가운데 영남 출신은 없었다<br>
+■강원도 '2024 동계청소년올림픽<br>
+' 유치 성공…'北 공동개최' 요청<br>
+국제올림픽위원회(IOC)는 10일(한국시간) 스위스 로잔의 스위스테크컨벤션센터에서 총회를 열고 IOC 위원들의 투표로 강원도<br>
+를 2024년 동계청소년올림픽 개최지로 확정했다. 투표 결과 총 유효투표 81표 중 찬성 79표, 반대 2표로, 압도적인 찬성표를 얻었다<br>
+■윤석열 반격? 檢특수부, <br>
+靑최강욱-민갑룡 경찰청장 수사한다<br>
+검찰은 10일 자유한국당이 민갑룡경찰청<br>
+장과 최강욱 청와대 공직기강비서관 등을 직권남용으로 고발한 사건을 서울중앙지검 반부패수사 3부(부장 허정)에 배당하고 수사에 착수했다. 민 청장, 최 비서관, 정보<br>
+국을 총괄하는 진교훈 경찰청 정보국장이 직권남용과 개인정보보호법 위반 혐의로 검찰 수사를 받게 됐다<br>
+■설계는 광대가, 심사는 원숭이가 직원도 못 믿는 보잉 737<br>
+보잉 직원들은 연방항공청(FAA)의 항공기 및 조종사 훈련 심사에 결함이 있다고 인식<br>
+했다. 2017년 4월 한 직원은 이 기종을 설계한 건 광대들이고, 그 광대를 감독하는 건 원숭이들이라고 꼬집었다. 항공 규제 당국인 FAA를 '원숭이'에 비유한 것이다.  <br>
+■고종 때 시작된 군 영창제도 역사 속으로…휴가단축 등 대체<br>
+구한말 고종 시대에 시작된 군 영창 제도와 '헌병'이란 명칭이 역사 속으로 사라진다.<br>
+군 영창 제도 및 헌병 명칭 폐지를 골자로 한 군인사법 개정안이 지난 9일 국회 본회의를 통과했다. 이 법은 공포 후 6개월 뒤에 시행된다고 국방부가 10일 전했다.<br>
+■주진모 사태로 커진 '해킹' 공포···<br>
+애플이 삼성보다 더 안전?<br>
+이번 연예인 스마트폰 해킹 소식이 알려<br>
+지면서 삼성전자가 10일 입장을 발표한 것은 클라우드 서버 자체는 안전하다는 것을 강조하기 위해서다. 삼성전자는 이날 삼성 갤럭시폰이나 삼성 클라우드 서비스<br>
+가 해킹된 것이 아니라, 일부 사용자 계정이 외부에 유출·도용된 것으로 추정된다고 밝혔다<br>
+■아들 숨진 것 모른채···<br>
+70대 치매 노모, 주검 옆서 홀로 생활<br>
+오후 5시30분쯤 용인시 처인구 포곡읍의 한 2층짜리 다세대주택 1층에서 A씨가 숨진 채 발견됐다.A씨 주검은 월세가 두 달가량 밀린 것을 이상하게 여긴 집주인이 집을 찾으면서 발견됐다. 집주인은 즉각 경찰에 신고했다.<br>
+■개 구충제 항암 간증 속···<br>
+암센터 임상시험 가치도 없다 왜<br>
+국립암센터는 기존 연구 문헌을 토대로 고찰했을 때, 펜벤다졸은 항암 신약으로<br>
+서의 효용성에 대한 과학적 근거가 없다고 결론 내렸다”며 펜벤다졸의 안전성이 확<br>
+보되지 않은 상황에서 사람을 대상으로 하는 임상시험을 하는 것은 연구 윤리에 어긋나는 행위다”고 9일 밝혔다. 이어 펜<br>
+벤다졸이 항암효과가 있다고 주장하는 비<br>
+과학적인 소문에 현혹되지 않기를 권고한<br>
+다”고 강조했다.<br>
+■장수 생막걸리, 25년 만에 투명한 페트병으로 교체<br>
+서울장수주식회사는 ‘장수 생막걸리’ 용기를 기존 녹색 페트병에서 재활용에 용이한 투명 페트병으로 교체한다고 10일 밝혔다. 장수 생막걸리가 지난 1996년 출시된 후 약 25년 만의 변화다.<br>
+■이동준 극장골' 한국축구, <br>
+중국에 1-0 진땀승<br>
+김학범 감독이 이끄는 한국 23세 이하(U-<br>
+23)남자축구대표팀은 10일(한국시간) 태국 송클라의 틴술라논 스타디움에서 끝난 2019 아시아축구연맹(AFC) U-23 챔피언십 조별리그 C조 1차전에서 중국을 1-0으로 꺾었다.<br>
+자료출처☞http://:goo.gl/GU8MEk</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2020년1월11일 부동산 주요뉴스<br>
+[김용일의 부동산톡] 아파트 입주자대표회의 소집통지시 안건의 기재정도와 무효<br>
+https://vo.la/zxeG<br>
+서울 재건축 17주 만에 하락 전환..9·13 대책 때보다 충격파 더 커<br>
+부동산114 주간 아파트 시장동향..서울 일반 아파트 3주 연속 상승폭 축소<br>
+https://vo.la/DwTs<br>
+올해 서울 2만여가구 일반분양..강동구 7000여가구 '최다'<br>
+서울 41곳 5만3677가구 중 일반분양 2만842가구 예정<br>
+https://vo.la/FxHN<br>
+[주목! 이 아파트]마포 도화현대, 몸값 낮춰 '9억' 거래<br>
+12·16 대책 이후 전용 84㎡ 9억에 거래<br>
+같은 달 직전 거래가보다 9000만원 낮아<br>
+https://vo.la/ZjJM<br>
+헬리오시티 다음 어디..? 속도내는 송파 재건축<br>
+https://vo.la/zhZe<br>
+[부동산캘린더]청약시스템 이관으로 분양시장 한산<br>
+2월 1일 청약업무 한국감정원이 수행<br>
+1월 셋째주 청약물량 1438곳..모델하우스 無<br>
+https://vo.la/Iff0<br>
+쉬어가는 청약 시장..2월부턴 어떻게 바뀌나<br>
+https://vo.la/LjFo<br>
+[경매브리핑]'쿼드러플 역세권' 공덕푸르지오시티, 24대 1<br>
+지지옥션, 1월 둘째주 법원경매 동향 분석<br>
+https://vo.la/sjqD<br>
+[집코노미TV] 올해 서울 집값 5% 상승 전망한 이유는..<br>
+'집'터뷰<br>
+홍춘욱 박사<br>
+https://vo.la/QOgE<br>
+한숨 돌린 분양시장 2월 재개..서울 '로또' 단지는 어디?<br>
+2~3월 전국 4만가구 분양 예정..서울 4373가구 등 수도권 2.3만가구<br>
+흑석3·힐스테이트세운·과천지정타·위례신도시 등 알짜 단지 대기<br>
+https://vo.la/RTDj<br>
+'여수 밤바다'의 위력.. 서울 부럽잖은 여수 분양시장<br>
+'마린파크 애시앙' 수십대 1, '힐스테이트 죽림 젠트리스'도 140대 1.. 관광객 유입+지역경기 탄탄<br>
+https://vo.la/hCrN<br>
+강남아파트는 규제에도 끄떡없다?<br>
+https://vo.la/m4Ai<br>
+부동산 경기 좋으니 해보자.. 정비구역 재지정 추진하는 해제구역들<br>
+https://vo.la/ZPsE<br>
+인덕원 대단지 매물 '품귀'..지정타+사통팔달 교통호재 눈길<br>
+'인덕원-동탄 복선전철', '월곶~판교 복선전철' 각각 2026년과 2025년 개통<br>
+https://vo.la/anZ1<br>
+주택청약, 내달 감정원 이관.. '청약홈'서 청약가점 등 바로 조회<br>
+https://vo.la/kH7I</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://n.news.naver.com/article/052/0001387167</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:44</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

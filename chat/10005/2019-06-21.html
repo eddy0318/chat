@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>. . .기업부동산 전문</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진 23장</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+05:12</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>. . .기업부동산 전문</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[2019.06.21 부동산친구 Z★ 남c]<br>
+-------------------------------<br>
+• 부동컨설팅, 건물관리<br>
+• 전체보기 를 누르시면 내용이 나옵니다.<br>
+-------------------------------<br>
+해당 뉴스는 주관적 기사를 전달한 사항이니<br>
+다각면에서 보시기를 권장합니다.<br>
+-------------------------------<br>
+◆업계◇정책●경제○주거◈분양<br>
+ 《 Headline 》 <br>
+◈ 분양 앞둔 건설사들, 분양가 낮출까 후분양 할까 (머니투데이)<br>
+http://news.mt.co.kr/mtview.php?no=2019061913472134236&pDepth2=Etotal<br>
+- 후분양 전환시 금융 비용 상승으로 수익률 떨어져…주택 공급 축소 우려<br>
+-------- ◆ 업   계 --------<br>
+◆ 이광래 우미건설 명예회장, 건설업 최고 영예 '금탑산업훈장' 수상 (데일리안) . SDR - SWG <br>
+http://www.dailian.co.kr/news/view/804721 <br>
+◆ 김상열 호반그룹 회장, 베트남 부총리와 오찬…상호 협력 다짐 (EBN)<br>
+http://www.ebn.co.kr/news/view/989927?kind=cate_code&key=ST&shword=&page=&period=<br>
+- 2015년부터 광주•전남 베트남 명예총영사로 임명...양국 우호 증진 노력<br>
+◆ 황선표 상무 SK D&D, 다음 먹거리 '물류센터 개발 (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906190100030210001921&lcode=00&page=1&svccode=00<br>
+- 해외 진출 관심, 당장은 시기상조<br>
+◆ DSD삼호, '힐스테이트 광교산' 개발 브릿지론 1300억 조달  (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906190100030740001951&lcode=00&page=2&svccode=00<br>
+- 현대건설 연대보증 제공…본PF 이달 말 예정<br>
+◆ 지동현 에이엠플러스 대표 부동산개발은 종합예술 (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906180100028460001810&lcode=00&page=2&svccode=00<br>
+- 든든한 대주주 덕 사업에 긍정적 영향, 창의적 개발·리스크 관리 중요<br>
+◆ 다온글로벌, 주택조합 구원투수…경남 랜드마크 도전 (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906190100030750001952&lcode=00&page=2&svccode=00<br>
+- 김해율하 사업, 경남은행 소개로 맞손…1600억 브릿지론 연대보증 <br>
+◆ 여의도 메리츠화재 사옥, 매각 본격 착수  (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906180100028870001835&lcode=00&page=2&svccode=00<br>
+- 자문사 세빌스코리아 IM 발송, 26일 입찰…세일앤리스백 가능성<br>
+◆ '첫 10년물' 호텔롯데, '강제상환' 멍에 지웠다  (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906180100027640001756&lcode=00&page=3&svccode=00<br>
+- [Deal story]사모채 일변도 탈피…실적 반등 등 기반 자존심 회복<br>
+◆ GS리테일, 4년만에 대규모 공모채 추진  (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906190100030060001912&lcode=00&page=4&svccode=00<br>
+- 최대 3000억 조달 계획…복수 증권사 IB에 RFP 발송<br>
+◆ 강남제비스코의 믿을 구석 '화학·건설'  (더벨)<br>
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201906180100027920001774&lcode=00&page=4&svccode=00<br>
+- [페인트업 리포트]③자회사 ㈜강남·강남화성·강남건영, 전사 수익성 견인<br>
+-------- ◇ 정   책 --------<br>
+◇ 국토부-부울경 합의…김해신공항 총리실 결정 따른다(종합)  (뉴스1)<br>
+http://news1.kr/articles/?3650974<br>
+- 김현미 장관-PK 단체장 1시간 비공개 회동후 합의<br>
+- 검토시기·방법 등 세부사항은 총리실서 논의 주재<br>
+◇ 강남 재건축 '꿈틀'..정부·서울시 합동 단속 나서 (뉴스핌)<br>
+http://www.newspim.com/news/view/20190620001286<br>
+- 신반포4지구·미성크로바·신당8구역 합동점검<br>
+◇ 집값 누르고 갭투자 잡았지만 내집 마련도 어려워져 (파이낸셜뉴스)<br>
+http://www.fnnews.com/news/201906201707206743<br>
+- 문재인정부 2년 부동산 정책<br>
+- 투기수요 억제, 시장 안정 목표..잇단 규제에도 상승폭 되레 커져<br>
+- 고강도 집값 잡기 대책 쏟아부어..대출규제로 거래절벽 부작용도<br>
+-------- ● 경   제 --------<br>
+● 부동산 규제에 ... 현금부자 파워만 더 커졌다 (서울경제)<br>
+https://www.sedaily.com/NewsView/1VKHPXSLA7/GB01<br>
+- '절세용 법인 설립→주택 구매'<br>
+- 지난달 법인이 산 집 1,755건<br>
+- 2030 매입 비중도 계속 늘어<br>
+- 강남 3구선 33%까지 치솟<br>
+- 신반포·경남 통합 등 후분양 전환<br>
+- 결국 자산가들 차지 될 것<br>
+● 건설업계 노후 기반시설 성능개선이 먼저” (아시아투데이)<br>
+http://www.asiatoday.co.kr/view.php?key=20190620010012382&ref=section_list<br>
+- 정부 4년간 32조원 투자에 냉랭<br>
+- 유지보수 정도로는 투자효과 미미<br>
+● 대우건설, 아파트 단지에 첨단 보안시스템 '5ZSS' 도입 (조선일보)<br>
+http://biz.chosun.com/site/data/html_dir/2019/06/20/2019062002506.html<br>
+-------- ○ 주   거 --------<br>
+○ 서울 아파트값 ‘꿈틀’ (경향비즈)<br>
+http://biz.khan.co.kr/khan_art_view.html?artid=201906202049005&code=920202&med_id=khan<br>
+ㆍ32주 연속 하락세에도 강남구 이어 송파·마포·양천 등 상승 전환<br>
+○ 하자 없는 아파트 만들자” 입주자 사전방문 의무화 (경향비즈)<br>
+http://biz.khan.co.kr/khan_art_view.html?artid=201906202048015&code=920202&med_id=khan<br>
+ㆍ국토부, 입주자 권리강화 발표…내년부터 지자체 전문점검단 꾸려<br>
+ㆍ시공사 등 ‘지적된 하자’ 보수 안 하면 과태료·준공검사도 못 받아<br>
+○ 강남 집값 '꿈틀'… 국토부·서울시, 강남 재건축 특별점검(종합) (아시아경제)<br>
+http://www.asiae.co.kr/article/development-sell/2019062013422181565<br>
+○ 강남4구 아파트값 8개월만에 하락 접고 보합 전환 (연합인포맥스)<br>
+http://news.einfomax.co.kr/news/articleView.html?idxno=4035270<br>
+○ 강남ㆍ송파 매매가 상승…서초는 35주만에 보합 (중앙일보)<br>
+https://price.joinsland.joins.com/sihwang/read.asp?pno=138210<br>
+- 전반적인 하락세 속에 강남권만 상승세 확산<br>
+- 서울 강남 매매가 보합…경기는 하락폭 확대<br>
+- 전셋값 하락폭 확대…서울 34주 만에 보합 전환<br>
+○  집값 오르자 선제적 예방조치?…강남권 재건축 조합 합동점검 (한국경제)<br>
+https://www.hankyung.com/realestate/article/2019062077991<br>
+- 국토부·서울시 이달말까지 3곳<br>
+-------- ◈ 분   양 --------<br>
+◈ GTX-A에도 체면구긴 운정신도시…3개 단지 모두 청약 미달  (뉴스웨이)<br>
+http://www.newsway.kr/news/view?tp=1&ud=2019062016410447046<br>
+- 대우건설 ‘운정신도시 파크푸르지오’ 청약률 최저…0.37:1<br>
+- 중흥S-클래스·대방노블랜드…1.13대 1, 1.45대 1로 치면치레<br>
+- 3기 신도시 고양창동 지정 영향 큰 듯…업계 기다려볼 것”<br>
+◈ 달라진 청약제도, '다방 분양가이드' 통해 확인하세요 (머니S)<br>
+http://moneys.mt.co.kr/news/mwView.php?no=2019062008598043080&type=4&code=w0903&code2=<br>
+◈ 분양가 통제 받느니…상아2차 후분양 가닥 (매일경제)<br>
+https://www.mk.co.kr/news/realestate/view/2019/06/440805/<br>
+- 대의원회의, 분양 연기 결정<br>
+- 서울 재건축사업 갈등 확산<br>
+- HUG 분양가통제 부작용 심각<br>
+- 로또 분양 심화·공급 축소<br>
+- 업계 보증독점 없애라 호소<br>
+◈ 래미안 원베일리·래미안 라클래시 '후분양'…정부 독려한 후분양 강남 확산? (아주경제)<br>
+https://www.ajunews.com/view/20190620145747047<br>
+◈ 반도건설 ‘운서역 반도유보라’ 6월 분양…기존 주상복합아파트 틀을 깨다 (에너지경제)<br>
+http://www.ekn.kr/news/article.html?no=438592<br>
+- 영종 최초 주상복합 아파트…역세·숲세·몰세권 다 잡아 <br>
+- LGU+, AIoT(사물인터넷) 기술·미세먼지 저감시스템 적용<br>
+- 공항철도 운서역 도보권…서울 마포권 30분 내 이동<br>
+◈ 지방 분양 흥행 이유 공통점 00가지 (Real Cast)<br>
+http://www.rcast.co.kr/sub02.php?BRD_ID=1560934932230<br>
+◈ 3분기 수도권 3만4000가구 등 전국 5만9000가구 분양 쏟아져 (Real Cast)<br>
+http://www.rcast.co.kr/sub02.php?BRD_ID=1560936130255<br>
+-----------------<br>
+※ 단톡방 내용은 확인을 할 수 없으니 개인연락처로 문의부탁드립니다.<br>
+남 윤 석 (Nam Yun-Suk)<br>
+주식회사 젠스타<br>
+서울시 중구 을지로5길 16, 8층 (을지로2가, 삼화타워) <br>
+Mobile. 010-4938-4313<br>
+FAX : 02-2003.8111<br>
+ E-mail. ysnam@mygenstar.com</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+05:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Yang HyunSeong</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은 아침 입니다용</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+05:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김준희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+# 제 1342호 신문브리핑(2019년 6월 21일) #<br>
+감사할 것이 있어서 감사하는 1차원적인 감사. 특별히 좋은 일이 없는데도 감사하는 2차원적인 감사. 불행을 당하고 힘들고 어려워도 감사하는 3차원적인 영적 감사.<br>
+- 평생감사 카드<br>
+<< 정치/외교 >><br>
+1. 김정은 북한 국무위원장과 시진핑(習近平) 중국 국가주석이 20일 북한 평양 금수산 영빈관에서 다섯 번째 정상회담을 하고 한반도 문제 해결을 위해 전략적 소통을 강화하기로 함<br>
+- 시 주석이 북한을 방문한 건 2012년 집권 이후 처음이며, 중국 최고지도자의 방북은 2005년 10월 후진타오(胡錦濤) 당시 주석 이후 14년 만으로 북·중의 밀월을 대외에 확실히 각인시켰다는 평가가 나옴<br>
+<< 경제 일반 >><br>
+1. 차량 호출 서비스 ‘타다’를 모방한 모빌리티(이동수단) 서비스가 계속 등장하고 있음<br>
+- 서울 강남에선 ‘파파’가 시범 운영 중으로 한 달 새 가입자가 1만 명을 넘어서며 빠르게 성장하고 있고, 또 다른 모빌리티 스타트업 차차크리에이션도 렌터카 회사들과 오는 8월 ‘차차밴’ 서비스 개시를 앞두고 렌터카 공급 협약을 맺었다고 20일 밝힘<br>
+- 이들 서비스의 공통점은 타다처럼 렌터카를 이용한 차량 호출 서비스로 타다가 인기를 끌며 시장성을 인정받자 모방 업체가 늘어나는 것으로 분석됨<br>
+2. 한국은행이 20일 발간한 금융안정보고서에 따르면 2018년 외부감사기업 2만1213곳 중 이자보상비율 1배 미만 기업 비중이 32.2%로 집계됨<br>
+- 이자보상비율은 영업이익을 이자비용으로 나눈 값으로 기업의 채무상환능력을 나타내며, 이 비율이 1배 미만이라는 건 영업이익으로 이자도 감당하지 못한다는 의미임<br>
+<< 금융/부동산 >><br>
+1. 미래에셋대우가 모바일페이 시장에 진출하기 위해 전자지급결제대행(PG) 사업 등록을 완료했다고 20일 밝힘<br>
+- 국내 증권회사 가운데 처음이며, 미래에셋대우는 우선 중국 텐센트와 손잡고 오는 8월께 국내에서 위챗페이 서비스를 대행하며, 이를 통해 중국 관광객이 자주 찾는 상권을 중심으로 가맹점을 늘린 뒤 자체 간편결제 서비스를 내놓기로 함<br>
+2. 은행권 결제망이 모든 금융기업에 저렴한 수수료로 개방되는 오픈뱅킹(공동결제 시스템)이 연말부터 가동되면서 연말부터 스마트폰에 어떤 은행의 앱(응용프로그램)이든 하나만 깔면 다른 은행에 있는 계좌까지 조회·이체가 가능해질 예정임<br>
+- 금융위원회는 오는 10월 시범 운영을 거쳐 12월부터 전 은행권에 오픈뱅킹을 전면 도입한다고 20일 발표했으며, 오픈뱅킹에선 16개 일반은행과 2개 인터넷전문은행이 표준화된 기술방식(오픈 API)으로 고객 정보를 제공하게 됨<br>
+<< 국제 >><br>
+1. 무역전쟁 불확실성이 커지며 경기가 둔화되고 있다는 판단에 따라 미국 중앙은행(Fed)이 하반기 기준금리 인하를 강하게 예고하면서 미 국채금리가 하루에만 10bp(1bp=0.01%포인트) 하락하며 채권시장에 랠리가 나타남<br>
+- 월가에서는 이달 말 주요 20개국(G20) 정상회의 때 미·중 정상이 무역협상을 타결하지 못하면 다음달 금리가 인하될 것으로 기대하고 있음<br>
+2. 일본 닛케이아시안리뷰는 19일(현지시간) 복수의 소식통을 인용해 애플이 주요 협력사들에 생산시설의 15~30%가량을 중국에서 동남아시아 등으로 이전하는 데 따른 비용 영향을 평가해 달라고 요청했다고 보도함<br>
+- 닛케이는 애플이 생산시설 이전을 단행할 경우 중국 산업계에 미칠 영향이 상당할 것으로 내다봤으며, 이와 관련 애플은 중국에서 1만 명을 직접 고용하고 있고 약 500만 명이 애플의 중국 생산라인에 참여하고 있는 것으로 추산되고 있음<br>
+3. 미국이 인도인에 대한 전문직 취업비자(H-1B) 발급을 제한하는 방안을 검토 중인 것으로 알려짐<br>
+- 인도가 중국 다음으로 미국의 무역전쟁 타깃이 될 것이라는 관측이 나옴<br>
+<< 오늘 신문의 경제관련 용어 >><br>
+* 이자보상배율(Interest Coverage Ratio)<br>
+- 기업이 수입에서 얼마를 이자비용으로 쓰고 있는지를 나타내는 수치임.<br>
+기업의 채무상환 능력을 나타내는 지표로 영업이익을 금융비용(이자비용)으로 나눈 것으로, 기업이 부채에 대한 이자를 지급할 수 있는 능력을 판단하기 위해 산출함. <br>
+이자보상배율이 1이면 영업활동으로 번 돈으로 이자를 지불하고 나면 남는 돈이 없다는 의미이며, 1보다 크다는 것은 영업 활동을 통해서 번 돈이 금융비용을 지불하고 남는다는 의미임. 이자보상배율이 1미만이면 영업활동에서 창출한 이익으로 금융비용조차 지불할 수 없기 때문에 잠재적 부실기업으로 볼 수 있음.<br>
+- 정보 출처 : 시사경제용어사전, 2017. 11., 기획재정부<br>
+<< 해운/항만/물류 >><br>
+1. 영국 클락슨에 따르면 14일자 중동-일본항로 VLGC 일일 용선료가 6만1218달러로, 1주일 전 5만6286달러보다 9% 상승함<br>
+- t당 가격 환산은 70달러로 전주의 66달러보다 4달러 올랐으며, VLGC 평균 손익분기점은 일일 용선료 2만5000달러 안팎으로, 손익분기점의 2배 이상 높은 수준에서 용선 거래가 이뤄지는 셈임<br>
+(코리아쉬핑가제트)<br>
+2. 일본 컨테이너선 통합선사 오션네트워크익스프레스(ONE)가 러시아와 핀란드를 연결하는 피더컨테이너항로 북해·발트해서비스(NBS)를 개편한다고 밝힘<br>
+- 일본 선사는 독일 선사 하파크로이트와 전략적 제휴를 통해 2500TEU급 선박 4척을 투입해 러시아노선과 핀란드노선을 진자(펜듈럼) 방식으로 운항할 계획이며, 아울러 러시아 상트페테르부르크항에선 기존 컨테이너터미널(CTSP)뿐 아니라 석유부두(PLP)까지 기항을 확대함<br>
+(코리아쉬핑가제트)<br>
+3. 폴라리스쉬핑은 32만5000t급 초대형 벌크선 <상헤븐>(SAO HEAVEN)호를 인도 받았다고 20일 밝힘<br>
+- 전날 선사 측에 인도된 신조선은 폴라리스쉬핑이 브라질 광산업체 발레와 체결한 25년 장기운송계약에 투입하기 위해 현대중공업에 발주한 18척의 동형선 시리즈 중 5번째 선박이며, LNG(액화천연가스)를 주연료로 사용할 수 있는 LNG레디 디자인을 적용하는 한편 배기가스 세정장치인 스크러버를 장착함<br>
+(코리아쉬핑가제트)<br>
+<< 해운 운임﻿지수 >><br>
+* 해운관련 통계 종합 Index(코리아쉬핑가제트 홈페이지 내용)<br>
+- 건화물선 운임지수 일일통계(2019년 6월 18일 기준) => BDI : 1,135 / BCI : 1,956 / BPI : 1,117 / BSI : 728<br>
+​- HRCI(HOWE ROBINSON CONTAINER I31EX / 2019년 6월 12일 기준) : 692<br>
+<< 조선/중공업 및 수주관련 >> <br>
+1. 20일 조선업계에 따르면 대만 에버그린은 오는 7월 2만3000TEU급 초대형 메가 컨테이너선 11척(옵션 2척 포함) 건조를 위한 입찰제안서를 발송함<br>
+- 메가 컨테이너선 총 공사비는 2조5000억원(약 17억 달러) 규모로서, 액화천연가스(LNG)를 연료로 사용하는 선박으로 건조될 예정이어서 기본 선박가격 보다 높게 책정된 것으로 전해짐<br>
+(EBN물류&조선)<br>
+<< LNG 및 친환경에너지 >><br>
+특이내용 없음<br>
+<< 해양 금융 >><br>
+특이내용 없음<br>
+<< 해양관련 법령 및 제도 >><br>
+특이내용 없음<br>
+<< 해양수산부 및 해양유관기관 입찰 및 중요 공지사항 >><br>
+특이내용 없음</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김석진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>보원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이그림은 어떻게 보는거죠 ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>보원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김석진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+S&P500 지수입니다. 초록색이면 오른거고 빨간색이면 내린겁니다.^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>보원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+많은 덩어리가 있는곳이 시장을 이끌어 가는거라고 봐야 하나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>보원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그시장의 점유율이라고 해야 하는건가..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>보원</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뭔가... 회로 보는것 같네요 ㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+07:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김성은</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019-06-21(금)뉴스브리핑<br>
+시진핑, 김정은 만나 북한 안전 돕겠다”...북한 체제보장 문제 이슈화 예고<br>
+-중국 국가주석 첫 국빈 방문 → 공항·금수산궁전 2차례 환영식 '극진 예우' 25만 인파 만세...중국 언론도 시 주석 방북 대대적 보도<br>
+☞ G20 미·중 담판 전 북·중 작전회의 → 시 주석이 전달할 ‘평양 메시지’에 대한 트럼프 반응에 따라 북·미, 미·중 무역전쟁에도 영향<br>
+- 시 주석 중국과 조선은 한집안”...북한 비핵화 협상 과정에 직접 개입 선언 → 평화협정·핵우산 거론 전망<br>
+- 김정은 인내심 유지하겠다” → 핵·미사일 실험 중단 약속을 당분간 지키면서 북·미 3차 정상회담 개최를 촉구한 것으로 해석<br>
+☞ 대화·제재 카드 동시에 꺼낸 미국 △비건 비핵화·체제보장 함께 가야” △재무부, 90일 만에 추가 제재·대상은 북한 도운 러시아 은행<br>
+- 북한엔 유화적 신호·중국엔 '탈선 말라' 경고 → 트럼프 입장에선 다양한 신호 보내 협상력을 높이려는 의도<br>
+▲ 미국, 17년 연속 북한을 ‘최악 인신매매국’ 지정 → 국무부, 인신매매 보고서 발표...中·러시아도 최악등급, 사우디·쿠바 추가돼<br>
+※ 미중 무역갈등 합의 위한 물밑 작업 본격화 △리커창 총리, 美기업 등 CEO만나 시장개방-규제 완화 △美USTR 대표 중국과 만나 대화<br>
+▲ 추궈홍 주한 중국 대사 미국, 화훼이 제재는 불공정 행위...한국, 이익위해 판단해야 → 북핵은 쌍궤병행으로 해결 (매경 5면)<br>
+■ 북한 어선 '대기 귀순' 은폐·축소 논란 → 청와대 개입 의혹으로 확산<br>
+※ 보수 언론은 해경이 '북한 어선 입항' 19분만에 청와대·국정원 등에 보고했음을 부각하며 정부 차원의 사건 방조·축소 의혹 제기<br>
+- 17일 군 브리핑에 靑행정관 참석한 사실이 밝혀지면서 청와대 해명(삼척항 인근은 방파제 포함)에 신뢰도가 떨어지는 양상<br>
+- 軍 일각 인근이라면, 해상으로 알지 누가 방파제라 생각하나 청와대가 발표 내용을 사전 협의하고도 군에 책임을 돌린다<br>
+☞ 해경의 첫 보고가 있었던 15일 새벽부터 군 브리핑이 있었던 17일 오전까지 청와대와 군 사이에 어떤 논의가 있었는지가 핵심<br>
+- 남북 군사합의로 동해가 뚫렸다는 비판을 우려해 청와대와 군이 은폐·축소를 공모했다면 '대통령 책임론'이 확산 될수도<br>
+▲ 정경두 국방, 90초 대국민 사과…질문도 안 받고 퇴장 → 군 안팎 장관 책임 전혀 언급 없어”...국방부, 합참·23사단·1함대 조사<br>
+■ 자사고 2곳 지정 취소 논란<br>
+※ 전주 상산(0.39점차 탈락)·안산 동산고 지정 취소 결정 : 교육부 동의 땐 내년 일반고 전환, 학교·학부모 반발...법정공방 불가피<br>
+- 상산고 평가 형평성 논란 : 커트 라인을 전북만 10점 높이고, 선발 의무없는 '사회통합전형' 감점이 탈락의 결정타<br>
+- 자사고·외국어고를 폐지하려는 정부 입장에 맞춰 어거지로 꿰맞춘 것 아니냐는 의구심이 들기에 충분하지만,<br>
+- 많은 일반 국민들이 자사고에 대한 부정적 인식을 갖고 있어 이슈를 지속시킬 동력을 만들수 있을지는 미지수<br>
+▲ 홍성대 상산고 이사장 정부 사학을 호주머니 속 물건 취급...교육부까지 자사고 취소 동의땐 사법부에 소송 내고 싸우겠다 (조선 1면)<br>
+▲ 김승환 전북교육감 임대차계약도 5년 뒤 재계약 안할 수 있다 → 9년 전에도 2곳 자사고 취소...법원 교육청 결정 잘못” 판결<br>
+☞ 보수 언론은 좌파 교육감들의 문 대통령 공약인 '자사고 폐지'의 첫 결과로 처음부터 죽이기로 작정하고 평가를 조작한 것이라고 비판<br>
+- 이번 평가가 공정하지도 합리적이지도 않은 만큼 교육부는 전북도교육감 결정을 수용해선 안되고, 자사고 폐지 공약도 폐기하라고 촉구<br>
+☞ 진보 언론은 설립취지 위배 자사고의 일반고 전환은 당연 → 정부는 자사고 설치의 근거가 되는 시행령 개정 작업에 속도를 내라고 주문<br>
+- '입시 명문' 변질된 자사고 수술대 → ’고교 서열화의 핵’ 자사고, MB정부때 49곳까지 마구 확대·일반고 중심 공교육은 황폐화<br>
+■ 기타 뉴스<br>
+※ 문 대통령 공정·정의 원칙 정립, 한두 해로 안 끝나 → 4차 반부패정책협의회 주재하며 ‘중단 없는 개혁’ 주문<br>
+- 국민에 좌절감” 세금 체납·사학 비리 등 콕 찍어 지목...‘윤석열 검찰총장’과 맞물려 집권 3년차 강공 나설 듯<br>
+※ 나경원 바른미래당과 우선 통합...애국당과는 자연스럽게 같이”(관훈토론회)...손학규 어떻게 감히...한국당은 촛불때 이미 사망선고”<br>
+▲ 한국당, 박찬호·이국종 교수 영입 추진 아직은 본인들 의사와 무관 → 이 교수의 영입 추진은 오히려 '역풍' 가능성<br>
+※ 손혜원이 받은 정보는 목포시가 투기 우려해 비공개한 문건 → 손 의원은 공개된 자료” 주장, 검찰 공무원들도 보안문서 진술” (중앙 14면)<br>
+※ 국군포로 손배소 3년만에...'피고 김정은' 오늘 첫 재판 → 6·25때 납북돼 강제노역한 2명 인권유린 당했다 3억대 소송(조선 10면)<br>
+※ 국정원 '원전 기술 유출' 늑장 조사 : 미국 기업과 '핵심 연결고리' 의심 업체 제보 받은 지 한달 만에 조사 착수 (세계 1면)<br>
+※ 유엔 빈 살만 사우디 왕세자가 카슈끄지 살해 배후 지목 → 스모킹건 없지만 관련 증거는 확보...미국·사우디 난감</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Nicky</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+<br>
+[2019년 6월 21일] 부동산 Hot Clip<br>
+https://pf.kakao.com/_fnVjT<br>
+https://blog.naver.com/itsking/221567176507<br>
+서울집값 바닥 다지나…실거래가 지수도 상승 전환<br>
+https://hoy.kr/mGwov<br>
+맹모삼천지교? 뒤로밀린 '학군'…공원·커뮤니티등 '생활환경' 선호 41%<br>
+https://hoy.kr/PCJR3<br>
+올 하반기엔 안산다 39.6%...가격 너무 올라서 31%<br>
+https://hoy.kr/q2Ykg<br>
+10명중 8명 올 하반기 집값 오르지 않을 것<br>
+https://hoy.kr/jkFED<br>
+종부세 뜯어고치나… 여당도 갈라선 '실수요자 피해' 논란<br>
+https://hoy.kr/rPRrT<br>
+사업 다각화 vs 일감 빼앗기… ‘작은 일’ 손대는 큰 건설사<br>
+https://hoy.kr/cBtHb<br>
+갈 길 바쁜 성수동 50층 재개발…1지구 건축심의 반려, #ckau<br>
+https://hoy.kr/srqvl<br>
+철산주공10·11단지도 사업인가…속도내는 재건축 변수는 HUG 분양가 규제<br>
+https://hoy.kr/jCqAo<br>
+맥 못추는 상업용 부동산…상가·오피스텔 수익률도 초양극화<br>
+https://hoy.kr/KZSJG<br>
+상가·오피스텔보단 아파트… 공실률 걱정 늘었다<br>
+https://hoy.kr/cpbkF<br>
+민간 지렛대 삼아 1200억 절감, 공원부지 의정부처럼…<br>
+https://hoy.kr/W0Xz4<br>
+'열받은' 서리풀공원 땅주인들 법정간다<br>
+https://hoy.kr/habVd<br>
+확장이냐 신설이냐… 동남권 신공항 다시 도마 위에<br>
+https://hoy.kr/y5IQk<br>
+반포주공1단지 재건축 ‘안갯속’…10월 이주 강행”vs리스크 너무 커”<br>
+https://hoy.kr/wUTdj<br>
+전월세 5% 넘게 올리면 ‘과태료 폭탄’<br>
+https://hoy.kr/9kkEQ<br>
+대법 차명부동산 소유권, 실소유자에 있다”… 판례 유지<br>
+https://hoy.kr/AK4d4<br>
+과천 3기 신도시 주민과 함께”… 개발 패러다임 바꾼다<br>
+https://hoy.kr/JYg4z</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>모건</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+♣ 6월21일 금요일 간추린 아침뉴스<br>
+# 헤드라인 뉴스<br>
+1.시진핑 방북 '6월 정상 외교전' 개막..'비핵화' 운명 달렸다<br>
+2.태영호 김정은, 시진핑 통해 트럼프에 비핵화 양보안 전달할듯<br>
+3.'인재영입' 나선 한국당, 내부서 박찬호·이국종·이재웅 거론<br>
+4.진보진영 김명환 구속영장 '촛불민심' 역행..즉각 철회해야<br>
+5.MB 이어 김관진도 직권남용죄 위헌성 따지기로..너무 추상적<br>
+6.文대통령 지지율, 8주 만에 '부정'↑..긍정 46.8% 부정 47.4%<br>
+7.전북 상산고 결국 자사고 재지정 취소..16년만에 일반고로 전환된다<br>
+8.김정은 북·중 관계, 새로운 높이에서 강화·발전시킬 것<br>
+9.정경두 北 어선 사태 엄중 인식…국민 여러분께 깊이 사과”<br>
+10.나경원 홍남기·김수현, 청문회 나와야…與 결단할까<br>
+11.김미화 550만원, 이만기 200만원..강연료 천차만별<br>
+12.20兆 못넘었던 文정부 SOC예산 내년엔 '총선바람' 타고 반등할까<br>
+13.학생들이 뭘보고 배우겠나..교대·교원대 성폭력 징계 52명<br>
+14.조원태 회장 'B787도입' 결정..대한항공-보잉 '代이은 의리'<br>
+15.'마약 상습투약' 버닝썬 이문호, 혐의 전면부인..수면제<br>
+16.아이폰도 결국 탈중국..'100조원 생산거점' 무너진다<br>
+17.日전문가 니가타 규모 6.7 강진, 미지의 동해 활단층서 발생<br>
+18.박홍률 전 목포시장 손혜원 전달문서 보안문건 아니다 반박<br>
+19.봉욱 대검 차장검사 사의 표명..윤석열 윗기수 줄사퇴 전망<br>
+20.美 RC-135정찰기, 한반도 상공 작전비행..시진핑 방북 고려했나<br>
+21.문정인 한미정상회담 20시간 전 판문점 남북정상회담 가능해<br>
+22.北, 준전시 같은 비상경계령…3명 이상 외식 땐 역적모의 처벌<br>
+23.이인영 이주 노동자 임금 낮추면 기업이 누구를 선호하겠나<br>
+24.국방부, 합동조사단 꾸린다… 北어선 58시간 '깜깜이 사태’ 규명<br>
+25.‘세네갈전 극적 동점골’ 이지솔 청와대 다시 가는 꿈 생겼다”<br>
+26.정우영, 분데스리가 프라이부르크로 이적...새 도전 하고 싶다”<br>
+27.정정용의 고백, 사실 정우영 3차전부터 부르려고 했다<br>
+28.비건 北, 최근 협상에 변화..북미, 유연한 접근 필요 이해”<br>
+29.고속도로 못달리는 꼬마 전기차도 세금은 '1억 테슬라'와 동급<br>
+30.마늘 가격 폭락 사태로 국회 긴급간담회...6월 중 마늘 2만t 긴급 수매<br>
+31.시진핑 중국 국가주석 평양 도착…국빈방북 일정 시작<br>
+32.이총리, 北어선 입항에 우리 군 큰 잘못…국민께 사과드린다<br>
+33.정경두 허위보고·은폐있었다면 철저히 조사해 엄정조치<br>
+34.외국인 근로자에 왜 국민연금까지 대줘야하나요<br>
+35.한국서도 인니 닭 껍질 튀김을… 소비자 청원의 힘<br>
+36.작년 4분기 임금근로 일자리 36만개 늘어…보건·복지 11만개↑<br>
+37.비타민D, 암세포의 항암제 저항 차단<br>
+38.제주 장마 26일 시작할 듯..올해는 장맛비 얼마나<br>
+39.BMW코리아, 주력 3·5시리즈 등 긴급 출고 정지<br>
+40.'비둘기' 변신 글로벌 중앙은행들 '돈줄 풀기' 나선다<br>
+41.복통에도 생방송…김주하 '프로정신', 손석희에게 배웠나<br>
+42.강남서 교통조사계 경찰, 차사고 낸 여성과 술자리 후 성관계<br>
+43.'성희롱 발언' 외질혜·감스트·남순, 3일 방송정지 징계…고작 3일 제재 논란<br>
+44.김성주의 국민연금 대전환 낸 만큼 받고, 기초연금 50만원<br>
+45.태국 절벽서 추락한 中 임산부… 알고보니 재산 노린 남편이 떠밀어<br>
+46.아직도.. 음주운전으로 매일 1.2명 목숨 잃는다<br>
+47.삼척 어민 北어선, 경운기 엔진 수준..불안해서 살겠나<br>
+48.'미스트롯' 가수 송가인 교통사고… 외상 없지만 정밀검사<br>
+49.버스 기사님 모십니다.. 경기도·업체 '발 동동'<br>
+50.‘암표와의 전쟁’ 엑소·방탄소년단, 등터지는 팬덤 어쩌나<br>
+51.일본行 한국 관광객 3달 연속 감소..엔고·한일갈등 영향<br>
+52.'최대 60%' 자라 온라인-오프라인 세일 행사 개시(재고소진 시 까지)<br>
+53.양파는 왜 암 예방에 좋을까.. 냄새보다 건강이 우선<br>
+54.전세자금대출 등 은행 보증부 가계대출 5년만에 100조원 증가<br>
+55.가계부채, 고위험군 '감소' 불구 상환능력 '취약'<br>
+56.금융사 자본비율, 스트레스 상황 충격 버틸 정도<br>
+57.한투증권, 외화RP 1년물 연 2.4%--> 2.8%로 인상<br>
+58.KB국민은행, 연 최고 2.6%…'내 아이를 위한 280일 적금' 출시<br>
+59.중부·경상 오후부터 비…돌풍에 천둥·번개도..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:35</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김준희</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년 6월 21일 뉴스/정책 브리핑<br>
+ <br>
+고기는 신문지로 포장해도 고기이고 쓰레기는 명품상자에 넣어도 쓰레기입니다. 따뜻함을 차가움으로 포장한 사람을 미워하지 말고 차가움을 따뜻함으로 포장한 사람에 속지마세요. 결국 포장지는 벗겨집니다 ” <br>
+ <br>
+ <br>
+[ 정치/외교 ]​<br>
+1. 청와대가 국회 정상화의 조건으로 논의되고 있는 '경제원탁회의'를 국회를 먼저 열면 수용할 수 있다고함<br>
+ <br>
+2. 자한당을 뺀 여야 4당이 소집한 6월 임시국회에서 상임위와 특위를 본격 가동하고, 법안심사소위 쪼개기 등을 통해 자한당에게 국회 정상화를 압박하고 있다고함<br>
+ <br>
+3. 자한당 나경원 원내대표가 관훈 토론회에서 합당을 한다면 대한애국당 보다는 정당의 형태를 갖춘 바른미래당과 먼저 통합하는 것이 바람직하다는 의견을 밝혔다고함<br>
+ <br>
+ <br>
+[ 정부/정책/공공 ]<br>
+.특이사항없음<br>
+ <br>
+ <br>
+[ 경기종합 ]<br>
+1. 올해 주요 대기업들의 이익이 크게 감소하면서 내년에 국가가 기업에서 걷을 법인세 수입이 10조원 이상 급감할 것으로 예상되면서 정부가 재정을 확대하는 추세에서 세금이 제대로 걷히지 않으면 국가 부담은 커질 전망이라고함<br>
+ <br>
+2. 영업이익으로 이자도 못 갚는 중소기업 비중이 지난해 전체 중소기업의 3분의 1을 넘어서면서‘좀비 중소기업’ 비중이 사상 최고치에 달했다고함<br>
+- 극심한 경기 침체에 조선 자동차 등 주력 업종 부진이 겹치면서 재무구조가 열악한 중소기업들이 직격탄을 맞음<br>
+ <br>
+3. 삼성전자와 SK하이닉스는 올해 당기순이익이 전년보다 각각 50%, 78% 감소한 22조3800억원, 3조3500억원에 불과할 것으로 예상된다고함<br>
+ <br>
+4. 반려동물 1천만 마리 시대가 도래하면서 가전업계도 반려동물 사업에 주목하고 있으며 국내 반려동물 시장 규모는 2조4천억원대라고함<br>
+ <br>
+5. 손정의 일본 소프트뱅크 회장이 7월 초 청와대를 방문해 문재인 대통령을 예방하고 이재용 삼성전자 부회장 등 국내 주요 기업인을 면담한다고함<br>
+ <br>
+6. 현대차가 오는 2021년 완공과 생산을 목표로 하는 '광주형일자리'에서 경형 CUV 차종 7만대 생산을 목표로 정하였으나, 현대차 노조가 지속적으로 반발하고 있어 변수라고함<br>
+ <br>
+7. LG디스플레이가 세계 자동차용 디스플레이 패널 시장에서 처음 출하량 1위에 올랐다고함<br>
+중국과의 LCD 패널 가격 경쟁 등으로 고전하고 있지만, 향후 스마트카 시대와 함께 성장이 예상되는 자동차용 디스플레이를 앞세워 부진을 극복할 지 주목됨<br>
+ <br>
+8. 미국 델타항공이 한진칼 지분 4.3% 매입에 나서면서 KCGI(강성부 펀드)와 경영권 분쟁을 벌이고 있는 조원태 한진그룹 회장에게 강력한 원군이 됐다고함<br>
+ <br>
+ <br>
+[ 금융/교통/부동산 ]<br>
+1. 오는 10월부터 자신이 즐겨 쓰는 은행 앱 하나로 모든 은행 계좌를 조회하고 이체할 수 있게 된다고함<br>
+ <br>
+2. 국내 은행 보증부 가계대출이 올해 3월 말 127조3000억원으로, 5년여 만에 100조원 가까이 불어났다고함<br>
+- 주택 분양시장 활성화와 전세가격 상승 등으로 부동산 관련 보증 수요가 늘어났기 때문임<br>
+ <br>
+3. 국제자금세탁방지기구와 금융 규제 기관들이 암호화폐에 자금세탁방지 규제를 적용하면서 실명계좌가 없는 암호화폐 거래소는 퇴출 위기에 놓였다고함<br>
+- 국내에 존재하는 암호화폐거래소는 150~200여개로 이 중 실명확인 계좌를 이용하는 곳은 업비트, 빗썸, 코인원, 코빗, 4곳 뿐이기 때문임<br>
+ <br>
+ <br>
+[ 사회/이슈 ]<br>
+1. 한국인 유명 여행·음식 칼럼니스트 주영욱씨가 필리핀에서 총에 맞아 숨진 채 발견됐다고함<br>
+ <br>
+ <br>
+[ 국 제 ]<br>
+1. 20일(미국시간) 뉴욕증시 3대지수는 연준의 금리인하 기대로 다우존스는 0.94% 상승, S&P 500 지수 0.95% 상승, 나스닥 0.80% 상승마감했다고함<br>
+ <br>
+2. 이란이 20일(현지 시각) 이란 영공에서 미군의 정찰용 무인기 'RQ-4A 글로벌 호크(약 2586억원)를 격추해 미국간 긴장이 한창 커졌다고함<br>
+ <br>
+3. 전대미문의 경제난과 폭정을 피해 베네수엘라를 탈출하는 국민이 매일 4800명을 넘어서면서 전체 국민(약 3200만명)의 16%가 난민 신세에 내몰리고 있다고함<br>
+ <br>
+ <br>
+[ 궁금한 이야기 ]<br>
+1. 부양을 게을리 한 부모가 자식의 사망보험금을 얻기 위해 나타난 사례가 계속 반복되고 있는 것은, 현재 현행법에 부모가 자녀의 양육 책임을 현저히 게을리한 것에 대한 상속인의 결격사유는 마련돼 있지 않기 때문이라고함</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년 6월 21일 최신 마케팅 뉴스<br>
+#1<br>
+수천 개의 좋은 카피보다 진정성 있는 10개의 후기<br>
+마케팅 캠페인의 성공 여부는 고객을 얼마만큼 홀릴 수 있을 것인가에 달렸습니다. 아예 무지한 상황을 이해할 때 타인의 경험에 의존하는 경우가 잦기 때문에 고객들은 선(先)경험자들의 이야기에 집중할 수밖에 없습니다. 백날천날 기업이 ‘우리 제품 좋아요!’ ‘저희 서비스 끝내줍니다!’를 외치면 뭐할까? 결국 고객이 반응하지 않으면 그만입니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/NbGsxJ<br>
+ <br>
+#2<br>
+일본 편도 항공권 4만원…출혈 마케팅의 속내<br>
+항공사가 초특가 항공권 마케팅에 열을 올리는 이유는 브랜드 홍보와 고객 유입 효과 때문입니다. 실제로 특가 항공권 이벤트가 시작되면 해당 항공사가 주요 포털사이트 실시간 검색 순위 상위에 오르게 되는데 관계자는 전체 좌석 중 10% 안팎 정도가 특가 판매 항공권”이라며 항공사 입장에선 막대한 홍보 효과를 지나칠 수 없다”고 설명했습니다. <br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/nfDC6W<br>
+#3<br>
+인스타그램, 브랜디드 콘텐츠 광고 기능 출시<br>
+인스타그램은 크리에이터가 올린 브랜디드 콘텐츠를 광고주가 홍보에 활용할 수 있는 '브랜디드 콘텐츠 광고 기능'을 선보인다고 밝혔습니다. 브랜디드 콘텐츠는 크리에이터가 광고주로부터 지원을 받아 게시한 콘텐츠로, 크리에이터는 '…과(와) 함께 합니다'라는 비즈니스 파트너 태그를 삽입해 광고주를 밝힐 수 있습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bit.ly/2MWJXog <br>
+#4<br>
+디지털 광고비 쓸어담는 IT공룡...구글·페이스북·아마존이 3분의2 차지”<br>
+디지털 광고 시장에서 이들 3개 사의 점유율 합계는 68.1%였습니다. 구글(37.2%), 페이스북(22.1%), 아마존(8.8%) 순으로 점유율이 높았는데 세부적으로 보면 모바일 광고 분야에서 구글은 33.0%의 점유율로 1위였고 페이스북이 30.8%로 이를 바짝 뒤쫓고 있습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/F67uFh<br>
+#5<br>
+구글 크롬, '이용자 민폐 광고' 7월부터 차단<br>
+크롬 브라우저에서 팝업, 자동재생 광고 등 이용자에게 불편을 주는 광고가 차단됩니다. 구글은 페이스북, 마이크로소프트 등과 정한 ‘더 나은 광고 표준’에 따라, 오는 7월 9일부터 크롬에서 광고를 필터링할 예정입니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bit.ly/2Zz4QY2 <br>
+#6<br>
+식품·외식업계 ‘한정판 마케팅’ 매출 구원투수 부상<br>
+식품·외식업계의 ‘한정판 마케팅’이 매출 구원투수로 부상하고 있습니다. 얇아진 소비자들의 지갑과 호기심을 자극하면서 매출 증가 효과를 노리기 위함으로 분석되는데 KFC, 팔도, 해태제과 등 큰 효과를 보고 있습니다.<br>
+(마케팅에듀 제공)관련정보 바로가기 : http://bitly.kr/ZeMkKq<br>
+출처 : www.m-edu.co.kr<br>
+아는 것이 힘이다, 마케팅에듀</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>서민주</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+■ 6월 21일 마케팅 뉴스클리핑<br>
+1. 배달의 민족, OO만 쏜다?...전면 중지, 생각 짧았다 사과<br>
+배달 애플리케이션 배달의 민족(이하 배민)이 연예인과 SNS 인플루언서에게 1만 원짜리 할인 쿠폰을 여러 장 제공한 사실이 알려지면서 소비자의 비난이 잇따르자 결국 사과했다. 배민은 19일 오후 인스타그램, 페이스북 등 SNS 공식 계정을 통해 배달의 민족이 지급한 OO이 쏜다 쿠폰을 보면서 실망하신 많은 여러분께 사과드린다. 많은 분들의 이야기를 찾아보고 듣고 곰곰이 생각해보니 저희의 생각이 짧았다. 진심으로 사과드린다라고 전했다.<br>
+2. 카카오페이, 카카오페이 배송 출시<br>
+카카오페이가 롯데글로벌로지스(롯데택배)와 손잡고 카카오톡 메신저 안에서 배송예약과 배송비 결제까지 할 수 있는 카카오페이 배송 서비스를 시작한다고 19일 밝혔다. 카카오페이 배송은 카카오톡을 통해 사용자가 배송지를 입력하거나 물품을 받을 카카오톡 친구에게 배송지 입력을 요청한 뒤, 편의점이나 택배기사 방문을 통해 물건을 부칠 수 있다.<br>
+3. 유튜브, 모든 어린이 콘텐츠 유튜브 키즈로 이전 검토<br>
+세계 최대 동영상 공유사이트 유튜브가 어린이 이용자 보호를 위해 모든 어린이용 동영상을 유튜브 키즈 앱으로 옮기는 방안을 검토 중이라고 월스트리트저널(WSJ)이 19일(현지시간) 보도했다. 보도에 따르면 구글 산하 유튜브 조직의 임원들은 어린이용 콘텐츠 일체를 독립된 유튜브 키즈 앱으로 이전하는 방안을 논의하고 있다. 어린 이용자들이 불쾌한 동영상에 노출되는 것을 더 잘 차단하기 위해서다.<br>
+4. 코바코 7월 광고경기 강보합 전망<br>
+19일 한국방송광고진흥공사(이하 코바코)에 따르면 다음 달 종합 광고경기전망지수(KAI)는 102.0으로 나타났다. 매체별로는 온라인-모바일(109.3)이 강세를 보였다. 광고주 업종별로는 여름방학 시즌을 맞아 교육 및 사회복지서비스(121.6)와 문화오락용품 및 관련서비스(114.6) 업종이 강세를 보였다.<br>
+5. 개인정보 관리소홀로 해킹...여기어때·빗썸·하나투어 재판행<br>
+고객의 개인정보를 소홀히 관리해 해킹당한 암호화폐중개업체 빗썸, 숙박중개업체 여기어때, 여행업체 하나투어가 재판에 넘겨졌다. 서울동부지검 사이버수사부는 빗썸, 여기어때, 하나투어 등 3개 업체와 각 업체의 개인정보관리책임자 3명을 정보통신망법 위반 혐의로 전날 불구속 기소했다고 19일 밝혔다. 이들은 고객의 개인정보를 안전하게 관리하지 않아 대량 유출되게 한 혐의를 받는다.<br>
+ <br>
+6. SK브로드밴드, B tv 풀 커버 AD 광고상품 출시<br>
+SK브로드밴드는 IPTV 타깃 광고 통합패키지 상품인 B tv 풀 커버 AD를 출시했다고 19일 밝혔다. B tv 풀 커버 AD는 원하는 가구에만 VOD 광고와 실시간 광고를 노출하는 오디언스 타기팅(Audience Targeting)이 가능하다. SK브로드밴드가 직접 개발한 빅데이터 플랫폼 CANVAS을 적용했다. CANVAS는 비식별 DMP(Data Management Platform)로 개인정보의 일부 또는 전부를 삭제하거나 변형을 통해 특정 개인을 식별할 수 없는 데이터인 비식별 데이터들을 수집해 분류, 분석, 선별해 관리하는 플랫폼이다. <br>
+7. 베트남 인플루언서들도 뷰티·음식 관심 많아<br>
+베트남 SNS 인플루언서들이 관심을 갖는 분야는 미용, 음식, 건강 등으로 한국 상황과 비슷한 것으로 나타났다. 베트남 디지털마케팅 기업 클레버애즈의 르바칸 트린 대표는 18일 베트남 호치민에서 지디넷코리아와의 인터뷰를 통해 베트남 인플루언서 생태계에 대해 소개했다. 르바칸 트린 대표는 베트남 젊은 사람들은 하루 평균 3시간 정도 스마트폰을 이용해 SNS를 사용하고 이때 페이스북이나 음악 서비스를 이용한다며 페이스북 인플루언서들은 주로 뷰티, 음식, 스파, 미용실, 건강식품에 대해 콘텐츠를 올린다고 말했다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김석진</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+<국내증시 마감시황><br>
+KOSPI 2,125.62(-0.27%)<br>
+KOSDAQ 722.64(-0.64%)<br>
+환율 1,164.00(+1.90)<br>
+​금일 국내증시는 미국과 이란 간의 지정학적 긴장도가 재차 짙어진 점과 전일 FOMC 이후 이벤트 소진에 따른 차익실현 물량이 출회된 영향으로 소폭 하락 마감했습니다. 더불어 차주 있을 G20 정상회담을 앞두고 그 결과를 확인하고 가자는 투자자들의 관망세 역시 금일 지수에 하방 압력으로 작용 했습니다. <br>
+뉴욕 타임스는 트럼프 대통령이 자국 무역 정찰기를 격추한 이란에 대해 보복 공격을 승인했다가 돌연 취소했다는 소식을 보도했습니다. 그간 잠잠하던 중동에 지정학적 이슈가 다시금 불거지면서 투자자들의 긴장감을 초래한 것입니다. 해당 뉴스로 인해 국제유가가 급등했고, 금과 같은 안전자산의 가격 역시 상승하는 모습을 연출했습니다. 공격 지시 이후 철회된 배경에는 백악관 내 의견 충돌이 주된 이유로 분석되고 있습니다. 금번 이슈가 트럼프 대통령의 불확실성을 다시 한번 환기시킴으로써, 투자자들의 섣부른 움직임을 제한한 것으로 보여집니다. <br>
+6월 FOMC 이후 美 연준의 태도에 대한 재해석 역시 시장의 부담으로 작용했습니다. 시장 분위기는 대체로 온건한 방향으로 이해했지만, 여전히 매파적인 분위기가 감지됐다고 인식하는 의견도 시장에 회자됐습니다. 무엇보다도 FOMC 전후 빠르게 하향되던 달러 인덱스가 주요 지지선에서 멈춘 점도 위험자산 가격 상승을 제한했습니다. <br>
+업종별로 살펴보면 증권(+0.9%)과 전기가스(+0.5%) 업종이 상대적인 강세를 나타냈고, 건설업(-1.6%), 운수창고(-1.6%), 그리고 비금속광물(-1.4%)이 약세를 기록했습니다. <br>
+시가총액 상위종목에서는 삼성전자(+0.4%)와 현대모비스(+0.9%), 그리고 POSCO(+0.6%)가 오름세를 기록했습니다. 반면 SK하이닉스(-2.1%)과 LG화학(-1.1%), 그리고 셀트리온(-0.7%)은 하락 마감했습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>(알 수 없음)</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:35</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+01:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Joo/진흥/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[스크랩] 어느 조선족의 고백<br>
+ http://naver.me/x4C5lK4s</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>Joo/진흥/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이거 다들 읽어보셨나요? 무섭네요ㄷㄷㄷ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 봤어요... 우리나라 모습이 참..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://m.dcinside.com/board/dngks/282675</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2탄입니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+헉..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이 글이 진짠지 아닌지는 따라가보면 알수있겠네요 전 오늘 해보려구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘 네이버 뉴스 댓글보니깐 조작 베스트 댓글 하나도 없고 클린하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매리카노/선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://news.v.daum.net/v/20200228050046375</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+밤새 트위터에 댓글조작햇던 세력들 싹다 정리되었네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:47</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다음도 좌표 떠요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+거기가 대박이자나요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다음까지는 모르겠는데 네이버는 클린해졌네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이글 읽고 사람들이 중국 반정부 사이트를 링크를 계속 올리니깐 트위터 댓글조작단들 싹다 계정폭파했어요.. 다 조선족이였나봐요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+하긴 트위터야 이사가면 되니까...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런 분들이 계속 나와줘야 할텐데요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:50</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+조선족 공산당이 댓글 조작하는거야 알고 있었는데, 네이버 다음 국정원은 알고 있을텐데 그냥 놔뒀네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+진짜 규모가 저 정도로 커졌는지는 모르겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+김겨쿨이라고 엄청난 트위터 댓글 조작 우두머리 있어요 이사람이 일크걸면 수천명이 우르르 베댓 조작하거든요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘 새벽 계정 폭파하고 도망갔네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+일크 --> 링크</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이 사람인데 조선일보에서 제2의 드루킹아니냐 했던 사람이예요.. 그런데 조선족일 줄은 생각도 못했네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런식으로 계속 여론조작했어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부린이/진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아침부터 웃고 갑니다..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빅맥/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+신빙성 있어 보이네요~이래퍼님 감사요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+많이 웃고 가실 길 가세요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>부린이/진흥/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네 가던 길 잘 갈게요. 감사.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요 긴 세월을 알고도 뒀다는거네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+dongtaiwang<br>
+动态网<br>
+动态网自由门</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이거 써잇으면 중국인들 접속 걸리고 도망간대요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://gall.dcinside.com/board/view/?id=baseball_new8&no=12890047&exception_mode=recommend&page=1</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이거 보시면 유투브 댓글에 반중정부사이트 올리니깐 아주 난리가 났어요..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:00</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어떻게 하란건지 모르겠어요 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빅맥/아름효성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+듕국쌀람들 다 걸리~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+댓글에 저걸 쓰면 되요??</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+말씀 중 죄송한데 효성 1층은 계약된 거 아니었나요? 광고에는 계속 뜨네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:06</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와 장난아니네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+게시글 같은거 쓸 때 저거 밑에 붙여두면. 중국에선 차단된대요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+dongtaiwang<br>
+动态网<br>
+动态网自由门</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+접속 차단시키는 단어래요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우리나라 조선족은 안될테고..중국 본토.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:14</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>홧팅/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제가 했어욤<br>
+어떤 부동산에서 안내린거 같아요 흠...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+효성1층은 보안이 잘 되어 있어서 안전해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1층 전체를 동작감지기 설치하고 그래서 도둑이 못 들어오고, 위로도 못 올라가요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+누가 했는지 천재적인 대응방법이라서 개별 세콤 안해도 될겁니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>GTX/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+맞아요, 1층 출입문 카드가 있어야만 출입가능하도라고요. 비반도 없음</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>GTX/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+비밀번호</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>홧팅/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+부동산에 말 했어요. 수정 해달라고요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오...좋네요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:26</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+아파트 모든 동의 1층을 동작감지기 같은거로 보안 걸어뒀어요. 2층으로 날라가지 않는한, 벽타고 올라가는거 불가능.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러고보니 집에 도둑이 들어서 가지고 갈게 없네요 저는......</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오면 좀 찝찝하긴 하겠지만 막상와도 가져갈게없음요ㅋㅋㅋ 냉장고에 먹을거나 가져가려나요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매/효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1층은 11.5에 거래완료인가요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>홧팅/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+11.4에요~~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>홧팅/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+전 투자라 더 올라야 하는데 걱정이에요. ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+더 오를거예요!!!!</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:49</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당댁/아름효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+답변 감사합니다. 이만한 입지는 없죠.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+1층을 둘러서 세콤 동작감지 설치하면 동 전체가 안전해 집니다. 돈이 문제가 아니라 강도가 될까봐 그런 것이구요. 동대표님에게 말하시면 월 몇백원 추가해서 가능할거에요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:03</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매/효성/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동작감지 설치되어있는지 몰랐는데 좋은 정보 감사합니다^^</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+두산삼호는 따로 카톡방이 있나요? 카페나...초대 좀 부탁드려도 될까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:08</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:15</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어떻게 초대해야하는지 찾는중ㅋㅋㅋ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+링크나 qR코드는 있는데 여기에 공유해도 되는지 모르겠네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>분당/두산/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+잠깐 공유해주시면 바로 클릭하겠습니당 ㅎㅎ 그럼 괜찮지 않을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:32</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+카카오톡 오픈채팅을 시작해 보세요.<br>
+링크를 선택하면 카카오톡이 실행됩니다.<br>
+아름마을4단지두산삼호 입주민들<br>
+https://open.kakao.com/o/g0XkwgLb</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저 지하철에서 바깥 진입하면 답답해서 마스크 벗고 집에 오는데 ...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그야말로 집 빼고는 전부 마스크 써야되는 상황인요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:46</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>클블/이매한신/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+와 엘베만 같이 타도 저렇게 될수 있나요...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:48</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+폐쇄된 같은 공간이라 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:51</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:57</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>2020/두산삼호/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마스크 안끼고 엘레베이터에서 확진자와 만나면 걸리나봐요.. 좁은 공간에서의 마스크는 꼭 끼도록 해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+사진</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:33</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어제도 후원계좌 올려졌었던거 같은데요. 지금 대구지역 의사샘들 보호장비가 많이 모자른거 같습니다. 후원금 연말정산은 어렵데요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:34</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ 마스크없이 엘베타도 걸릴수있군요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>오로라이매청구36</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대화 했을 것 같아요<br>
+마스크쓰고 대화하기<br>
+없으면 대화시도 하지 말기</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>성이/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대화금지 바닥만보기 ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:53</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ 진짜 마스크없으면 옷으로라도 가리고있어야돼요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>슬기/풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+계단오르내리기로 건강챙길래요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+방장님~ 죄송하지만 대한의사협회 계좌 가려주세요. 저기는 일반인이 보내면 반환된다네요. 제가 삭제가 안되서요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:59</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대한공중보건의사협의회 T. 02-792-2578 카뱅 79792027913 허동총무이사 요기는 일반인도 받는데요. 연말정산 기부금 처리 안되고요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:01</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:07</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>프로/동신/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런 개인계좌는 의협인지 알수 있나요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:16</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>프로/동신/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어디로 쓰이는지도 모르고...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:17</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 그래서 전화로 확인해 봤어요. 대한공중보건의사협의회 홈피 전화번호예요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+제 친구가 의사인데 많이 걱정해서 저도 이런거 안하는데 용기내서 해 봤습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:18</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+대한의사협회는 1566-5058전화걸면 어디로 기부할지 알려주더라고요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:19</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[단독]의료물품 동나는데···中에 라텍스 장갑 등 60억 지원 - https://n.news.naver.com/article/025/0002979579?ntype=RANKING</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이런기사 보면 말씀하신대로 기부하는게 나을듯 하네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 소액이라도 보내려구요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+집콕하면서 할거 뭐 있나해서 이런거라도 해 봤습니다. 대구 파견된 공중보건의는 숙박비도 현재는 자비부담으로 통보받았나보더라고 정부에서 처리해 주겠지만 안타까운 마음으로 나서보았습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:20</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 소액만 보냈습니다. 저도 이런 일에 인색한 사람이었거든요.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:21</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>구르밍/청구/20대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+좋은정보공유해주셔서 고맙습니다 힘 보탤게요 의사분들 정말 고생많으시네요ㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:22</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>독수리/선경/30</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+분당은 더 확진자 안나온거죠? 아까 두 명 복정동 성남동만 나오고요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:52</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+우선은 그런 것 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>빙그리/풍림/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+용인수지가 많고</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+13:55</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하이/아름건영 /30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저 기사보니 속터지네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>하이/아름건영 /30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+정말 너무합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어제 용인거주 정자근무자</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+동선이 나와야할거 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:13</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>또로로/효성/41</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+가족 중에 신천지가 있습니다.<br>
+https://m.clien.net/service/board/park/4288573CLIEN<br>
+2013년 저는 위와 같은 글을 쓴 적이 있습니다.<br>
+위의 내용은 제 개인적 경험과 밀접한 관련이 있습니다.<br>
+글에 언급하지는 않았지만 2012년에 어머니께서 신천지의 포교 대상이 됐습니다.<br>
+저는 모태신앙이었지만 중학교시절 기독교에서 나와 무교로 살아가고 있었고 그 당시 카페 창업을 준비중이었으며 직장을 다니지 않던 시기여서 어머니의 권유로 성경공부를 하는 곳에 따라가게 됐습니다. 전 기본적으로 절대선과 절대악에 의구심을 가지고 있는 사람입니다. 그러다 보니 그 가르친다는 곳에서 이야기하는 절대악은 사탄이다 라는 내용이 납득이 되지 않더군요.<br>
+그 곳을 다닌지 3일째 되던 날 가르치던 내용을 바탕으로 인터넷 검색을 해 보고 정보를 취합한 결과 그 교육을 하는 곳은 신천지라는 결론을 얻게 됐습니다. 저는 어머니께 그 정보를 알려드렸고 듣고 싶으면 적당히 비판적으로 스스로 생각하셨으면 한다는 내용을 알려드렸습니다. 그리고 적당히 듣다가 카페를 개업하고 바쁘다는 핑계를 대고 적당히 나와서 생활하고 있었습니다.<br>
+어머니께서는 평소 신앙에 대해서 갈증이 많으신 분이었고 주변 친지들이 대부분 나름 독실한 기독교다보니 일명 기독교에서 말하는 말씀과 성경적 지식에 대해서 열등감을 좀 가지고 계셨던 것 같습니다. 그리고 신천지에서 알려주는 내용에 깊이 공감하시고 탄복하시는 것 같았습니다. 그 과정에서 저와 하루가 멀다 하고 다툼이 많았습니다. 저는 비판적인 시각을 견지해주시길 언제나 말씀드렸지만 저보다 훨씬 오래 사신분의 의지와 고집을 꺾기는 어렵더군요.<br>
+그러던 와중에 어머니께서는 저도 모르게 막냇동생녀석에게 신천지를 다닐 것을 요구하셨고 기본적으로 갈등상황을 싫어하는 동생은 어머니께 맞춰드리고 본인의 마음의 평안을 찾고자 어머니의 요구를 따라드렸으나 매주 수, 일요일 인증과 예배 참석을 언제나 강요하셨습니다. 동생은 그 부분에 대해서 많이 힘들어했고 어머니와 갈등을 빚었습니다. 어머니께서는 언제나 자식을 죽을 곳에 밀어 넣는 부모는 없다고 말씀하셨지만 제 동생은 언제나 괴로워했습니다.<br>
+저도 그것을 알게 되면서 종교에 대해 어머니와 많은 이야기를 했고 결국 저는 어머니가 신천지를 다닐 종교의 자유가 있다면 동생이나 저는 신천지를 선택하지 않을 자유가 있는 것이고 그것을 존중해줬으면 좋겠다는 이야기를 했습니다. 오랜 기간 설득을 하던 차에 결국 동생이 더 이상 다니지 않겠다는 선언을 하고 저는 어머니도 포기하시길 요구했습니다. 지금 제 동생은 신천지라고 하면 치를 떠는 상황입니다. <br>
+이따금 예전에 신천지 다닐 때 또래 애들 이랑 대화하면 어땠냐 라고 물어보면 주저 없이 ‘비상식적인 병신들이 이야기하는데 내가 거기 떨어져 있는거 같았다.’라고 이야기합니다. 개인적으로 마음이 아픈 일이죠. 가장 예민할 고등학교 시기부터 그런데에 있었으니까요. 그래도 어머니를 미워하진 않았습니다. 안타까울 뿐이었지요. 어머니는 그 곳에서 정말 마음의 평안과 인생의 즐거움을 찾으신 것 같았거든요. 그렇게 믿고 계시고 확신하시는 분의 마음을 저같은 사람이 움직이는건 정말 어려운 일입니다. 6년동안 매일을 싸웠습니다. 그나마 다른 신천지 분들에 비해서 제 이야기에 귀 기울여 주시고 공감해주시는데 그런척 하시는건지는 저도 알 수가 없네요.<br>
+작년에 제가 몸도 안좋아 입원도 오래 하고 개인적으로 안좋은 일이 많았었는데 어머니께서는 저에게 말씀을 들어보라는 권유를 하시더군요. 저는 그다지 듣고 싶지는 않았습니다만 어머니께서 끊임없이 설득하시고 마지막 부탁이라고 하시는데 자식된 도리로 큰 돈 벌어서 호강시켜드리지는 못하지만 뭐 이런거 정도 들어드리는 것은 문제가 되지 않겠지 라고 생각했습니다. 죽은 사람 소원도 들어준다는데 어머니 소원이라는데 한 번 들어드리자 라고 생각했습니다. 어차피 저는 그곳에 들어가지 않을테니까요. 그 집단 교리와 내용은 어느정도 주워들은게 있는데다가 저는 오컬트나 미스터리 등을 좋아하지만 인간의 영생을 믿을만큼 비과학적인 생각이나 상식을 가지고 있지는 않다는 것을 알고 있기 때문입니다. 또한 기독교는 특성상 절대악이라는 것을 상정해야 하는데 저는 서두에 언급했다시피 절대악이라는 것이 존재한다고 생각하지 않는 사람입니다.<br>
+기독교 믿으시는 분들은 펄쩍 뛰겠지만 저는 전지전능한 조물주, 혹은 신, 혹은 절대자가 존재한다면 사탄 또한 그로 인해 만들어진 존재이고 그 절대악이란 존재는 절대자에 의해서 움직일 수 밖에 없을것이라 생각하고 있습니다. 즉 현재 상황을 미루어 짐작했을 때 전지전능한 신은 이미 인간이 종교에서 멀어질 것을 상정하고 인간에게 공포심을 심어야 할 필요가 있었고 그 역할을 할 대상을 만들어 악역을 하게끔 종용하였을수도 있다. 라고 생각하는 겁니다. 그래서 저는 전세계에서 사탄은 가장 많은 욕을 먹고 있지만 실제로는 절대자에게 가장 제대로 충성하고 믿음을 가진 존재가 사탄이 아닐까 하는 어이없는 상상을 하기도 하는 사람입니다. 이런 사람이 기독교를 독실하게 믿을수 있을리가 없지요. 물론 이런 이야기를 들으면 그저 상상일 뿐이라고 치부하는 사람들도 있습니다. 그렇지만 전 나름 논리적인거 같은데…<br>
+차치하고 그렇게 성경공부를 하다가 작년 12월에 갑자기 어머니와 성경을 가르치는 전도사라는 사람이 센터로 들어가라고 하더군요. 이제까지 7개월을 가르쳐놓고 센터를 들어가라니… 시간낭비를 한 것 같아 매우 불쾌했고 이야기했습니다. 전 다른 교육생들과는 달리 이미 그쪽을 알고 있기 때문에 숨기는 것도 없었지만 자꾸 말이 바뀌는건 좀 기분나쁘더군요. 그래도 어차피 시작한거 끝을 내야 어머니께서 제게 더 이상 종교적 강요를 하지 않으실 것 같아 알겠다고 이야기하고 작년 12월부터 센터, 일명 아카데미라는 곳을 다니게 됐습니다.<br>
+지금은 폐업했지만 저는 카페를 하면서 메르스를 겪었고 조심해서 나쁠게 없다는 생각이 있어서 1월 중순정도부터 센터를 다니던 어디를 다니던 마스크를 하고 다녔습니다. 어차피 안경을 쓰기 떄문에 고글까지는 하지 않았고 손씻기와 마스크, 기침예절을 준수하며 각종 뉴스를 챙겨보면서 사태가 진정되기를 기다렸습니다. 그리고 2월 21일이었던가 지난주부터 센터를 무기한 운영하지 않는다는 이야기를 들었습니다.<br>
+저는 잘됐다고 생각하고 생활하고 있었는데 매일매일 뉴스에서는 신천지에 대한 기사와 소식들이 쏟아져나오더군요.<br>
+https://m.clien.net/service/board/park/14620285CLIEN<br>
+https://m.clien.net/service/board/park/14620701CLIEN<br>
+저는 제가 알고있는 정보를 바탕으로 2월 22일 저 두 글을 게시하였습니다.<br>
+제가 가족들과의 갈등과 남편과의 갈등에 지친 중장년층 여성들이 신천지에 많다고 이야기한 내용은 저희 어머니를 비롯한 많은 중장년층 여성분들이 신천지의 다수를 차지하고 있기 때문입니다. 전후 어려울 때 태어나 집에서 제대로 사랑을 받지 못한 분들이 중매결혼으로 결혼하여 남편에게 사랑을 받지 못하고 혹은 제대로 된 표현을 듣지 못하고 집에서 자녀들에게도 소외감을 느낄때 상냥하고 친절하게 대해주는 사람들은 그분들을 행복하게 만들어주었겠지요.<br>
+저희 어머니를 통해서 만난 신천지 사람들은 대부분 가식적이고 이상하게 보일만큼 친절하고 상냥하고 긍정적인 사람이 많았습니다. 그리고 제 어머니의 유년시절과 성장기, 그리고 아버지와 결혼와 그 이후 결혼생활을 어느정도 알고 있는 저는 어머니께서 저런 사람들에게 위안과 위로를 받고 서로 공감해주고 지내시나보다 라고 생각했습니다. 죄송스럽게도 저는 그분들이 어머니꼐 드리는 것을 제가 전부 해드리기에 역량이 부족한 사람이었습니다.<br>
+이미 부모님 사이에 어머니의 종교로 인해 트러블이 있었고 저나 제 동생과도 트러블이 있었지만 그나마 다행인 부분은 요즘들어 매일 뉴스를 보고 정보와 팩트체크를 하고 있는 저로서는 어머니와 사소롭게 트러블이 조금씩 있지만 잘 넘어가고 있다는 겁니다. 하지만 계속 이야기를 하고 있습니다. 그게 제가 해야 할 일이라 생각하기 때문입니다.  요즘 상황을 보시고 아버지께서 자주 분노하고 동생도 신천지에 대해서 마구 뭐라고 하고 주변에서도 뭐라고 하는데 어머니께서 적당히 듣고 계신다는 점입니다. 가끔 반박하려고 하시긴 하시지만 저는 그냥 감래해야 할 일이고 지금 신천지가 잘못하고 있는것 맞다고 어머니께 말씀드리면 다시 또 그냥 들어 넘기시는 중이긴 합니다. <br>
+그런데 오늘 오전 10시 40분쯤 시청에서 전화가 왔습니다. 제가 신천지 신도로 등록이 되어있다는군요. 빠른 상황판단이 필요했고 이 상황에 제가 신도가 아니라고 해봤자 의미가 없을 듯하여 일단 저는 교육생이라고 이야기해두고 고생이 많으시다고 격려해드렸습니다. 그리고 저희집 식구 중에 신도가 없는지 묻길래 솔직하게 말씀드렸습니다. 어머니는 이미 시청에서 전화를 받기 시작한지 며칠 됐다고 하셨기 때문에 그 부분도 전달했고 정읍에서 신천지는 제가 아는 기간만 9년이 됐으며 가장 말단 신도들보다는 중간관리자 이상을 족쳐야 할 것이며 단순히 구두로 물어봤자 다 부정할 것이기 때문에 휴대폰 지피에스 확인을 통해서 이동경로 확보를 하는 것이 중요할 것이라고 조언해드렸습니다. 또 분명 대중교통이나 버스처럼 눈에 띄는 수단이 아니라 개인차를 가지고 이동했을 확률이 높기 때문에 무조건 지피에스 체크가 중요할 것이라 강조해드렸습니다.<br>
+통화를 마치고 저는 센터라는 곳에서 저한테 무지 친한척을 하시는 일명 전도사라는 사람한테 메세지를 보냈습니다. 그랬더니 돌아오는 말이 정부방침이라면서 정부까는 뉘앙스로 말하더군요. 저는 정부에 불만은 없으며 지금 현 상황에 신천지가 거짓말을 하니 이런식으로 하게되는게 아니냐고 따졌는데 신천지는 거짓말을 한 적이 없다고 응수하길래 질본이 코로나19 조사하고 검사하기 바쁜데 거짓말을 하겠냐고 말했더니 그러게요 라고 대답하면서 가짜나 허위기사가 많다고 이야기하더군요. 또 제가 비판적으로 단정짓고 말하고 있다면서 대화하고 싶지 않다고 하길래 저는 비판하는걸 고맙게 여겨라. 난 지금 비난이 아닌 비판을 하고 있는것이다. 비판의 말은 겸허히 들어라. 대중들에게 온갖 피해를 주고 있으면서 그런식으로 말할 수 있다니 대단하다고 이야기했습니다. 전 그 사람들에게 욕을 하고 싶지 않습니다. 그런 이상한 사람들 때문에 제 교양과 인간성에 흠집을 내야할 만큼 그들이 귀하다고 생각하지 않기 때문입니다. 뭐 그 선택은 개개인의 자유인것이니 강요할 생각은 없습니다. 그저 비루한 개인의 자존심이다 생각해주세요.<br>
+이제부터 저는 약 2주 동안 시청의 확인전화를 하루에 두 번씩 받아야 합니다.<br>
+그리고 굳이 누가 시키지는 않겠지만 저는 집에서 밖으로 나가지 않으려고 합니다.<br>
+이러한 제게 그나마 마지막 보루이자 다행인 점이 한 가지 있습니다. 그것은 바로 저와 제 동생의 끈질긴 설득에 저희 어머니께서는 이만희가 죽으면 더 이상 신천지에 가지 않겠다고 약속하셨다는 점입니다. 부끄럽습니다만 저와 제 동생은 하루빨리 이만희가 죽기를 염원하고 있습니다. (여기서 부끄럽다는 것은 악인이든 뭐든 누군가의 죽음을 간절히 염원한다는 마음이 부끄럽다는 의미입니다.)<br>
+이전 제 모습이 누군가에게는 답답하고 기가 막힐 수도 있을것입니다. 혹은 신천지인제 약치는거 아니냐고 의심하는 분도 계실수 있을겁니다. 저는 2013년 어머니께서 신천지를 다니신다는 것을 알게되고 다른분들에게 제대로 된 정보를 전달하면 조금이나마 도움이 되지 않을까 싶어 해당 글을 썼고 지난 22일에 쓴 글도 그런 의도로 적었습니다.<br>
+혹시라도 이 글을 보시는 분들 중 저처럼 가족중에 신천지가 있으시다면 싸우셨으면 합니다. 저도 6년 이상을 매일같이 싸워왔고 지금도 간간이 부듲힙니다. 자식이라는 특성상 그렇게 쟁취한 것이 이만희가 죽으면 신천지를 나오겠다는 약속입니다만 그것이라도 받으십시오. 어찌보면 그것이 최선일수도 있습니다.<br>
+저는 무교이지만 어머니께 말씀드립니다. 어머니의 마음에 단단한 성전이 지어졌으면 좋겠다고… 그게 신천지의 성전이 아니라 어머니와 어머니가 믿는 하나님과 단단히 연결된 성전이었으면 좋겠다고 말입니다. 어차피 기독교를 사모하는 어머니께는 거기에 맞게 이야기를 해야 찔러볼수라도 있다고 생각하기 때문입니다.<br>
+저 같은 사람이 말해봤자 의미는 없을테지만 가족과의 갈등을 피하지 마십시오. 부딪히고 또 부딪히고 깨지면 붙여서 다시 부딪히십시오. 우리나라는 싸우는게 좋지 않다고 가르치지만 모든게 좋을 수는 없는 것이고 인간관계에서는 좋을 때 알게되는 정보보다 싸우면서 알게되는 정보가 더 많고 정확한 편입니다. 침착하게 말로 대화로 토론으로 풀 수 있으면 베스트겠지만 그게 불가능할때는 논쟁도 하고 싸움도 할 필요가 있습니다.<br>
+진심으로 전합니다. 신천지 신도들이 이 글을 본다면 부디 솔직해지셨으면 좋겠습니다. 그리고 객관적인 상황판단을 하셨으면 좋겠습니다. 신천지는 레지스탕스가 아닙니다. 대단한 집단도 아니고요. 지금은 일단 살아야 하지 않겠습니까. 신천지고 뭐고 다 내려놓고 지금은 일단 코로나19를 이겨내고 건강한 대한민국이 되는게 최우선이라고 생각합니다.<br>
+두서없는 글… 긴 글… 읽어주셔서 고맙습니다.<br>
+할말은 많지만 머릿속에서 잘 정리가 되지 않는군요. 용기를 내어서 솔직하게 글을 써 봤습니다만 이런 글에 어떠한 비난의 화살을 맞게 될지는 모르겠습니다. 그래서 조금 두렵기도 합니다. 하지만 저같은 상황에 계실 누군가에게는 조금이나마 도움이 됐으면 좋겠습니다. <br>
+전국에서 고생하시는 공무원분들 의료진분들 질병관리본부 분들 모두 고맙습니다.<br>
+저는 제가 할 수 있는 것을 하면서 이 상황을 이겨내는데 조금이나마 보탬이 될 수 있도록 노력하겠습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:23</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>또로로/효성/41</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+신천지에 대한 생각해 볼만한 글입니다... 혹시라도 가족중에 신천지가 있는 경우 한번 읽어보시죠...</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:24</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>휘파람/아름건영/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+느무 화가나네요.<br>
+북한에 안되니 이제 중국에 퍼주고 아양을 떠네요.<br>
+우리 중국 하고픈거 다해~</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:56</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>미리/이매삼성/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ 기도삽관에 중증자 계속 느는제 경증이라고 주장하는분들 보면 답답해요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:58</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매 청구 1층 7.8에 팔렸네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+네이버에 뜸</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+오늘요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+거래일 2.28.로 뜨는데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:40</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+잘팔렸죠?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그래도  원하는대로  되셨나보네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+다행이네요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+누구신지는 모르지만 잘되었습니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+근데  이런 코로나  시기에  집보고샀을까?<br>
+아님  안보고  샀을까요?</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅋㅋㅋ 그러게요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+저도 지금 막 검색해보고 알았어요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+안보고  산다고도 하던데..</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+뭐 집 안보고 사는분들도 워낙 많긴 한거 같아요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:43</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+투자물건으로</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그쵸</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:44</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>가봅시다/진흥.청구이매/40</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+어차피  미래가치를  보는거니까</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+마쟈요 그리고 분당 거주로 좋죠 뭐</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>랄라/청구/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이매는 뭐 강남 바로 아랜데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:45</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>두산삼호/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+요즘 집보러다니는 사람도없고 막상 집보러온다고해도 좀 꺼려질듯요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:54</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매 래미안 퍼스티지/아름선경/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+<대한 의사협회 권고문><br>
+안녕하십니까. 대한의사협회입니다. <br>
+2월 28일 금일 오전 기준으로 코로나19 확진환자가 2,000명을 넘어섰습니다. 하루새 505명의 환자가 추가된 것은 첫 번째 확진자 발생 이후 하루 사이 증가폭으로 최대입니다. 우려했던 지역사회 확산이 이제는 폭발적인 확진자 증가추세로 확인되고 있습니다. 악화일로의 상황에서 대한의사협회는 정부와 국민께 다음과 같이 권고드립니다. <br>
+먼저 정부에 말씀드립니다.<br>
+첫째, 코로나19 확진 환자의 위험인자와 중증도에 따른 입원기준을 마련하여야 합니다. 현재, 코로나19 확진이 되면 환자의 상태와 상관없이, 모든 환자를 입원시키고 있습니다. 이는 과거 메르스와 동일한 기준이나 현재의 전국적 발병 상황은 원내감염 위주로 국내 확진자가 186명을 기록한 2015년 메르스 사태와는 비교가 되지 않습니다. 27일 하루만 전국에서 500명이 넘는 환자가 확진되는 등 코로나19 확진자가 폭증하고 있는 반면, 병상은 한정되어 있으며 특히, 음압병상은 전국에 1,000여개 밖에 되지 않습니다. 이 병상들을 모두 코로나19 환자에게만 배정할 수도 없는 상황입니다. 이런 와중에 확진 판정을 받은, 신장이식 과거력이 있는 70대 환자가 병상이 없어 집에서 대기하다가 사망하는 일까지 벌어지고 있습니다. 무증상 또는 경증의, 위험인자가 없는 환자는 관리가 가능한 시설에 격리하고 산소치료 이상이 필요하거나 기저질환과 위험인자를 가진 환자, 고령의 환자를 우선적으로 전담병원에서 입원하여 치료하며 특히 기계환기나 체외순환보조가 필요한 중환자는 전국의 상급종합병원 집중치료실로 입원하도록 기준 마련이 시급합니다.<br>
+특히 현재까지 중국에서의 중증 이상의 환자의 사례에서 볼 때, 사망에 이르는 경우는 폐렴의 악화로 인한 급성호흡곤란증후군으로의 진행, 또는 심혈관계 합병증에 의한 경우가 대부분으로 앞으로 지속적으로 늘어날 수요를 감안하여 기계환기를 위해 필요한 가용 인공호흡기 및 체외순환 현황 파악 및 필요시 추가 확보가 가능하도록 사전에 준비가 필요합니다. <br>
+둘째, 의료진에게 마스크, 장갑 등 개인보호구를 충분하게 공급하여 주십시오. 의료진의 안전은 곧 환자의 안전과도 직결됩니다. 의료진들은 현재 위험지역에 상주하고 있으며 필요하면 몇 번이고 새롭게 보호구를 갖추어야 하므로 개인보호구는 예상보다 빠르게 소모될 수 밖에 없습니다. 대한의사협회가 현장의 의료진으로부터 가장 많은 요청을 받는 것 역시 마스크와 장갑 등의 기본적인 개인보호구입니다. 또한 대구경북 지역 외의 일반 지역사회에서도 많은 의원, 중소병원, 병원급 의료기관이 당장 2-3일 후에 쓸 마스크가 없다며 대한의사협회에 도움을 요청하고 있습니다. 대한의사협회가 그 사이, 수 차례 여러가지 합리적 대책을 제안해 왔으나 정부는 이를 수용하지 않았습니다만, 부디 현장의 간절한 요구에 대해서 만큼은 정부가 책임지는 자세로 아낌 없는 지원을 해주기를 바랍니다. <br>
+셋째, 정부는 최악의 세계적 확산에 미리 대비하여 주십시오. 코로나19라는 새로운 바이러스 감염병이 세상에 알려진지 두달이 지나면서 이 바이러스가 지금까지 알고 있던 어떤 바이러스보다도 영민한 바이러스라는 것이 과학적으로 밝혀지고 있습니다. 무증상 상태에서도 전파를 시킬 수 있다는 여러 근거들이 보고되었고 발병 초기부터 바이러스 부하(수치)가 급격히 높아진다는 사실도 확인되고 잇습니다. 또, 상기도 가운데에서도 코에서 많은 바이러스가 확인되었습니다. 이런 모든 사실을 통해, 이 바이러스는 증상을 통해 존재를 드러내지 않으면서도 이미 감염이 된 사람이 바이러스를 다른 사람에게 전파하고 다닐 수 있도록 하는, 매우 상대하기 어려운 적이라는 사실을 알 수 있습니다. 최근 이탈리아에서의 급격한 환자 발생, 또, 미국에서도 역학적 연결고리를 밝히기 어려운 감염 사례들이 나타나고 있는 것도 이와 같은 맥락입니다. 우려했던 세계적 대유행(pandemic)의 전조 증상입니다. 대한의사협회가 강조해 온, 심각하고 되돌릴 수 없는 위협의 가능성이 있다면 설령 그것이 과학적으로 확실하지 않더라도 충분한 사전조치가 필요하다는 ‘사전예방의 원칙’(precautionary principle)에 따른 모든 적극적인 조치가 필요한 시점입니다. 정치 ․ 경제적 충격을 각오하더라도 일시적으로 우리 사회를 잠시동안 멈추는 극단적인 조치를 포함하여 모든 가능한 시나리오를 따져, 필요한 준비를 하는 것이 정부가 해야 할 역할입니다.<br>
+국민 여러분께도 말씀드립니다.<br>
+갑작스러운 확진 환자의 증가와 지역사회 감염의 확산으로 경험해보지 못한 긴장과 공포가 우리를 지배하고 있습니다. 하지만 분명한 것은, 그 어떤 치명적인 감염병도 결국 인류를 이기지는 못했다는 것입니다. 우리는 코로나19와 싸워 이길 수 있고 또 이겨낼 것입니다. 중요한 것은 이러한 상황에서 평정을 유지하고 각자의 역할을 충실히 수행하는 것입니다. 이 질병의 불확실성에 근거해서 모든 가능성을 따지면서 현장을 지원해야 하는 것이 정부의 역할, 현장에서 질병과 맞서는 것이 저희 의료인의 역할이라면, 이 질병이 우리의 일상에서 더 이상 확산되지 않도록 하는 것이 바로 국민 여러분의 역할입니다. <br>
+이제는 체화된 마스크 사용법과 손위생 관리, 개인물품 위생관리 등을 더욱 철저하게 지켜주십시오. 또, 외출을 최소화하고 불필요한 접촉을 최대한 줄여주십시오. 특히, 자녀들의 개학이 연기된 3월 첫주에는, 모든 국민께서 마치 큰, 비나 눈이 오는 날처럼, 집에 머물러 주시기를 제안드립니다. 종교활동이나 모임, 행사는 모두 취소해 주십시오. 기업은 직원들이 재택근무 또는 연가나 휴가를 이용해 집에 머물 수 있도록 도와주십시오. 정부와 지자체도, 코로나19와 연관한 업무가 없는 직원들이 외부활동을 최소화할 수 있도록 한시적인 2부제 근무(홀짝일 교대근무) 등을 적극적으로 고려해주십시오. 사회적 거리 두기(socail distancing)에 익숙해지기 위한, 1주일을 제안합니다. <br>
+지금 이 시각에도 많은 환자들이 새로 진단되고 있습니다. 검사와 치료의 최전선에서 감염의 위협을 감수하면서도 국민의 건강과 안전을 위해 고군분투하고 있는 우리의 자랑스러운 의사, 간호사, 임상병리사 등 의료진과 밤낮없이 행정적 지원에 나서고 있는 공무원들을 응원해 주십시오. 그들이 바로 우리의 영웅입니다. 대한의사협회와 13만 의사들은 이 위기를 극복할 때까지 언제나 국민 여러분과 함께 하겠습니다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:39</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>사탕/동신9/30대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+ㅠㅠ</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:42</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이매SRT-GTX/두산삼호/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+이젠 정부가 전문가 말 좀 들어야 할텐데</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>아름이/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+그러게요</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+18:15</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

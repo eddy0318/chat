@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Every Chat | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+<div class="direct-chat direct-chat-secondary">
+<div>
+
+<div class='direct-chat-msg'>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-name float-left'>Eddy</span>
+  </div>
+  <!-- /.direct-chat-infos -->
+  <img class='direct-chat-img' src='dist/img/user1-128x128.jpg' alt='message user image'>
+  <!-- /.direct-chat-img -->
+  <div class='direct-chat-text'>
+    Is this template really for free? That's unbelievable!
+  </div>
+  <div class='direct-chat-text'>
+    Is this template really for free? That's unbelievable!!!!!
+  </div>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-timestamp float-right'>23 Jan 2:00 pm</span>
+  </div>
+  <!-- /.direct-chat-text -->
+</div>
+<div class='direct-chat-msg'>
+  <div class='direct-chat-text'>
+    Test
+  </div>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-timestamp float-right'>23 Jan 2:00 pm</span>
+  </div>
+</div>
+
+<!-- /.direct-chat-msg -->
+
+<!-- Message to the right -->
+<div class='direct-chat-msg right'>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-name float-right'>Sarah Bullock</span>
+  </div>
+  <!-- /.direct-chat-infos -->
+  <img class='direct-chat-img' src='dist/img/user3-128x128.jpg' alt='message user image'>
+  <!-- /.direct-chat-img -->
+  <div class='direct-chat-text'>
+    You better believe it!
+  </div>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-timestamp float-left'>23 Jan 2:05 pm</span>
+  </div>
+  <!-- /.direct-chat-text -->
+</div>
+<!-- /.direct-chat-msg -->
+
+<!-- Message. Default to the left -->
+<div class='direct-chat-msg'>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-name float-left'>Alexander Pierce</span>
+  </div>
+  <!-- /.direct-chat-infos -->
+  <img class='direct-chat-img' src='dist/img/user1-128x128.jpg' alt='message user image'>
+  <!-- /.direct-chat-img -->
+  <div class='direct-chat-text'>
+    Working with AdminLTE on a great new app! Wanna join?
+  </div>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-timestamp float-right'>23 Jan 5:37 pm</span>
+  </div>
+  <!-- /.direct-chat-text -->
+</div>
+<!-- /.direct-chat-msg -->
+
+<div class='direct-chat-msg'>
+  <div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>효성OB/아름풍림/40대</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+    <a data-toggle='modal' data-target='#dist_1'><img class='my_thumbnail' src='http://127.0.0.1:8000/dist/img/photo1.png'/></a>
+  </div>
+  <div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>00:34</span></div>
+</div>
+
+<!-- Message to the right -->
+<div class='direct-chat-msg right' >
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-name float-right'>Sarah Bullock</span>
+  </div>
+  <!-- /.direct-chat-infos -->
+  <img class='direct-chat-img' src='dist/img/user3-128x128.jpg' alt='message user image'>
+  <!-- /.direct-chat-img -->
+  <div class="direct-chat-text">
+    <a data-toggle="modal" data-target="#dist_1"><img class="my_thumbnail" src="dist/img/photo1.png"/></a>
+    <a data-toggle="modal" data-target="#photo2"><img class="my_thumbnail" src="dist/img/photo2.png"/></a>
+  </div>
+  <div class='modal fade' id="dist_1">
+    <div class='modal-dialog modal-lg'>
+      <div class='modal-content my_container'>
+        <img class="my_img" src="dist/img/photo1.png">
+        <button type='button' class='my_btn' data-dismiss='modal' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="photo1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content my_container">
+        <img class="my_img" src="dist/img/photo1.png">
+        <button type="button" class="my_btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="photo2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content my_container">
+        <img class="my_img" src="dist/img/photo2.png">
+        <button type="button" class="my_btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class='direct-chat-infos clearfix'>
+    <span class='direct-chat-timestamp float-left'>23 Jan 6:10 pm</span>
+  </div>
+  <!-- /.direct-chat-text -->
+</div>
+<!-- /.direct-chat-msg -->
+</div>
+
+</div>
+
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+</body>
+
+</html>

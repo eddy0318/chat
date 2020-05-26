@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>유진호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+2019년 5월 25일 [이룸] 종합뉴스<br>
+◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆<br>
+주요 카테고리 <br>
+@ 부동산<br>
+@ 금융증권<br>
+@ 경제종합<br>
+@ 종합 헤드라인<br>
+@ 스타트업/창업<br>
+@ 블록체인<br>
+@ 생활정보 <br>
+------------------------------<br>
+[이룸]<br>
+https://blog.naver.com/ecoerum<br>
+커뮤니티<br>
+https://blog.naver.com/ecoerum<br>
+◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆<br>
+5월 25일 주요신문사 간추린 부동산 뉴스 <br>
+지하 40미터 아래는 보상 없이 개발?…법 미비 '암초’<br>
+GTX는 주택부지로 들어오는데, 충분한 안전성 검사가 이뤄지지 않있다는 주장 <br>
+과거 지하 90미터가 넘는 땅에 대해서도 소유권을 인정한 경우 법적 분쟁으로 비화<br>
+관련 법이 미비한 가운데, 공사가 더욱 늦어질 수 있다는 우려<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=057&aid=0001353365<br>
+HUG, '청년 셰어하우스' 사업에 4억원 후원<br>
+대학생 및 취업준비생들에게 시세 대비 <br>
+저렴한 주거 공간과 취업 역량 강화 프로그램 등 제공<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=421&aid=0004007850<br>
+일산 떨어지고 서울재건축은 오르고…아파트값 희비<br>
+-노후아파트 많은 1기 신도시에서 거래절벽 심화<br>
+-서울 아파트 가격 전주보다 0.01% 떨어져 27주 연속 하락<br>
+-재건축 아파트가 0.06% 상승했고 전주(0.02%)보다 상승폭도 <br>
+커졌지만, 일반아파트(-0.02%)는 약세<br>
+-신도시와 경기·인천은 이번 주에도 동반하락(-0.01%)<br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=003&arti_id=0009249691<br>
+서울 미분양 급감했지만…고분양가 논란 단지는 안 팔려요<br>
+-서울의 미분양 주택수는 전월 말(721가구) 대비 66% 감소한 244가구<br>
+-다 지어진 뒤에도 팔리지 않은 준공후 미분양도 서울에 62가구<br>
+-분양가가 지나치게 높거나 1급지가 아닌 곳에서 장기 미분양 <br>
+상태인 물건은 향후 큰 폭의 할인분양 없이는 소진되기 어려워<br>
+-실거주와 투자 수요자 모두 입지가 좋고 억대 차익이 기대되는 '똘똘한 청약'을 선호<br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=277&arti_id=0004473201<br>
+지역구 일산만 챙긴다”… 김현미 기자간담회에 검단·다산 분노<br>
+김현미 ‘GTX 당근’에…일산 주민은 실효성 없다” <br>
+서울 3호선 파주, 인천 2호선 검단 거쳐 일산까지 연장” <br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=417&arti_id=0000412359<br>
+지금은 손해 속도 늦추는 서울 재건축 아파트<br>
+-조합원 지위양도 금지(2017년 8월), 재건축초과이익환수제 시행(2018년 1월), <br>
+-안전진단 강화(2018년 2월) 2주택자의 주택담보대출도 제한 등 집값 안정화를 취지로 <br>
+규제 강화한 것이 원인 <br>
+-강남에서는 재건축초과이익환수제 시행이, 강북에서는 임대주택 비율 확대가 주요 걸림돌<br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=008&arti_id=0004223137<br>
+'보유세 누가 내나'…6월1일 기준 납부대상 달라져<br>
+-12월 납부 종합부동산세 기준일은 6월1일, 다주택자들은 그 전에 주택을 처분하려는 움직임<br>
+-매매계약만 체결한 상태라면 잔금일 또는 등기접수일 중 빠른 날을 기준으로 해당 날짜가 <br>
+6월1일 이전이면 매수자가, 이후면 매도자가 세금을 부담<br>
+-신축 아파트의 경우 6월1일 이후에 잔금을 납부하면 분양자가 재산세를 부담<br>
+-주택은 7월과 9월에 반씩 나눠 과세, 단 재산세 세액이 20만원 이하일 경우 한꺼번에 납부<br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=003&arti_id=0009248333<br>
+서울 아파트 거래 3개월 연속 증가…바닥 찍었다고?<br>
+거래량 급감에 따른 기저효과, 예년 평균 대비 절반 못 미쳐<br>
+간헐적인 거래, 추격매수 어려워…거래회복 속단 일러<br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=421&arti_id=0004006336<br>
+적폐 굴레 벗고 속도내는 민자사업…건설업계 그래도 못 미더워”<br>
+경기활성화 측면에서 정책기조를 바꾼 것은 긍정적, 정부 정책의 일관성에 의문과 우려도 <br>
+https://land.naver.com/news/newsRead.nhn?type=headline&bss_ymd=20190524&prsco_id=366&arti_id=0000434802<br>
+새만금개발청, 日기업 상대 '투자설명회'<br>
+전기차․스마트 팜 등 전북 혁신성장 산업, 새만금 투자환경 홍보<br>
+김현숙 새만금개발청장 곧 가시적인 성과 나올 것<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=003&aid=0009249791<br>
+3기신도시 직격탄…양주·검단 청약참패<br>
+성남·과천은 줄줄이 1순위 마감 집값 약세지역만 폭탄 안긴격<br>
+신도시로 주변집값 안떨어져 김현미장관 주장에 주민 울분<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=009&aid=0004362357<br>
+애플스토어, 명동에 깃발 꽂나<br>
+1호 매장에 이어 2호 매장을 KB국민은행 옛 명동사옥에 내는 것을 적극 검토<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=009&aid=0004362356<br>
+세종 등 6200가구…견본주택 오픈 `빅데이`<br>
+세종시 전국 견본주택 물량의 절반 넘는 3256가구<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=009&aid=0004362354<br>
+서울 아파트 거래 3개월 연속 증가<br>
+이사철이 본격화된 3월부터 소폭 반등하기 시작해 3개월 연속 증가세<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=009&aid=0004362353<br>
+각광받는 공유주택…도심호텔은 임대주택 변신<br>
+1인 가구가 늘면서 같은 공간을 보다 더 효율적으로 제공하고, <br>
+여러가지 생활편의시설을 포함한 공유주택이 점차 늘어<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=260&oid=215&aid=0000775511<br>
+출처 : 이룸<br>
+https://blog.naver.com/ecoerum<br>
+-----------------------------------------------------------------------------<br>
+5월 25일 데일리 금융증권 속보 <br>
+[뉴욕마감] 무역전쟁 '장기화'에 와르르…다우 1.1%↓<br>
+-中 협상하고 싶으면 행동 고쳐라 vs 트럼프 합의 안 돼도 괜찮다<br>
+수요 감소 우려에 국제유가 폭락<br>
+-미국의 제조업 구매관리자지수(PMI)는 50.6으로, 약 10년만에 최저치<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0004223154&office_id=008&mode=mainnews&type=&date=2019-05-24&page=1<br>
+[마감시황]코스피, 미중 무역협상 난항에 '또' 하락 마감<br>
+미국과 중국의 무역전쟁 우려에 장 중 약세를 보이다 하락세 마감<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0009249652&office_id=003&mode=mainnews&type=&date=2019-05-24&page=1<br>
+[외환마감]장 막판 달러·위안 환율 급락..원·달러 환율 내려<br>
+24일 원·달러 환율 1188.40원 마감…0.80원↓<br>
+이번주 들어 외환시장에는 당국의 개입 경계감이 있어<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0004386345&office_id=018&mode=mainnews&type=&date=2019-05-24&page=1<br>
+키움뱅크냐 토스뱅크냐…오늘 제3인터넷은행 심사 착수<br>
+2박3일간 외부위원들이 비공개로 진행…26일 금융위 의결·발표<br>
+자금조달력 키움 안정권 평가…대주주 부담 던 토스 통과할지 주목<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0010844916&office_id=001&mode=mainnews&type=&date=2019-05-24&page=1<br>
+[성 기자의 까칠한 재테크]정치 불확실성 걷히는 인도·브라질 투자해볼까?<br>
+인도, 23일 모디 총선 불활실성 해소..증시 상승에 '긍정적'<br>
+미국 상장, 인도 증시 추총 INDA, INDY ETF 추천<br>
+브라질, 연금개혁은 하반기 가시화..저점 분할 매수 추천<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0004385947&office_id=018&mode=mainnews&type=&date=2019-05-24&page=1<br>
+코스피 지수변경에 들쭉날쭉 장세...아웃 종목 골라 탈까<br>
+코스피200 새 편입 종목, 이미 연초 대비 58~63%대 올라…주가 선반영”<br>
+제외 종목서 아이디어 찾아야”…코스닥150 대형종목 편출입 효과도 주목<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0002330726&office_id=119&mode=mainnews&type=&date=2019-05-24&page=1<br>
+모두 내다 팔 때 사들이는 '연기금'⋯이유 있는 코스닥 '집중'<br>
+올해들어 매달 순매수세를 기록 중, 지난 23일까지 총 1조3000억원 이상 매수<br>
+실적과 수급이 아닌 오히려 저평가된 성장성, 코스닥 유망 기업에 주목<br>
+▲쏠리드 ▲파트론 ▲매일유업 ▲에코마케팅 등 매수, 수익실현 <br>
+https://finance.naver.com/news/news_read.nhn?article_id=0002330728&office_id=119&mode=mainnews&type=&date=2019-05-24&page=1<br>
+'실적부진' 반·디·차 부품업체, 보유주식 매각 잰걸음<br>
+- 올 들어 8곳 재무구조 개선 위해 자사주 처분나서<br>
+- 경기 부진에 부품업체 `직격탄`…재무구조 개선 시급<br>
+- 바른전자 · 서연탑메탈 등 계열사 보유주식도 팔아치워<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0004385924&office_id=018&mode=mainnews&type=&date=2019-05-24&page=1<br>
+트럼프 쇼크·실적 부진에…증권가 앞다퉈 연간전망 하향<br>
+- 증권가 하반기 코스피 예상 밴드 1980~2400선<br>
+- '상저하고' 전망했던 증권가…하반기 좁은 박스피 예상<br>
+https://finance.naver.com/news/news_read.nhn?article_id=0004385929&office_id=018&mode=mainnews&type=&date=2019-05-24&page=1<br>
+채무 상담하면 추심 중단…재산 없으면 빚도 90% 탕감<br>
+‘개인·자영업 연체 채무자의 재기 지원 강화 방안’<br>
+-금융회사에 진 빚을 갚지 못해 국민행복기금 지원을 받는 채무자 <br>
+금융복지상담센터에 채무상담을 신청하면 채권 추심이 중단 <br>
+-또 재산이 없는 경우 채무자의 소득 등에 따라 빚의 최대 90%까지 감면<br>
+https://news.naver.com/main/read.nhn?mode=LS2D&mid=shm&sid1=101&sid2=259&oid=366&aid=0000434863<br>
+출처 : 이룸<br>
+https://blog.naver.com/ecoerum<br>
+-----------------------------------------------------------------------------<br>
+5월 25일 경제종합뉴스 <br>
+[단독] 롯데그룹, 롯데카드-롯데손보 매각 본계약 체결<br>
+이날 이사회 열고 금융계열사 처분키로<br>
+우리銀·MBK 우협 교체 2일만에 전격 SPA 체결<br>
+롯데손보 지분 5% 남기고 JKL파트너스에 넘겨<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=015&aid=0004147432<br>
+농가 3곳 때문에 잔반 사용 금지?…양돈농가 반발<br>
+잔반 공급 기준을 지키지 않은 농가 3곳 적발<br>
+아프리카돼지열병 원인, 정부가 돼지에 잔반 먹이는 걸 금지하는 법 추진<br>
+환경부 당장 음식 폐기물 처리가 힘들어질 것 우려<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=056&aid=0010705254<br>
+美, 환율전쟁 선포…中 노린 ‘관세폭탄’에 韓도 '유탄' 우려<br>
+미국 상무부 자국 통화 가치를 절하하는 국가들에 상계관세 부과를 추진<br>
+화웨이 퇴출 추진에 이어, 환율을 조작하는 국가에 대해 관세를 부과<br>
+환율관찰 대상국에 올라가 있는 만큼 그 정도의 우려가 반영<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=448&aid=0000274697<br>
+커지는 화웨이 사태 업계 긴장<br>
+-통신 기지국·광전송망·기업 네트워크 차질 우려<br>
+-기지국 장비 거래 LG유플러스<br>
+-타 업체로 대체 땐 비용 증가”<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=032&aid=0002942088<br>
+텐센트·알리바바의 '빅데이터 혁명'…홍콩 금융시장 지각변동<br>
+-SNS 활동, 거래기록, 소비결제 등의 빅데이터에 <br>
+의존한 자체 신용평가 시스템에 따라 2.4초 만에 대출 심사 끝나 <br>
+-메신저로 주고받은 대화와, 거래기록 등 빅데이터를 활용한 <br>
+자체 신용평가 시스템으로 지불 능력을 평가<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=057&aid=0001353367<br>
+최저임금위원회 공익위원 물갈이…3년 연속 두 자릿수 인상 어려울 듯?<br>
+내년도 최저임금 인상 폭, 속도 조절에 무게를 실어<br>
+최저임금위원회 공익위원 물갈이 자체가 속도 조절을 위한 수순 관측<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=022&aid=0003365805<br>
+USB인 줄…10대 흡연 '비상' 세금까지 낮아<br>
+-미국의 액상형 전자 담배 국내 판매시작<br>
+-청소년 흡연이 늘어날 것이라는 우려에 이어 <br>
+이번엔 담뱃세를 일반 담배보다 훨씬 적게 낸다는 점 논란<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=214&aid=0000951154<br>
+국가채무비율 ‘40% 마지노선’ 공방…꼭 지켜야 할까?<br>
+-GDP 대비 국가채무비율 OECD 평균 113%, 일본 220%, 영국과 미국도 100% 넘어<br>
+-당장 문제는 되지 않지만 결국 미래세대에 부담을 줄 수 있기 때문에 <br>
+재정을 어디에 투입할지는 신중하게 결정해야<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=374&aid=0000184928<br>
+1인가구 근로소득 12% 증가…고령층 일자리사업 효과<br>
+-올 1분기 월평균 99만3919원 4분기 연속 두 자릿수 늘어 <br>
+65살 이상 취업 20만명 증가 영향<br>
+-1인 가구 비중 30%에 이르는데 통계청 가계동향엔 ‘2인 이상’만 반영<br>
+가구소득 추이 정확도 떨어져” 지적<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=028&aid=0002455019<br>
+키울수록 손해… 축산 농가들 한숨만<br>
+산란계 키우면 마리당 약 1700원 손해…계란값 하락 때문 <br>
+돼지와 소의 수익성도 악화…유일하게 육우만 개선<br>
+https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=101&oid=022&aid=0003365767<br>
+출처 : 이룸<br>
+https://blog.naver.com/ecoerum<br>
+---------------------------------------------------------------------------<br>
+5월 25일 주요신문사 헤드라인 뉴스 <br>
+랭킹뉴스 <br>
+#英 메이 총리, '브렉시트 벽'에 사퇴…후임 내달 선출<br>
+#수소탱크 폭발 원인 조사...이번에도 안전불감증   <br>
+#초등생 2명 사망 축구클럽 차량 운전자 구속… 법원 도망 우려”   <br>
+#이앙기 몰며 모내기 도운 문 대통령 농가 소득 증대에 최선   <br>
+#'실습 여경이 음란행위자 검거' 경찰 홍보에 여론 '싸늘', 왜?   <br>
+#삼바 김태한 대표 영장심사…구속땐 삼성 윗선 수사 탄력   <br>
+정치<br>
+미·중 ‘화웨이 불똥’에 제2의 사드 사태 오나…시진핑 방한 무산  경향신문<br>
+천영우 한국처럼 검찰이 외교기밀 다 보는 나라, 문명국 중에 없어”   동아일보<br>
+날선 분위기로 끝난 한일 외교장관 회담…정상회담 안갯속으로   동아일보<br>
+[단독] 시진핑 6월 방한 무산...서울 중구 호텔 예약 취소  YTN<br>
+美당국자 해상순항미사일로 동북아에 핵억지력 제공가능(종합)   연합뉴스<br>
+'강효상 후배' 외교관 다음주 귀국 조치...정보유출 의심 사안 전부 조사  YTN<br>
+경제<br>
+뉴욕증시, 트럼프 무역전쟁 불안 달래기 상승 출발  연합뉴스<br>
+농가 3곳 때문에 잔반 사용 금지?…양돈농가 반발  KBS<br>
+우리는 유령 노동자”…배달원, 위험 내몰려도 보호 ‘뒷전’  KBS<br>
+언제든 무엇이든 집까지 척척!…불붙은 ‘배송 전쟁’  KBS<br>
+美, 환율전쟁 선포…中 노린 ‘관세폭탄’에 韓도 '유탄' 우려  TV조선<br>
+사회<br>
+10년만에 입연 장자연 前남친 절친들, 윤지오 한번도 못 들어”  서울신문<br>
+WHO, 게임중독 질병 인정 임박...논란 확산  YTN<br>
+[나이트] 전자담배 '쥴', 세금 절반 불과 '논란'  YTN<br>
+신종 액상담배 판매 시작...청소년 확산 우려에 단속 강화  YTN<br>
+길거리에서 음란행위...여경 신고로 '덜미'  YTN<br>
+브렉시트 벽 못넘고… 英메이 6월 7일 사퇴”   세계일보<br>
+생활문화<br>
+수많은 유진 초이와 애신이 사진놀이에 여념 없는 곳   오마이뉴스<br>
+밴드 잔나비 멤버 학교폭력 논란에 자진탈퇴   경향신문<br>
+'영천 35.6도' 전국 불볕더위…서울도 올해 첫 폭염특보  TV조선<br>
+'기생충' 향한 9분간 기립박수…'칸 황금종려상' 한발 앞으로  SBS<br>
+'영광과 좌절' 마라도나의 삶…칸, 두 번째 다큐 공개   JTBC<br>
+세계<br>
+EU, 메이 사퇴 아쉬워하면서도 달라진 것 없다…재협상 불가   연합뉴스<br>
+메이 사퇴 발표에 보수당 결단 환영…노동당 조기총선 필요   연합뉴스<br>
+미중 무역전쟁, ‘환율 전쟁’ 번지나?…트럼프는 장기전 대비  KBS<br>
+2초만에 집 날라가…美 중부 토네이도에 최소 6명 사망  TV조선<br>
+미국 정부·의회 ‘침묵’…주미 대사관 감찰 계속  KBS<br>
+it/과학<br>
+5G·금융망까지…국내 기업, 화웨이 사태 불똥 우려  KBS<br>
+5월인데 벌써 곳곳 폭염…낮에는 35도, 밤에는 열대야  KBS<br>
+전문가들 포항 이산화탄소 저장 실증사업 포항지진과 무관   동아사이언스<br>
+5월인데 벌써 곳곳 폭염…오늘 밤 동해안 첫 열대야  KBS<br>
+블록체인 프로젝트 위즈블 유모 대표, 사망 공지   파이낸셜뉴스<br>
+전문 영역에도 ‘동영상’ 열풍…쉽고 친근하게 정보 제공  KBS<br>
+출처 : 이룸<br>
+https://blog.naver.com/ecoerum<br>
+---------------------------------------------------------------------------<br>
+5월 5주 전국 분양동향<br>
+▶ 5월 마지막 주 주간분양동향 <br>
+▶ 모델하우스 오픈 13곳<br>
+▶ 당첨자 발표 16곳, 계약 14곳<br>
+5월 마지막 주 청약물량은 17곳 7,974가구 <br>
+모델하우스는 13곳 오픈예정<br>
+당첨자 발표는 16곳, 당첨자 계약은 14곳<br>
+ <br>
+▶ 금주의 청약 단지<br>
+금주 청약접수가 실시되는 단지는 17곳<br>
+27일(월) △롯데캐슬 클라시아 △의정부 고산 S2-2블록(영구임대) <br>
+△진주 일진 스위트포레 강남(주상복합) 등 3곳에서 청약접수를 시작<br>
+롯데건설은 서울시 성북구 길음동 길음1구역을 재개발하는 롯데캐슬 클라시아를 <br>
+27일 분양한다. 전용면적 38~112㎡ 총 2,029가구 중 일반분양 59~112㎡ 637가구.<br>
+지하철 4호선 길음역과 미아사거리역이 도보 10분거리인 더블역세권이다. <br>
+숭곡초 · 중, 영훈초, 영훈국제중, 영훈고 등 명문학군을 걸어서 통학 가능 <br>
+현대백화점, 롯데백화점, 이마트 등 대형쇼핑센터가 가깝고 북서울꿈의숲, <br>
+오동공원 등이 인접해 쾌적한 주거생활이 가능<br>
+28일(화) △의정부 고산 S2-2블록(국민임대) △대구 경남 센트로팰리스(오피스텔) <br>
+△부산 개금동 포르투나 등 3곳에서 청약접수를 시작<br>
+29일(수) △동탄역 삼정그린코아 더베스트(주상복합) △대구 수성범어 W(주상복합 · 오피스텔)<br>
+△대구 경남 센트로팰리스(주상복합) △부산 두산위브더제니스 하버시티 등 5곳에서 청약접수<br>
+두산건설은 부산시 동구 범일동 좌천범일구역 통합3지구를 정비해 짓는 주거복합단지 <br>
+두산위브더제니스를 29일 분양한다. 아파트 전용 59~84㎡ 총 2,040가구 중 <br>
+일반분양 1,226가구. 오피스텔 29~68㎡ 총 345실 중 일반분양 341실.<br>
+부산지하철 1호선 좌천역이 도보 7분거리인 역세권이다. 부산 북항 재개발을 통해 <br>
+해양 관광자원 인프라가 더욱 풍부해질 전망이다. 부산진시장, 현대백화점 등 <br>
+편의시설이 가깝고 성남초, 금성중 · 고 등을 걸어서 통학할 수 있다.<br>
+30일(목) △세종 더휴 예미지(L1 · L2블록) △세종 어울림 파밀리에 센트럴 M1 · M4블록(공공분양) <br>
+△세종 자이 e편한세상(공공분양) △광주 화정 아이파크 등 6곳에서 청약접수를 시작<br>
+한신공영과 금성백조주택은 세종시 반곡동 4-2생활권 L1, L2블록에 짓는 <br>
+세종 더휴 예미지를 30일 분양한다. L1블록 59~97㎡ 338가구. L2블록 59~97㎡ 508가구.<br>
+간선급행버스(BRT) 정류장을 도보로 이용할 수 있어 세종시내를 비롯해 대전, 청주 등 인근도<br>
+시로 이동이 편리하다. 대덕테크노벨리, 대전 제3 · 4 일반산업단지, 세종테크밸리(조성예정)<br>
+등 직주근접성이 우수하며 괴화산, 삼성천 수변공원이 가까워 주거환경이 쾌적하다. <br>
+단지 앞 초등학교 및 중학교가 신설예정이다.<br>
+▶ 금주의 모델하우스 오픈 단지<br>
+금주에 오픈예정인 모델하우스는 13곳 모두 31일(금)에 오픈<br>
+수도권에서는 △과천제이드자이(공공분양) △인천 주안 캐슬&더샵 에듀포레 <br>
+△인천 부개역 코오롱하늘채 △인천 루원 지웰시티 푸르지오(주상복합) 등 <br>
+4곳이 오픈예정이다.<br>
+지방에서는 △청주 동남지구 우미린 에듀포레 △대구 상인 모아엘가 파크뷰 <br>
+△대구 힐스테이트 다사역(주상복합 · 오피스텔) △대구 화원파크뷰 우방아이유쉘 <br>
+△대구 힐스테이트 데시앙 도남 △부산 e편한세상 시민공원 1 · 2단지 <br>
+△빌리브 트레비체(주상복합) 등 9곳이 오픈예정이다.<br>
+▶ 금주의 당첨자 발표 단지<br>
+금주 당첨자를 발표하는 단지는 16곳<br>
+27일(월)에 △광명 디오스텔 가산(오피스텔) △동탄 더샵 센텀폴리스 11 · 12블록(오피스텔) <br>
+△영도 동삼동 비룡 벨로스텔라 등 4곳에서 당첨자를 발표한다.<br>
+28일(화)에 △남해 센트럴오션힐 1곳에서 당첨자를 발표한다.<br>
+29일(수)에 △검단 파라곤(AA14블록) △동대구역 더샵 센터시티(오피스텔) 등 <br>
+2곳에서 당첨자를 발표<br>
+30일(목)에 △과천자이 △성남 e편한세상 금빛 그랑메종 △성남 신흥역 하늘채 랜더스원 <br>
+△시흥장현 동원로얄듀크 2차 △양주신도시 중흥S-클래스 센텀시티(A11-1블록) <br>
+△대구 경남 센트로팰리스(오피스텔) △동대구역 더샵 센터시티(주상복합) 등 <br>
+7곳에서 당첨자를 발표한다.<br>
+31일(금)에 △양주신도시 중흥S-클래스 센텀시티(A11-3블록) 1곳에서 당첨자를 발표한다.<br>
+6월 2일(일)에 △순천 가곡지구 영무예다음(민간임대) 1곳에서 당첨자를 발표한다.<br>
+▶ 금주의 당첨자 계약 단지<br>
+금주에는 당첨자 계약 단지가 14곳<br>
+27일(월)에 △방배그랑자이 △일산2차 아이파크(민간임대) <br>
+△세종 행정중심복합도시 2-1생활권 M6블록 가온마을 7단지(국민임대) <br>
+△군산 디오션시티 더샵 등 4곳에서 당첨자 계약을 실시<br>
+28일(화)에 △위례신도시 우미린 1차 △화성 우방 아이유쉘 메가시티 1 · 2단지 <br>
+△광명 디오스텔 가산(오피스텔) △천안 청당 코오롱하늘채 <br>
+△전주 만성지구 B2블록 에코르1단지(공공임대) △전주 우아한시티 등 7곳에서 <br>
+당첨자 계약을 실시<br>
+29일(수)에 △동탄 더샵 센텀폴리스 11 · 12블록(오피스텔) 등 2곳에서<br>
+당첨자 계약을 실시한다.<br>
+31일(금)에 △대구 경남 센트로팰리스(오피스텔) 1곳에서 당첨자 계약을 실시한다.<br>
+출처 : 이룸<br>
+https://blog.naver.com/ecoerum</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+08:11</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>나금배</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+감사합니다</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+09:15</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>

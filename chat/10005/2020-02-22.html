@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <!--<link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="../../dist/css/adminlte.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .my_thumbnail{
+      cursor: pointer;
+      height: 128px;
+    }
+    .my_container{
+      position:relative;
+    }
+    .my_container .my_img {
+      position:relative;
+      width:100%;
+      padding-top: 0%;
+    }
+    .my_container .my_btn {
+      position: absolute;
+      top: 5%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgba(255,255,255,0);
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+<!-- Message. Default to the left -->
+  <div class="direct-chat direct-chat-secondary">
+    <div style="padding:10px">
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>연욱</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[1보] 코로나19 확진자 142명 추가…국내 총 346명·사망 2명 - https://m.yna.co.kr/kr/contents/?cid=AKR20200222026600017</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+10:02</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>이창호</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[속보] 경남 추가 확진자 2명 중 1명은 간호사…창원한마음병원 폐쇄 - https://n.news.naver.com/article/001/0011419346</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+11:41</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[조선일보] 청주·안양 택시기사 2명 확진… 접촉 승객수 깜깜<br>
+https://news.chosun.com/site/data/html_dir/2020/02/22/2020022200798.html<br>
+[한겨레] [속보] 코로나19 중증 9명…상태 심각한 1명 인공호흡기<br>
+http://hani.co.kr/arti/society/health/929265.html?_fr=mt1</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[한겨레] [속보] 코로나19 중증 9명…상태 심각한 1명 인공호흡기<br>
+http://hani.co.kr/arti/society/health/929265.html?_fr=mt1</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+12:36</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[한국경제] 단독 삼성전자 구미사업장 확진자 발생…사업장 폐쇄<br>
+https://www.hankyung.com/economy/article/202002226058i</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+14:37</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[매일경제] 신천지 9000명 격리…생활비만 100억 지원<br>
+https://www.mk.co.kr/news/society/view/2020/02/184000/</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+15:27</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒매경이 전하는 세상의 지식(매-세-지, 2월 22일) ❒<br>
+‾‾‾‾‾<br>
+대구에서 신종 코로나바이러스 감염증 환자가 급증하는 가운데 21일 오후 대구시 남구 보건소에 의심 환자들이 몰려들고 있다. 남구에는 코로나19 확산을 가져온 것으로 지목받는 신천지 교회가 있다. /사진=연합뉴스<br>
+1. 문재인 대통령이 21일 코로나19 사태와 관련해 정세균 국무총리에게 긴급 현안 보고를 받는 자리에서 신천지 대구교회와 경북 청도 대남병원 장례식 문제를 거론하며 예배와 장례식 참석자에 대해 철저한 조사가 필요하다고 강조함.<br>
+2. 코로나19 확진자가 전국적으로 확산하자 금융시장도 큰 충격을 받음. 21일 코스피는 하루 만에 1.49% 하락한 2162.84로 마침. 지난 5일 이후 약 15일 만에 2200<br>
+선이 무너진 것.<br>
+3, 코로나19 확진자가 대폭 늘어나고 국내 사망자까지 발생하는 등 사태가 확대 일로로 치달으면서 정기 주주총회를 앞둔 기업들이 딜레마에 빠짐. 회사로서는 주주 친화 강화 기조에 따라 소액주주 참여율을 높여<br>
+야 하지만 다중이 모이는 행사를 개최해 코로나 확산에 일조할 수 있고, 사내에 감염이 번지는 리스크도 무시할 수 없다 보니 진퇴양난에 빠진 것.<br>
+4. 코로나19 쇼크가 수출 전선에 본격적으로 먹구름을 드리우기 시작함. 당초 2월을 분기점으로 수출이 반등할 것으로 기대했던 정부로서는 3년 만에 역성장을 기록<br>
+한 지난해에 이어 올해도 극심한 수출 한파를 우려하지 않을 수 없게 됐음.<br>
+5. 코로나19 확산으로 경기 침체가 심해지자 동대문시장이 상가 임대료 인하를 위한 단체행동에 나섰음. 동대문시장이 단체행동에 나선 것은<br>
+2016년'사드(THAAD·고고도 미사일 방어체계) 보복 사태'로 위기에 몰린 이후 4년 만에 처음.<br>
+6. 단 사흘 만에 전국 곳곳에서 코로나19 확진자가150명 이상 발생하면서 실질적으로 전국 거의 모든 지역의 방역망이 초토화. 그동안 입국자 관리에 주력해온 보<br>
+건당국의 방역체계는 해외여행력이 없는 감염 경로 미상 환자와 신천지 대구교회를 중심으로 한 집단 감염, 전방위로 확산되는 지역사회 전파를 막기에 역부족.<br>
+7. 국내에서 코로나19 첫 사망자가 나온 가운데 확진자로 분류돼 치료를 받고 있는 환자 상태에 대한 관심이 커지고 있음. 이와 관련해 산소마스크로 산소를 공급받는 등 중증도가 높은 환자는 6~7명인 것으로 집계.<br>
+8. 정부가 코로나19의 지역 확산을 저지하기 위해 호흡기 증상이 있는 환자를 다른 환자와 분리해 진료하는 '국민안심병원'을 운영하기로 했음. 감염병 특별관리지역<br>
+으로 지정된 대구에서는 폐렴 입원 환자 모두에 대해 코로나19 진단검사를 하고, 폐렴환자의 타 병원 전원도 금지.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒2월22일 토요일 HeadlineNews❒<br>
+‾‾‾‾‾<br>
+■오늘 전국 새벽까지 빗방울…<br>
+수도권 미세먼지 '나쁨'<br>
+■신천지 대구교회 교인 4천120명 자가격리 추진…1대1 관리 불가<br>
+■청도대남병원 55세 코로나<br>
+19 확진자 사망…국내 2번째<br>
+■코로나19 확산에 '적막강산'…<br>
+대구시민 일상 흔들려<br>
+■메르스 넘어선 코로나19'…<br>
+신천지대구발 '전국확산' 초읽기<br>
+■경찰 광화문집회 참가자도 <br>
+엄중 사법처리…범투본, 강행 방침<br>
+■매점매석 적발 마스크 221만개, 대구·경북지역 우선 공급<br>
+■선거구 인구기준 13만6천∼<br>
+27만3천 제시…미달 3곳·초과 15곳<br>
+■46년 노후주택 음식점으로 <br>
+개조 중 붕괴…기둥 작업 중 사고<br>
+■마스크 착용한 양승태…<br>
+폐암 수술로 두 달 만에 재판 재개<br>
+■전국적으로 확산하는 '코로나19' 사태…총선 핵심변수로 부상<br>
+■'공직선거법 위반' 전광훈 <br>
+구속심사 불출석…24일로 연기<br>
+■중국서 코로나19 '완치' 판정·<br>
+퇴원 후 다시 '양성' 나와<br>
+■일본 곳곳서 코로나 감염자 <br>
+추가 확인…어린이 환자도 속출<br>
+■고통도 내 피와 살…BTS, <br>
+진정한 나를 찾고 '소명'을 말하다<br>
+■'친박 핵심' 윤상현 공천 탈락…이혜훈·이은재도 '컷오프'<br>
+■민주, 강서갑 금태섭 경선키로…<br>
+김남국은 다른 지역 전략배치<br>
+■CNN 한·미 방위비협상 지연<br>
+우려 고조…간극 여전히 커<br>
+■한국과 무역문제 있는데 웬 작품상?…트럼프 '기생충' 저격<br>
+■코로나19에 법원·검찰도 '긴장'…<br>
+윤석열 소환조사 최소화<br>
+■안철수 국민께 약속한 그 길 가겠다…통합당과 선거연대 거부<br>
+■특정 단체에 일감 준다 <br>
+18층 건물 옥상서 투신 소동<br>
+■두산重, 명예퇴직 이어 <br>
+루마니아 공장도 정리한다<br>
+■여권 코로나19 추경 전향적 검토…23일 고위당정서 논의<br>
+■병무청, 대구·청도지역 입영 잠정연기…내주부터 적용<br>
+■이번엔 종지부 찍나…미-탈레반, <br>
+일주일 휴전 후 29일 평화협정<br>
+■EU 정상들, 장기예산 놓고 균열…<br>
+이틀째 협상도 교착<br>
+■코로나19 급격 확산에 금융시장 '충격'…금값 이틀째 사상최고<br>
+■베트남 삼성전자도 생산 지연 우려…삼성 큰 문제 없어<br>
+■별에 바짝 붙어 18시간만에 <br>
+공전하는 목성급 행성 운명은<br>
+■포천서 폐렴의심 증상 70대 <br>
+숨져 한때 비상…코로나19 음성<br>
+■조현배 해양경찰청장 사의…해양전문가가 청장 돼야<br>
+■코로나19 소비위축 와중에…<br>
+갤럭시Z플립 中서 '8분완판'<br>
+■정부 부동산 불법행위 대응반 <br>
+출범…첫 타깃은 '집값담합'<br>
+■안성, 선거 앞두고 '용인 <br>
+SK하이닉스 방류수 문제' 이슈화<br>
+■쏘렌토 사전계약 하루만에 중단사태…하이브리드 가격 올린다<br>
+■체르노빌 보내라 우한탈출 <br>
+자국민들에 돌던진 우크라 주민들<br>
+■청와대 어린이집·유치원에 <br>
+성 인지 교육 담당교사 지정<br>
+■전경련, 기업정책실 신설 '조직개편'…3실→4실로 확대<br>
+■춘천 시내버스 일부 노조원 내일 <br>
+하루 파업…전세버스 10대 투입<br>
+■코로나19 확산에…일부 국가<br>
+ '입국 한국인' 격리 조치<br>
+■샌더스, 일리노이주 여론조사서도 선두<br>
+■러 '야심작' 수호이 슈퍼제트<br>
+100 항공기 국제시장서 외면<br>
+■서산 대산공단 도로서 컨테이너 전복…일부 오염물질 바다 유입<br>
+■장성 제봉산 약수 라돈 기준 초과…<br>
+음용 자제 권고<br>
+■빈대와의 전쟁 벌이는 프랑스…포털·핫라인까지 설치<br>
+■삼성전자, 이사회 의장에 박재완 선임…첫 사외이사 의장<br>
+■비위혐의로 수사받던 <br>
+전 청송군수 숨진 채 발견<br>
+■코로나19 확진 54세 여성 사망…<br>
+국내 2번째<br>
+■[코스닥]13.67p(2.01%)내린667.99<br>
+■[코스피]32.66p(1.49%)내린2,162.84<br>
+자료출처☞http://:goo.gl/GU8MEk <br>
+■오늘의 영어 한마디      <br>
+forget to ~ : ~하는 걸 잊다<br>
+I forgot to call my friends<br>
+ after I arrived in Europe.<br>
+☞나는 유럽에 도착한 다음에 <br>
+친구들에게 연락하는 것을 잊어버렸다.<br>
+They forgot to make <br>
+a reservation on the flight to Japan.<br>
+☞그들은 일본 가는 비행기를 <br>
+예약하는 것을 잊어버렸다.<br>
+She forgot to bring her referral<br>
+ letters to her job interview.<br>
+☞그녀는 회사 인터뷰에 추천서를 <br>
+가져오는 것을 잊어버렸다.<br>
+■오늘의 건강상식<br>
+매달 반복되는 우울과 짜증, <br>
+월경증후군을 아시나요?<br>
+https://shealth.life/v4/contentsView?contsId=8952&areaType=DISCOVER_PLUS</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>신경범</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+❒ 2월22일, 토요일 ❒<br>
+#아침소식<br>
+■새벽까지 전국 비…<br>
+기온은 평년보다 포근 <br>
+전국이 흐리다가 낮부터 가끔 구름이 많겠<br>
+다아침 기온은 1~9도(평년 -7~2도), 낮 기온은 5~14도(평년 5~11)가 되겠다. 미<br>
+세먼지는 전국이 ‘보통’ 수준을 보이겠다.<br>
+■샌더스, 일리노이주 여론조사서도 선두<br>
+미국 민주당 대선 후보 선출을 위한 경선<br>
+을 한 달 앞둔 일리노이 주에서 버니 샌더<br>
+스 연방상원의원(버몬트)이 지지율 선두<br>
+를 달리고 있는 것으로 나타났다.<br>
+■한국과 무역문제 있는데 웬 작품상?…트럼프 '기생충' 저격<br>
+트럼프 대통령은 20일(현지시간) 콜로라<br>
+도주 콜로라도 유세에서 올해 아카데미 시상식이 얼마나 나빴지?승자는 한국에서 온 영화라고 말했다고 폭스뉴스가 보도<br>
+했다.그는 도대체 그게 다 뭐였지?우리는 한국과 무역에서 충분히 많은 문제를 갖고 있다라며 더욱이 올해 최고의 영화상을 주나? 잘 됐나? 모르겠다라고 했다.<br>
+■청도 대남병원 확진자 부산 이송 후 숨져…사망자 2명으로 증가<br>
+코로나바이러스 감염증(코로나19) 확진자 1명이 21일 청도 대남병원에서 치료를 받<br>
+던 확진 환자 A 씨(54·여)가 부산대병원 음압병동으로 옮겨졌지만 숨졌다고 밝혔<br>
+다.<br>
+■국내 ‘코로나19’ 환자 48명 추가 발생…총 204명<br>
+신종 코로나바이러스 감염증 국내 확진 환<br>
+자가 하루새 100명이나 늘었다.중앙방역<br>
+대책본부는 21일 오후 4시 기준 코로나19 확진자가 48명 추가 확인됐다고 밝혔다.<br>
+■신천지 타고 전국으로 퍼진 코로나19…환자 10명 중 7명꼴<br>
+21일까지 확진된 신종 코로나19환자는 10명 중 7명꼴로 신천지예수교 대구교회<br>
+와 이어지는 것으로 나타났다. 이 신천지 교인들이 대구와 경북뿐 아니라 서울과 광<br>
+주, 경남 등으로 퍼져나가며 전국에 비상<br>
+이 걸렸다.<br>
+■코로나19, 직장 풍경 바꿔…<br>
+출장 취소하고 회식은 자제<br>
+인크루트가 운영하는 알바콜이 직장인 66<br>
+1명을 대상으로 조사한 결과 코로나19로 근무방식이 조금이라도 변경됐다는 응답은 39.1%로 집계됐다.해외출장(16.1%)과 국내출장(13.2%)을 연기 또는 취소했다는 비율은 29.2%로 1위였다.<br>
+■형량 늘어난 이명박 한동안 멍한 표정…애써 미소지으며 재수감<br>
+항소심에서 1심보다 2년 늘어난 징역 17<br>
+년을 선고받은 이명박 전 대통령은 법정<br>
+에서 당혹스러운 표정을 감추지 못했다.<br>
+19일 서울고법 형사1부가  항소심 판결<br>
+을 선고하는 동안 피고인석에 앉은 이 전 대통령의 표정은 점점 굳어졌다.<br>
+■조현배 해양경찰청장 사의…해양전문가가 청장 돼야<br>
+조현배 해양경찰청장이 21일 사의를 표명<br>
+했다.조 청장은 이날 해양경찰법 시행과 함<br>
+께 청장직에서 물러나겠다는 의사를 밝혔<br>
+다.조 청장이 추후 해양수산부 장관을 통해 임명권자인 대통령에게 사직서를 제출하면 재가를 거쳐 '의원면직'될 전망이다.<br>
+■매점매석 적발 마스크 221만개, 대구·경북지역 우선 공급<br>
+식품의약품안전처는 보건용 마스크·손 소<br>
+독제 매점매석 행위 금지 조치를 어기고 보<br>
+건용 마스크524만개를 보관하던 부산지역<br>
+의 제조·판매업체(A사)를 적발했다고 21일 밝혔다.<br>
+■윤석열 소환 조사 최소로 하라”…코로나19 대응 TF 가동<br>
+윤석열 검찰총장(60·사법연수원 23기)<br>
+이 21일 신종 코로나 바이러스(코로나19) 확산 방지를 위해 소환 조사를 최소로 하<br>
+라고 지시했다<br>
+■특정 단체에 일감 준다 <br>
+18층 건물 옥상서 투신 소동<br>
+부산동구 한건물18층 옥상에서 40대 남<br>
+성이 아래로 투신하겠다며 소동을 벌이고 있다.경찰에 따르면 이 남성은 해당 건물<br>
+과 관련이 있는 한 건설회사가 북항재개발 공사를 하면서 특정 단체에 일감을 많이 준다고 주장하며 시정을 요구하고 있다.<br>
+■코로나19 소비위축 와중에…갤럭시Z플립 中서 '8분완판'<br>
+코로나19 확산 사태로 중국인들의 소비 심<br>
+리가 크게 위축된 가운데서도 삼성전자의 새 폴더블폰 갤럭시Z플립이 중국 시장에 성공적으로 안착했다. 삼성전자는 이날  우<br>
+수 고객 전용 온라인 커뮤니티에서 갤럭시<br>
+Z플립 선착순 판매 행사를 진행했다.<br>
+■비위혐의로 수사받던 전 청송군수 숨진 채 발견<br>
+경찰에 실종 신고된 한동수 전 청송군수<br>
+가 행방을 감춘 지 3일 만인21일 경북 안<br>
+동문화관광단지 내 공터 차에서 숨진 채 발견됐다한 전 군수는 재임 당시 비위 혐<br>
+의로 검찰 수사를 받아왔다.<br>
+ .<br>
+■마스크 사려고 3억3000만 원 입금했는데… 전화번호 착신한 사기<br>
+코로나19 확산으로 마스크가 시중에 부족<br>
+한 걸 악용해 돈을 가로챈 사기꾼 일당 가<br>
+운데 1명을 경찰이 붙잡았다.마스크 생산<br>
+업체를 사칭하고 구매대금 3억3000만 원<br>
+을 빼돌린 피의자 1명을 검거하고 공범을 추적하고 있다고 21일 밝혔다.<br>
+■빙속 김보름, 동계체전 1500m 금메달…3관왕 등극<br>
+김보름은 21일  태릉국제스케이트장에서 열린 대회 스피드스케이팅 여자 일반부15<br>
+00m에서 2분04초82를 기록해1위를차지<br>
+했다.지난 19일 매스스타트, 20일 3000<br>
+m에서 금메달을 딴 김보름은 1500m 금메달로 대회 3관왕에 올랐다.</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:28</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뽀숑</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://twitter.com/jenniferatntd/status/1230999469384175617?s=21</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+16:38</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[매일경제] [속보] 코로나 확진자 87명 추가…국내 총 433명<br>
+https://www.mk.co.kr/news/society/view/2020/02/184286/</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:25</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>김광표</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+https://n.news.naver.com/article/003/0009716412</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+17:30</span></div></div>
+<div class='direct-chat-msg'>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-name float-left'>뉴비</span></div><img class='direct-chat-img' src='../../dist/img/user1-128x128.jpg' alt='message user image'>
+  <div class='direct-chat-text'>
+[매일경제] [속보] 정총리 큰 책임감…밀집행사 자제 당부<br>
+https://www.mk.co.kr/news/politics/view/2020/02/184629/</div>
+<div class='direct-chat-infos clearfix'><span class='direct-chat-timestamp float-right'>
+21:26</span></div></div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+  </body>
+</html>
